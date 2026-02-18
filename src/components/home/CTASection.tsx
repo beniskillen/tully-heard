@@ -5,13 +5,7 @@ import { Button } from '@/components/ui/button';
 
 export const CTASection = () => {
   return (
-    <section className="section-padding bg-background relative overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      </div>
-
+    <section className="section-padding bg-card relative overflow-hidden">
       <div className="container-narrow relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -19,12 +13,12 @@ export const CTASection = () => {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-semibold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6">
             Ready to{' '}
             <span className="italic text-primary">Transform</span>{' '}
             Your Venue?
           </h2>
-          <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
+          <p className="text-muted-foreground font-sans text-lg mb-10 leading-relaxed">
             Our 25 years of experience have taught us to take a relationship-driven, consultative approach to every engagement. Book a time to chat — we'll listen, ask the right questions, and share data-backed insights that help you invest with clarity.
           </p>
 
@@ -32,7 +26,7 @@ export const CTASection = () => {
             <Link to="/contact">
               <Button variant="heroPrimary" size="xl" className="gap-3">
                 <Calendar size={20} />
-                Book a Strategy Call
+                Book a Consultation
               </Button>
             </Link>
             <Link to="/how-we-work">
@@ -49,14 +43,14 @@ export const CTASection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="mt-12 pt-12 border-t border-border/50"
+            className="mt-12 pt-12 border-t border-border"
           >
-            <p className="text-muted-foreground text-sm mb-4">
+            <p className="text-muted-foreground font-sans text-sm mb-4">
               Trusted by Australia's leading venues
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
+            <div className="flex flex-wrap items-center justify-center gap-8">
               {['Chatswood RSL', 'Gosford RSL', 'Club Mudgee', 'Bankstown Sports', 'Doyalson RSL'].map((venue) => (
-                <span key={venue} className="text-muted-foreground text-sm font-medium">
+                <span key={venue} className="text-muted-foreground font-sans text-sm font-medium">
                   {venue}
                 </span>
               ))}

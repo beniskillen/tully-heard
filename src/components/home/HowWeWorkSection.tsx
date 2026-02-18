@@ -36,14 +36,14 @@ export const HowWeWorkSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-primary text-sm uppercase tracking-wider font-medium mb-4">
+          <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
             How We Work
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-semibold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6">
             Driven by Insights.{' '}
             <span className="italic text-primary">Focused</span> on Outcomes.
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground font-sans text-lg max-w-2xl mx-auto">
             Our unique process blends lived industry experience with a contemporary, insights-led approach to decision-making.
           </p>
         </motion.div>
@@ -58,16 +58,16 @@ export const HowWeWorkSection = () => {
               transition={{ delay: index * 0.1 }}
               className="feature-card group"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/15 transition-colors">
                 <step.icon className="text-primary" size={24} />
               </div>
-              <div className="text-muted-foreground text-sm font-medium mb-2">
+              <div className="text-muted-foreground text-sm font-sans font-semibold mb-2">
                 0{index + 1}
               </div>
-              <h3 className="text-xl font-display font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-display text-foreground mb-3">
                 {step.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground font-sans text-sm leading-relaxed">
                 {step.description}
               </p>
             </motion.div>
