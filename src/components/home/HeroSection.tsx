@@ -7,7 +7,6 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
-      {/* Video Background */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-black/40 z-10" /> {/* Overlay stays on top */}
           <iframe
