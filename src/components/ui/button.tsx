@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-sans font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -14,23 +14,25 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
-          "border border-border bg-transparent text-foreground hover:bg-secondary hover:text-secondary-foreground",
+          "border border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: 
-          "hover:bg-secondary hover:text-secondary-foreground",
-        link: 
+        ghost:
+          "hover:bg-secondary hover:text-foreground",
+        link:
           "text-primary underline-offset-4 hover:underline",
+        navy:
+          "bg-navy text-navy-foreground font-semibold shadow-md hover:shadow-lg hover:scale-105 tracking-wide",
         hero:
-          "bg-primary text-primary-foreground font-semibold shadow-lg hover:scale-105 tracking-wide",
+          "bg-navy text-navy-foreground font-semibold shadow-lg hover:scale-105 tracking-wide",
         heroPrimary:
-          "bg-primary text-primary-foreground font-semibold text-base px-8 py-4 shadow-lg hover:scale-105 tracking-wide",
+          "bg-navy text-navy-foreground font-semibold text-base px-8 py-4 shadow-lg hover:scale-105 tracking-wide",
         heroSecondary:
           "bg-transparent border-2 border-foreground/20 text-foreground font-medium hover:border-primary hover:text-primary",
         nav:
-          "text-muted-foreground hover:text-foreground font-medium",
+          "text-foreground hover:text-primary font-semibold uppercase tracking-[0.125em]",
         gold:
-          "bg-gradient-to-r from-primary to-amber-600 text-primary-foreground font-semibold shadow-lg hover:scale-105",
+          "bg-primary text-primary-foreground font-semibold shadow-lg hover:scale-105",
       },
       size: {
         default: "h-10 px-6 py-2",

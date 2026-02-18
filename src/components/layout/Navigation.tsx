@@ -41,16 +41,16 @@ export const Navigation = () => {
         <nav
           className={`flex items-center justify-between rounded-full px-6 py-3 transition-all duration-500 ${
             isScrolled
-              ? 'bg-background/90 backdrop-blur-xl border border-border/50 shadow-lg'
-              : 'bg-background/70 backdrop-blur-md border border-border/30'
+              ? 'bg-background/95 backdrop-blur-xl border border-border shadow-md'
+              : 'bg-background/80 backdrop-blur-md border border-border/50'
           }`}
         >
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="font-display font-bold text-primary-foreground text-sm">TH</span>
+            <div className="w-10 h-10 rounded-lg bg-navy flex items-center justify-center">
+              <span className="font-display font-semibold text-navy-foreground text-sm">TH</span>
             </div>
-            <span className="font-display font-semibold text-lg text-foreground hidden sm:block">
+            <span className="font-display text-lg text-foreground hidden sm:block">
               Tully Heard
             </span>
           </Link>
@@ -61,10 +61,10 @@ export const Navigation = () => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
+                className={`px-4 py-2 text-xs font-sans font-semibold uppercase tracking-[0.125em] rounded-full transition-all duration-300 ${
                   location.pathname === link.href
                     ? 'text-primary bg-primary/10'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-secondary/50'
+                    : 'text-foreground hover:text-primary hover:bg-primary/5'
                 }`}
               >
                 {link.label}
@@ -75,7 +75,7 @@ export const Navigation = () => {
           {/* CTA Button */}
           <div className="flex items-center gap-3">
             <Link to="/contact" className="hidden sm:block">
-              <Button variant="hero" size="sm">
+              <Button variant="navy" size="sm">
                 Book a Call
               </Button>
             </Link>
@@ -111,10 +111,10 @@ export const Navigation = () => {
                 >
                   <Link
                     to={link.href}
-                    className={`block px-4 py-3 text-lg font-medium rounded-xl transition-all duration-300 ${
+                    className={`block px-4 py-3 text-sm font-sans font-semibold uppercase tracking-[0.125em] rounded-xl transition-all duration-300 ${
                       location.pathname === link.href
                         ? 'text-primary bg-primary/10'
-                        : 'text-foreground hover:bg-secondary/50'
+                        : 'text-foreground hover:bg-secondary'
                     }`}
                   >
                     {link.label}
@@ -128,7 +128,7 @@ export const Navigation = () => {
                 className="mt-4"
               >
                 <Link to="/contact">
-                  <Button variant="hero" size="lg" className="w-full">
+                  <Button variant="navy" size="lg" className="w-full">
                     Book a Call
                   </Button>
                 </Link>

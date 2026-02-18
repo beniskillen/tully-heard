@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Star, Play } from 'lucide-react';
+import { Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
 
@@ -13,15 +13,14 @@ const clientAvatars = [
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      {/* Subtle background image - very light */}
       <div className="absolute inset-0">
         <img
           src={heroBg}
           alt="Hospitality venue"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-[0.06]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       </div>
 
       <div className="relative z-10 container-narrow pt-32 pb-20">
@@ -48,7 +47,7 @@ export const HeroSection = () => {
                 <Star key={i} size={16} className="fill-primary text-primary" />
               ))}
             </div>
-            <span className="text-foreground font-medium">100+ Successful Venues</span>
+            <span className="text-foreground font-sans font-medium text-sm">100+ Successful Venues</span>
           </div>
         </motion.div>
 
@@ -59,12 +58,12 @@ export const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-semibold text-foreground leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display text-foreground leading-tight mb-6">
             Ready to{' '}
             <span className="italic text-primary">transform</span>{' '}
             your venue's future?
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground font-sans max-w-2xl mx-auto mb-10 leading-relaxed">
             With smarter strategies & expert guidance, we'll optimise your venue's performance. Let's create lasting impact, together.
           </p>
 
@@ -77,8 +76,8 @@ export const HeroSection = () => {
           >
             <Link to="/contact">
               <Button variant="heroPrimary" size="xl" className="gap-3">
-                <Play size={18} className="fill-current" />
-                Book a Strategy Call
+                Book a Consultation
+                <ArrowRight size={18} />
               </Button>
             </Link>
             <Link to="/case-studies">
@@ -97,7 +96,7 @@ export const HeroSection = () => {
         transition={{ delay: 1, duration: 0.6 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-2">
+        <div className="w-6 h-10 rounded-full border-2 border-border flex items-start justify-center p-2">
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}

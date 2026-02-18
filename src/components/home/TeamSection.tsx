@@ -46,15 +46,15 @@ export const TeamSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-primary text-sm uppercase tracking-wider font-medium mb-4">
+          <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
             Our People
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-semibold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6">
             Meet the{' '}
             <span className="italic text-primary">Experts</span>{' '}
             Behind Your Success
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground font-sans text-lg max-w-2xl mx-auto">
             Our team of seasoned hospitality professionals brings decades of hands-on experience as venue owners and strategic consultants.
           </p>
         </motion.div>
@@ -66,16 +66,16 @@ export const TeamSection = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16"
         >
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <div
               key={stat.label}
-              className="flex flex-col items-center text-center p-6 rounded-2xl bg-background border border-border/50"
+              className="flex flex-col items-center text-center p-6 rounded-2xl bg-background border border-border"
             >
               <stat.icon className="text-primary mb-4" size={32} />
-              <div className="text-4xl font-display font-bold text-foreground mb-2">
+              <div className="text-4xl font-display text-foreground mb-2">
                 {stat.value}
               </div>
-              <div className="text-muted-foreground text-sm">{stat.label}</div>
+              <div className="text-muted-foreground font-sans text-sm">{stat.label}</div>
             </div>
           ))}
         </motion.div>
@@ -97,13 +97,12 @@ export const TeamSection = () => {
                   alt={member.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <h3 className="text-lg font-display font-semibold text-foreground mb-1">
+              <h3 className="text-lg font-display text-foreground mb-1">
                 {member.name}
               </h3>
-              <p className="text-primary text-sm mb-2">{member.role}</p>
-              <p className="text-muted-foreground text-sm">{member.specialty}</p>
+              <p className="text-primary font-sans text-sm mb-2">{member.role}</p>
+              <p className="text-muted-foreground font-sans text-sm">{member.specialty}</p>
             </motion.div>
           ))}
         </div>
