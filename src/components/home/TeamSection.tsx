@@ -5,25 +5,25 @@ import { Button } from '@/components/ui/button';
 
 const teamMembers = [
   {
-    name: 'Ben Killen',
+    name: 'John Tully',
     role: 'Managing Director',
     specialty: 'Strategic Planning & Venue Development',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces',
   },
   {
-    name: 'Sarah Mitchell',
+    name: 'Luke Heard',
     role: 'Director of Operations',
     specialty: 'Customer Experience & Service Design',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
   },
   {
-    name: 'James Thompson',
+    name: 'Peter Mclean',
     role: 'Senior Consultant',
     specialty: 'Market Research & Analytics',
     image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=faces',
   },
   {
-    name: 'Emma Chen',
+    name: 'John Doe',
     role: 'Senior Consultant',
     specialty: 'F&B Strategy & Brand Development',
     image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=faces',
