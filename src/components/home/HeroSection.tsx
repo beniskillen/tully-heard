@@ -7,13 +7,15 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-black/40 z-10" /> {/* Overlay stays on top */}
-          <iframe
-            className="w-full h-full scale-150 pointer-events-none"
-            src="https://www.youtube.com/embed/hlbbFR9j9PY?autoplay=1&mute=1&controls=0&loop=1&playlist=hlbbFR9j9PY&playsinline=1&rel=0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            title="Hero Video"
-          />
+          <div className="absolute inset-0 bg-black/40 z-10" />
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+             <iframe
+              className="w-[300%] h-[300%] aspect-video"
+              src="https://www.youtube.com/embed/hlbbFR9j9PY?autoplay=1&mute=1&controls=0&loop=1&playlist=hlbbFR9j9PY&playsinline=1&rel=0&vq=hd1080"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              title="Hero Video"
+            />
+          </div>
         </div>
 
       <div className="relative z-10 container-narrow text-center pt-32 pb-20">
