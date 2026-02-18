@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import heroVideo from 'https://www.youtube.com/watch?v=hlbbFR9j9PY';
 
 export const HeroSection = () => {
   return (
