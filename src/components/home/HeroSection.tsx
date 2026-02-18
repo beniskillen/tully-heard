@@ -1,24 +1,22 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import heroVideo from '@/assets/hero-video.mp4';
+import heroVideo from 'https://www.youtube.com/watch?v=hlbbFR9j9PY';
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+      {/* Video Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 bg-black/40 z-10" /> {/* Overlay stays on top */}
+          <iframe
+            className="w-full h-full scale-150 pointer-events-none"
+            src="https://www.youtube.com/embed/hlbbFR9j9PY?autoplay=1&mute=1&controls=0&loop=1&playlist=hlbbFR9j9PY&playsinline=1&rel=0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            title="Hero Video"
+          />
+        </div>
 
       <div className="relative z-10 container-narrow text-center pt-32 pb-20">
         <motion.div
