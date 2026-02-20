@@ -23,10 +23,10 @@ const teamMembers = [
     image: 'ng-headshot.png',
   },
   {
-    name: 'John Doe',
+    name: 'Peter Mclean',
     role: 'Senior Consultant',
     specialty: 'F&B Strategy & Brand Development',
-    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=faces',
+    image: 'pm-headshot.png',
   },
 ];
 
