@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '../../assets/th-logo.jpeg';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -44,6 +45,15 @@ export const Navigation = () => {
           ? 'bg-background/60 backdrop-blur-xl border border-border shadow-md'
           : 'bg-background/30 backdrop-blur-md border border-border/50'
       }`}
+    >
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="Tully Heard" 
+              className="h-12 w-auto object-contain rounded-md"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1:text-center whitespace-nowrap">
