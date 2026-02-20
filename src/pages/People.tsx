@@ -13,39 +13,39 @@ const stats = [
 
 const teamMembers = [
   {
-    name: 'Ben Killen',
+    name: 'John Tully',
     role: 'Managing Director',
     specialty: 'Strategic Planning & Venue Development',
-    bio: 'With over 20 years in hospitality leadership, Ben has guided countless venues through successful transformations. His hands-on experience as a venue owner informs every strategic recommendation.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=600&fit=crop&crop=faces',
+    bio: 'With over 20 years in hospitality leadership, John has guided countless venues through successful transformations. His hands-on experience as a venue owner informs every strategic recommendation.',
+    image: '/jt-headshot.jpg'
   },
   {
-    name: 'Sarah Mitchell',
+    name: 'Luke Heard',
     role: 'Director of Operations',
     specialty: 'Customer Experience & Service Design',
-    bio: 'Sarah brings deep expertise in customer experience design, having led service transformation programs for major hospitality brands across Australia and Asia.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=600&fit=crop&crop=faces',
+    bio: 'Luke brings deep expertise in customer experience design, having led service transformation programs for major hospitality brands across Australia and Asia.',
+    image: '/lh-headshot.png'
   },
   {
-    name: 'James Thompson',
+    name: 'Peter Mclean',
     role: 'Senior Consultant',
     specialty: 'Market Research & Analytics',
-    bio: 'James combines rigorous analytical methodology with practical hospitality insights to deliver data-driven strategies that achieve measurable results.',
+    bio: 'Peter combines rigorous analytical methodology with practical hospitality insights to deliver data-driven strategies that achieve measurable results.',
     image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&h=600&fit=crop&crop=faces',
   },
   {
-    name: 'Emma Chen',
+    name: 'Vaughn Campbell',
     role: 'Senior Consultant',
     specialty: 'F&B Strategy & Brand Development',
     bio: 'Emma has developed award-winning F&B concepts for venues across Australia, specialising in brand positioning and menu engineering.',
     image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=600&fit=crop&crop=faces',
   },
   {
-    name: 'Michael Roberts',
+    name: 'Norelle Goldrig',
     role: 'Consultant',
     specialty: 'Project Management & Implementation',
     bio: 'Michael ensures seamless project delivery with his background in construction management and hospitality operations.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=faces',
+    image: 'ng-headshot.png',
   },
   {
     name: 'Lisa Wang',
