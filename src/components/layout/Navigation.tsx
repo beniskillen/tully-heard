@@ -38,12 +38,13 @@ export const Navigation = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4"
       >
-        <nav
-          className={`className="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between rounded-full bg-white/90 px-8 py-4 backdrop-blur-md shadow-lg transition-all duration-300 w-[95%] max-w-5xl"
-              ? 'bg-background/95 backdrop-blur-xl border border-border shadow-md'
-              : 'bg-background/80 backdrop-blur-md border border-border/50'
-          }`}
-        >
+  <nav
+      className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[95%] max-w-5xl px-8 py-4 rounded-full transition-all duration-300 ${
+        isScrolled
+          ? 'bg-background/60 backdrop-blur-xl border border-border shadow-md'
+          : 'bg-background/30 backdrop-blur-md border border-border/50'
+      }`}
+    >
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg bg-navy flex items-center justify-center">
@@ -55,7 +56,7 @@ export const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1:text-center whitespace-nowrap">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
