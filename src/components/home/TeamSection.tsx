@@ -14,13 +14,13 @@ const teamMembers = [
     name: 'Luke Heard',
     role: 'Director of Operations',
     specialty: 'Customer Experience & Service Design',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
+    image: 'lh-headshot.png',
   },
   {
-    name: 'Peter Mclean',
+    name: 'Norelle Goldrig',
     role: 'Senior Consultant',
     specialty: 'Market Research & Analytics',
-    image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=faces',
+    image: 'ng-headshot.png',
   },
   {
     name: 'John Doe',
