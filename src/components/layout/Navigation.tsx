@@ -39,8 +39,7 @@ export const Navigation = () => {
         className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4"
       >
         <nav
-          className={`flex items-center justify-between rounded-full px-6 py-3 transition-all duration-500 ${
-            isScrolled
+          className={`className="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between rounded-full bg-white/90 px-8 py-4 backdrop-blur-md shadow-lg transition-all duration-300 w-[95%] max-w-5xl"
               ? 'bg-background/95 backdrop-blur-xl border border-border shadow-md'
               : 'bg-background/80 backdrop-blur-md border border-border/50'
           }`}
