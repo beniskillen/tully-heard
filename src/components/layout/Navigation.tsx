@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { logo } from 'src/assets/Tully Heard.jpeg';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -46,13 +47,12 @@ export const Navigation = () => {
       }`}
     >
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-navy flex items-center justify-center">
-              <span className="font-display font-semibold text-navy-foreground text-sm">TH</span>
-            </div>
-            <span className="font-display text-lg text-foreground hidden sm:block">
-              Tully Heard
-            </span>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="Tully Heard" 
+              className="h-12 w-auto object-contain rounded-md"
+            />
           </Link>
 
           {/* Desktop Navigation */}
