@@ -1,35 +1,49 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import logo from '../../assets/th-logo.jpeg';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/how-we-work', label: 'How We Work' },
-  { href: '/services', label: 'Services' },
-  { href: '/case-studies', label: 'Case Studies' },
-  { href: '/people', label: 'People' },
-  { href: '/media', label: 'Media' },
+  { href: '#about', label: 'About Us' },
+  { href: '#services', label: 'Our Services' },
+  { href: '#work', label: 'Our Work' },
+  { href: '#contact', label: 'Contact' },
 ];
+
+const scrollToSection = (href: string) => {
+  const id = href.replace('#', '');
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
+  const [activeSection, setActiveSection] = useState<string>('');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      const sections = navLinks.map((l) => l.href.replace('#', ''));
+      const current = sections.find((id) => {
+        const el = document.getElementById(id);
+        if (!el) return false;
+        const rect = el.getBoundingClientRect();
+        return rect.top <= 120 && rect.bottom > 120;
+      });
+      if (current) setActiveSection(current);
     };
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
+  const handleClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    scrollToSection(href);
     setIsMobileMenuOpen(false);
-  }, [location.pathname]);
+  };
 
   return (
     <>
@@ -39,48 +53,42 @@ export const Navigation = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4"
       >
-  <nav
-      className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[95%] max-w-5xl px-8 py-4 rounded-full transition-all duration-300 ${
-        isScrolled
-          ? 'bg-background/60 backdrop-blur-xl border border-border shadow-md'
-          : 'bg-background/30 backdrop-blur-md border border-border/50'
-      }`}
-    >
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img 
-              src={logo} 
-              alt="Tully Heard" 
-              className="h-12 w-auto object-contain rounded-md"
-            />
-          </Link>
+        <nav
+          className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[95%] max-w-5xl px-8 py-4 rounded-full transition-all duration-300 ${
+            isScrolled
+              ? 'bg-background/60 backdrop-blur-xl border border-border shadow-md'
+              : 'bg-background/30 backdrop-blur-md border border-border/50'
+          }`}
+        >
+          <a href="#top" onClick={(e) => handleClick(e, '#top')} className="flex items-center">
+            <img src={logo} alt="Tully Heard" className="h-12 w-auto object-contain rounded-md" />
+          </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1:text-center whitespace-nowrap">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`px-4 py-2 text-xs font-sans font-semibold uppercase tracking-[0.125em] rounded-full transition-all duration-300 ${
-                  location.pathname === link.href
-                    ? 'text-primary bg-primary/10'
-                    : 'text-foreground hover:text-primary hover:bg-primary/5'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="hidden lg:flex items-center gap-1 whitespace-nowrap">
+            {navLinks.map((link) => {
+              const id = link.href.replace('#', '');
+              const isActive = activeSection === id;
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => handleClick(e, link.href)}
+                  className={`px-4 py-2 text-xs font-sans font-semibold uppercase tracking-[0.125em] rounded-full transition-all duration-300 ${
+                    isActive
+                      ? 'text-primary bg-primary/10'
+                      : 'text-foreground hover:text-primary hover:bg-primary/5'
+                  }`}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
           </div>
 
-          {/* CTA Button */}
           <div className="flex items-center gap-3">
-            <Link to="/contact" className="hidden sm:block">
-              <Button variant="navy" size="sm">
-                Book a Call
-              </Button>
-            </Link>
-
-            {/* Mobile Menu Button */}
+            <a href="#contact" onClick={(e) => handleClick(e, '#contact')} className="hidden sm:block">
+              <Button variant="navy" size="sm">Get in Touch</Button>
+            </a>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="lg:hidden p-2 text-foreground"
@@ -91,7 +99,6 @@ export const Navigation = () => {
         </nav>
       </motion.header>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -109,16 +116,13 @@ export const Navigation = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <Link
-                    to={link.href}
-                    className={`block px-4 py-3 text-sm font-sans font-semibold uppercase tracking-[0.125em] rounded-xl transition-all duration-300 ${
-                      location.pathname === link.href
-                        ? 'text-primary bg-primary/10'
-                        : 'text-foreground hover:bg-secondary'
-                    }`}
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleClick(e, link.href)}
+                    className="block px-4 py-3 text-sm font-sans font-semibold uppercase tracking-[0.125em] rounded-xl text-foreground hover:bg-secondary transition-all duration-300"
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 </motion.div>
               ))}
               <motion.div
@@ -127,11 +131,9 @@ export const Navigation = () => {
                 transition={{ delay: navLinks.length * 0.05 }}
                 className="mt-4"
               >
-                <Link to="/contact">
-                  <Button variant="navy" size="lg" className="w-full">
-                    Book a Call
-                  </Button>
-                </Link>
+                <a href="#contact" onClick={(e) => handleClick(e, '#contact')}>
+                  <Button variant="navy" size="lg" className="w-full">Get in Touch</Button>
+                </a>
               </motion.div>
             </div>
           </motion.div>
