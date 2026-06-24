@@ -1,24 +1,22 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
-const scrollToContact = () => {
-  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-};
 
 export const HeroSection = () => {
   return (
-    <section id="top" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-black/40 z-10" />
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <iframe
-            className="w-[300%] h-[300%] aspect-video"
-            src="https://www.youtube.com/embed/hlbbFR9j9PY?autoplay=1&mute=1&controls=0&loop=1&playlist=hlbbFR9j9PY&playsinline=1&rel=0&vq=hd1080"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            title="Hero Video"
-          />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Video Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 bg-black/40 z-10" />
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+             <iframe
+              className="w-[300%] h-[300%] aspect-video"
+              src="https://www.youtube.com/embed/hlbbFR9j9PY?autoplay=1&mute=1&controls=0&loop=1&playlist=hlbbFR9j9PY&playsinline=1&rel=0&vq=hd1080"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              title="Hero Video"
+            />
+          </div>
         </div>
-      </div>
 
       <div className="relative z-10 container-narrow text-center pt-32 pb-20">
         <motion.div
@@ -39,9 +37,11 @@ export const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <Button variant="navy" size="xl" className="text-base px-10 py-4" onClick={scrollToContact}>
-              GET IN TOUCH
-            </Button>
+            <Link to="/contact">
+              <Button variant="navy" size="xl" className="text-base px-10 py-4">
+                GET IN TOUCH
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
