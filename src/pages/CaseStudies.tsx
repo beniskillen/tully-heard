@@ -24,9 +24,15 @@ import doyloImg from '@/assets/cases/doylo.jpg.asset.json';
 import gosfordLogo from '@/assets/logos/gosford-rsl.png.asset.json';
 import yogisLogo from '@/assets/logos/doylos-sports-bar.png.asset.json';
 import growersLogo from '@/assets/logos/the-growers-by-ponte.png.asset.json';
-import mudgeeLogo from '@/assets/logos/club-mudgee.png.asset.json';
+import mudgeeLogo from '@/assets/logos/club-mudgee.svg.asset.json';
 import bankstownLogo from '@/assets/logos/bankstown-sports.png.asset.json';
-import doyloLogo from '@/assets/logos/doylo-lifestyle-group.png.asset.json';
+import doyloLogo from '@/assets/logos/doylo-lifestyle-group.svg.asset.json';
+import cabraLogo from '@/assets/logos/cabra-vale-diggers.svg.asset.json';
+import karuahLogo from '@/assets/logos/karuah-rsl-club.svg.asset.json';
+import oaksLogo from '@/assets/logos/the-oaks-hotel.svg.asset.json';
+import wollongongLogo from '@/assets/logos/wollongong-city-of-innovation.svg.asset.json';
+import moorePkLogo from '@/assets/logos/moore-park.svg.asset.json';
+import centralRealLogo from '@/assets/logos/central-real-capital.svg.asset.json';
 
 type Stat = { value: string; label: string };
 
@@ -223,12 +229,12 @@ const fullCases: FullCase[] = [
 ];
 
 const moreWork = [
-  { title: 'Cabra Vale Diggers', body: 'Strategic planning and feasibility support for major club development decisions.' },
-  { title: 'Karuah RSL', body: 'Premises optimisation and redevelopment planning to support future growth opportunities.' },
-  { title: 'Oaks Hotel Neutral Bay', body: 'Site and premises planning, concept development and execution support, including Taffy’s Sports Bar.' },
-  { title: 'Wollongong Council Theatre Site', body: 'Hospitality advisory support for a government-led venue and precinct opportunity.' },
-  { title: 'Moore Park Golf Club', body: 'Hospitality assistance for a major redevelopment context.' },
-  { title: 'Central Real Capital', body: 'Integrated resort feasibility and assessment support.' },
+  { title: 'Cabra Vale Diggers', body: 'Strategic planning and feasibility support for major club development decisions.', logo: cabraLogo.url },
+  { title: 'Karuah RSL', body: 'Premises optimisation and redevelopment planning to support future growth opportunities.', logo: karuahLogo.url },
+  { title: 'Oaks Hotel Neutral Bay', body: 'Site and premises planning, concept development and execution support, including Taffy’s Sports Bar.', logo: oaksLogo.url },
+  { title: 'Wollongong Council Theatre Site', body: 'Hospitality advisory support for a government-led venue and precinct opportunity.', logo: wollongongLogo.url },
+  { title: 'Moore Park Golf Club', body: 'Hospitality assistance for a major redevelopment context.', logo: moorePkLogo.url },
+  { title: 'Central Real Capital', body: 'Integrated resort feasibility and assessment support.', logo: centralRealLogo.url },
 ];
 
 const statIcons = [TrendingUp, Users, Award];
@@ -516,10 +522,13 @@ const CaseStudies = () => {
                       </div>
                       <div
                         aria-label={`${w.title} logo`}
-                        className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center overflow-hidden"
+                        className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center overflow-hidden p-1.5"
                       >
-                        {/* Replace with an <img src={w.logo} /> once club logos are uploaded */}
-                        <Building2 className="text-muted-foreground/60" size={16} strokeWidth={1.5} />
+                        {w.logo ? (
+                          <img src={w.logo} alt={`${w.title} logo`} className="max-w-full max-h-full object-contain" />
+                        ) : (
+                          <Building2 className="text-muted-foreground/60" size={16} strokeWidth={1.5} />
+                        )}
                       </div>
                     </div>
                     <h3 className="text-lg font-display text-foreground mb-3">{w.title}</h3>
