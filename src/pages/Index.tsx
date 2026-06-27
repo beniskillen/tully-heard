@@ -55,6 +55,33 @@ const Index = () => {
       <main>
         <HeroSection />
 
+        {/* Trusted By */}
+        <section className="py-12 bg-card border-y border-border">
+          <div className="container-narrow">
+            <p className="text-center text-xs font-sans uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-8">
+              Trusted by leading clubs and hospitality venues
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-6 items-center">
+              {[
+                'Gosford RSL',
+                'Chatswood RSL',
+                'Shoalhaven Ex-Servos',
+                'Club Mudgee',
+                'Bankstown Sports',
+                'The Doylo',
+              ].map((name) => (
+                <div
+                  key={name}
+                  className="text-center font-display italic text-foreground/70 hover:text-foreground transition-colors text-lg leading-tight"
+                >
+                  {name}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
         {/* Driven by Insights */}
         <section className="section-padding bg-background">
           <div className="container-narrow text-center max-w-3xl">
