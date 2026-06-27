@@ -471,16 +471,47 @@ const CaseStudies = () => {
         {/* More Selected Work */}
         <section className="section-padding bg-background">
           <div className="container-narrow">
-            <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-6">
-              More selected work
-            </p>
+            <div className="flex items-end justify-between mb-8 flex-wrap gap-4">
+              <div>
+                <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-3">
+                  More selected work
+                </p>
+                <h2 className="text-2xl sm:text-3xl font-display text-foreground">
+                  A broader portfolio of <span className="italic text-primary">venue and precinct</span> engagements
+                </h2>
+              </div>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {moreWork.map((w) => (
-                <div key={w.title} className="p-8 rounded-2xl bg-card border border-border">
-                  <h3 className="text-lg font-display text-foreground mb-3">{w.title}</h3>
-                  <p className="text-muted-foreground font-sans leading-relaxed text-sm">{w.body}</p>
-                </div>
-              ))}
+              {moreWork.map((w, i) => {
+                const Icon = moreWorkIcons[i % moreWorkIcons.length];
+                return (
+                  <motion.div
+                    key={w.title}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    transition={{ duration: 0.4, delay: i * 0.05 }}
+                    className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                  >
+                    {/* Logo slot */}
+                    <div className="flex items-center justify-between mb-5">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                        <Icon className="text-primary" size={20} />
+                      </div>
+                      <div
+                        aria-label={`${w.title} logo`}
+                        className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center overflow-hidden"
+                      >
+                        {/* Replace with an <img src={w.logo} /> once club logos are uploaded */}
+                        <Building2 className="text-muted-foreground/60" size={16} strokeWidth={1.5} />
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-display text-foreground mb-3">{w.title}</h3>
+                    <p className="text-muted-foreground font-sans leading-relaxed text-sm">{w.body}</p>
+                    <div className="mt-5 h-px bg-gradient-to-r from-primary/30 to-transparent" />
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </section>
