@@ -233,7 +233,7 @@ const CaseStudies = () => {
             />
             <div className="absolute inset-0 bg-black/50 z-10" />
           </div>
-          <div className="relative z-10 container-narrow max-w-3xl">
+          <div className="relative z-10 container-narrow max-w-3xl mx-auto text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
               <p className="text-white/80 text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
                 Our Work
