@@ -80,9 +80,9 @@ const Index = () => {
         <HeroSection />
 
         {/* Trusted By */}
-        <section className="py-12 bg-[#1f2a3a] border-y border-border overflow-hidden">
+        <section className="py-12 bg-[#EEF0F2] border-y border-border overflow-hidden">
           <div className="container-narrow">
-            <p className="text-center text-xs font-sans uppercase tracking-[0.2em] font-semibold text-white/70 mb-8">
+            <p className="text-center text-xs font-sans uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-8">
               Trusted by leading clubs and hospitality venues
             </p>
           </div>
