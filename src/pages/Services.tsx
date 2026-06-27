@@ -75,21 +75,34 @@ const Services = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
-        <section className="pt-40 pb-20 bg-background">
-          <div className="container-narrow max-w-3xl">
+        <section className="relative pt-40 pb-24 overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden">
+            <video
+              className="absolute inset-0 w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              src="https://yuthbrxadentorgrsyar.supabase.co/storage/v1/object/sign/Tully%20Heard%20Consulting/Tully%20Heard%20Website%20Cut%20-%20Supabase.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wNGE4MjlmYy0xNTZiLTQ1NzgtYWViNS01NDUxMmE0MjJiNDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJUdWxseSBIZWFyZCBDb25zdWx0aW5nL1R1bGx5IEhlYXJkIFdlYnNpdGUgQ3V0IC0gU3VwYWJhc2UubXA0Iiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjU0MDc4MSwiZXhwIjo0OTA0NjA0NzgxfQ.xHJgXPtasan2Ym9_XP4xS9Gkcjh-LJYXiwFDJk-4wpg"
+            />
+            <div className="absolute inset-0 bg-black/50 z-10" />
+          </div>
+          <div className="relative z-10 container-narrow max-w-3xl">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-              <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
+              <p className="text-white/80 text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
                 Services
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-foreground mb-6 italic">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-white mb-6 italic">
                 Practical strategic advice for complex venue decisions
               </h1>
-              <p className="text-muted-foreground font-sans text-lg leading-relaxed">
+              <p className="text-white/80 font-sans text-lg leading-relaxed">
                 Tully Heard provides specialist advisory services across hospitality, leisure, clubs and related property-backed businesses.
               </p>
             </motion.div>
           </div>
         </section>
+
 
         <section className="section-padding bg-card">
           <div className="container-narrow">
