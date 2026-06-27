@@ -36,6 +36,7 @@ interface FullCase {
   headline: string;
   intro: string;
   image: string;
+  logo?: string;
   result: string;
   stats: Stat[];
   challenge: string;
