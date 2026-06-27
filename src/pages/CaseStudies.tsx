@@ -21,6 +21,12 @@ import shoalhavenImg from '@/assets/cases/shoalhaven.png.asset.json';
 import mudgeeImg from '@/assets/cases/club-mudgee.webp.asset.json';
 import bankstownImg from '@/assets/cases/bankstown.jpg.asset.json';
 import doyloImg from '@/assets/cases/doylo.jpg.asset.json';
+import gosfordLogo from '@/assets/logos/gosford-rsl.png.asset.json';
+import yogisLogo from '@/assets/logos/doylos-sports-bar.png.asset.json';
+import growersLogo from '@/assets/logos/the-growers-by-ponte.png.asset.json';
+import mudgeeLogo from '@/assets/logos/club-mudgee.png.asset.json';
+import bankstownLogo from '@/assets/logos/bankstown-sports.png.asset.json';
+import doyloLogo from '@/assets/logos/doylo-lifestyle-group.png.asset.json';
 
 type Stat = { value: string; label: string };
 
@@ -30,6 +36,7 @@ interface FullCase {
   headline: string;
   intro: string;
   image: string;
+  logo?: string;
   result: string;
   stats: Stat[];
   challenge: string;
@@ -46,6 +53,7 @@ const fullCases: FullCase[] = [
     intro:
       'A major redevelopment that repositioned the club as a leading dining, entertainment and community destination on the Central Coast.',
     image: gosfordImg.url,
+    logo: gosfordLogo.url,
     result: 'Major venue transformation',
     stats: [
       { value: '4', label: 'Destination drivers: dining, events, sport and brewery' },
@@ -74,6 +82,7 @@ const fullCases: FullCase[] = [
     intro:
       'A revitalised sports and entertainment concept designed to broaden appeal while strengthening the club’s role as a social destination.',
     image: yogisImg.url,
+    logo: yogisLogo.url,
     result: 'Broader audience appeal',
     stats: [
       { value: '200%', label: 'Increase in visitation' },
@@ -102,6 +111,7 @@ const fullCases: FullCase[] = [
     intro:
       'A locally led hospitality concept designed to broaden appeal, strengthen community connection and create a more distinctive venue experience.',
     image: shoalhavenImg.url,
+    logo: growersLogo.url,
     result: 'Regional destination positioning',
     stats: [
       { value: '2', label: 'Visitor markets targeted: Sydney and Canberra' },
@@ -130,6 +140,7 @@ const fullCases: FullCase[] = [
     intro:
       'A repositioned sports bar and community hub that gave an underutilised area a clearer role in the venue.',
     image: mudgeeImg.url,
+    logo: mudgeeLogo.url,
     result: 'Improved venue utilisation',
     stats: [
       { value: 'Local', label: 'Sports-led concept to bring new energy into the venue' },
@@ -158,6 +169,7 @@ const fullCases: FullCase[] = [
     intro:
       'A craft beer and casual dining concept that helped shift the role of an existing sports bar and broaden the venue’s appeal.',
     image: bankstownImg.url,
+    logo: bankstownLogo.url,
     result: 'Underused space repositioned',
     stats: [
       { value: '18–45', label: 'Younger demographic targeted through the new concept' },
@@ -186,6 +198,7 @@ const fullCases: FullCase[] = [
     intro:
       'An entertainment-led hospitality concept designed to increase engagement, broaden appeal and create a more interactive venue experience.',
     image: doyloImg.url,
+    logo: doyloLogo.url,
     result: 'Experience-led venue positioning',
     stats: [
       { value: '7', label: 'Interactive sports simulations increasing reasons to visit' },
@@ -381,10 +394,13 @@ const CaseStudies = () => {
                   <div className="flex items-start gap-5 mb-4">
                     <div
                       aria-label={`${current.title} logo`}
-                      className="shrink-0 w-20 h-20 rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden shadow-sm"
+                      className="shrink-0 w-24 h-24 rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden shadow-sm p-3"
                     >
-                      {/* Replace with an <img src={current.logo} /> once club logos are uploaded */}
-                      <Building2 className="text-primary/60" size={28} strokeWidth={1.5} />
+                      {current.logo ? (
+                        <img src={current.logo} alt={`${current.title} logo`} className="max-w-full max-h-full object-contain" />
+                      ) : (
+                        <Building2 className="text-primary/60" size={28} strokeWidth={1.5} />
+                      )}
                     </div>
                     <div>
                       <h3 className="text-3xl lg:text-4xl font-display text-foreground leading-tight">

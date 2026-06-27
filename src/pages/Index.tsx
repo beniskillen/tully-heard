@@ -14,6 +14,25 @@ import {
   Users,
   Rocket,
 } from 'lucide-react';
+import bankstownLogo from '@/assets/logos/bankstown-sports.png.asset.json';
+import mudgeeLogo from '@/assets/logos/club-mudgee.png.asset.json';
+import clubsNswLogo from '@/assets/logos/clubs-nsw.png.asset.json';
+import doyloLogo from '@/assets/logos/doylo-lifestyle-group.png.asset.json';
+import yogisLogo from '@/assets/logos/doylos-sports-bar.png.asset.json';
+import gosfordLogo from '@/assets/logos/gosford-rsl.png.asset.json';
+import northBondiLogo from '@/assets/logos/north-bondi-rsl-club.png.asset.json';
+import growersLogo from '@/assets/logos/the-growers-by-ponte.png.asset.json';
+
+const trustLogos = [
+  { name: 'Gosford RSL', src: gosfordLogo.url },
+  { name: 'Bankstown Sports', src: bankstownLogo.url },
+  { name: 'North Bondi RSL Club', src: northBondiLogo.url },
+  { name: 'ClubsNSW', src: clubsNswLogo.url },
+  { name: 'The Growers by Ponte', src: growersLogo.url },
+  { name: 'Club Mudgee', src: mudgeeLogo.url },
+  { name: "Yogi's Sports Bar", src: yogisLogo.url },
+  { name: 'Doylo Lifestyle Group', src: doyloLogo.url },
+];
 
 const capabilities = [
   {
@@ -56,30 +75,26 @@ const Index = () => {
         <HeroSection />
 
         {/* Trusted By */}
-        <section className="py-12 bg-card border-y border-border">
+        <section className="py-12 bg-card border-y border-border overflow-hidden">
           <div className="container-narrow">
             <p className="text-center text-xs font-sans uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-8">
               Trusted by leading clubs and hospitality venues
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-6 items-center">
-              {[
-                'Gosford RSL',
-                'Chatswood RSL',
-                'Shoalhaven Ex-Servos',
-                'Club Mudgee',
-                'Bankstown Sports',
-                'The Doylo',
-              ].map((name) => (
-                <div
-                  key={name}
-                  className="text-center font-display italic text-foreground/70 hover:text-foreground transition-colors text-lg leading-tight"
-                >
-                  {name}
-                </div>
+          </div>
+          <div className="relative">
+            <div className="flex w-max animate-marquee gap-16 items-center">
+              {[...trustLogos, ...trustLogos].map((logo, i) => (
+                <img
+                  key={`${logo.name}-${i}`}
+                  src={logo.src}
+                  alt={logo.name}
+                  className="h-14 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity shrink-0"
+                />
               ))}
             </div>
           </div>
         </section>
+
 
 
         {/* Driven by Insights */}
