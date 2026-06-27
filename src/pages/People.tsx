@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
+import vaughnHeadshot from '@/assets/vaughn-campbell.png.asset.json';
 
 const team = [
   {
@@ -24,7 +25,7 @@ const team = [
   {
     name: 'Vaughn Campbell',
     role: 'Principal Consultant',
-    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=600&fit=crop&crop=faces',
+    image: vaughnHeadshot.url,
     bio: [
       'Vaughn leads the Data Analytics and Business Intelligence team and has over 20 years’ experience working with clients across sectors including media, telecommunications, retail, hospitality, mining and energy, entertainment and manufacturing.',
       'Vaughn has worked with clubs across Australia to design data insight strategies that help organisations understand and enhance member experience, improve financial performance and influence behaviours central to performance.',
