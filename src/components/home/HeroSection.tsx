@@ -7,16 +7,18 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
         <div className="absolute inset-0 overflow-hidden">
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            src="https://yuthbrxadentorgrsyar.supabase.co/storage/v1/object/sign/Tully%20Heard%20Consulting/Tully%20Heard%20Website%20Cut%20-%20Supabase.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wNGE4MjlmYy0xNTZiLTQ1NzgtYWViNS01NDUxMmE0MjJiNDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJUdWxseSBIZWFyZCBDb25zdWx0aW5nL1R1bGx5IEhlYXJkIFdlYnNpdGUgQ3V0IC0gU3VwYWJhc2UubXA0Iiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjUyOTkzMywiZXhwIjo0OTA0NTkzOTMzfQ.A4Gvt4HFgG-6gteZmFlw4c3sU1bW43jCAQyqsvEiE0g"
+          />
           <div className="absolute inset-0 bg-black/40 z-10" />
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-             <iframe
-              className="w-[300%] h-[300%] aspect-video"
-              src="https://www.youtube.com/embed/hlbbFR9j9PY?autoplay=1&mute=1&controls=0&loop=1&playlist=hlbbFR9j9PY&playsinline=1&rel=0&vq=hd1080"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              title="Hero Video"
-            />
-          </div>
         </div>
+
 
       <div className="relative z-10 container-narrow text-center pt-32 pb-20">
         <motion.div
