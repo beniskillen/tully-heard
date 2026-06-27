@@ -13,7 +13,12 @@ import {
   LayoutGrid,
   Users,
   Rocket,
+  TrendingUp,
+  Award,
+  Calendar,
 } from 'lucide-react';
+import { AnimatedStat } from '@/components/AnimatedStat';
+
 import bankstownLogo from '@/assets/logos/bankstown-sports.png.asset.json';
 import mudgeeLogo from '@/assets/logos/club-mudgee.png.asset.json';
 import clubsNswLogo from '@/assets/logos/clubs-nsw.png.asset.json';
