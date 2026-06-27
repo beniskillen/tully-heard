@@ -115,19 +115,20 @@ const Services = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.04 }}
-                  className="feature-card group"
                 >
-                  <div className="flex items-start justify-between mb-5">
-                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                      <s.icon className="text-primary" size={26} />
+                  <Link to="/contact" className="feature-card group block h-full">
+                    <div className="flex items-start justify-between mb-5">
+                      <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                        <s.icon className="text-primary" size={26} />
+                      </div>
+                      <ArrowUpRight
+                        className="text-muted-foreground group-hover:text-primary transition-colors"
+                        size={22}
+                      />
                     </div>
-                    <ArrowUpRight
-                      className="text-muted-foreground group-hover:text-primary transition-colors"
-                      size={22}
-                    />
-                  </div>
-                  <h2 className="text-xl font-display text-foreground mb-3">{s.title}</h2>
-                  <p className="text-muted-foreground font-sans leading-relaxed">{s.body}</p>
+                    <h2 className="text-xl font-display text-foreground mb-3">{s.title}</h2>
+                    <p className="text-muted-foreground font-sans leading-relaxed">{s.body}</p>
+                  </Link>
                 </motion.div>
               ))}
             </div>
