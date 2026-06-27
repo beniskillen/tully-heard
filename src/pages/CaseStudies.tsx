@@ -5,6 +5,12 @@ import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import gosfordImg from '@/assets/cases/gosford-rsl.jpeg.asset.json';
+import yogisImg from '@/assets/cases/yogis-chatswood.webp.asset.json';
+import shoalhavenImg from '@/assets/cases/shoalhaven.png.asset.json';
+import mudgeeImg from '@/assets/cases/club-mudgee.webp.asset.json';
+import bankstownImg from '@/assets/cases/bankstown.jpg.asset.json';
+import doyloImg from '@/assets/cases/doylo.jpg.asset.json';
 
 type Stat = { value: string; label: string };
 
@@ -29,7 +35,7 @@ const fullCases: FullCase[] = [
     headline: 'Strategic direction for a major venue transformation',
     intro:
       'A major redevelopment that repositioned the club as a leading dining, entertainment and community destination on the Central Coast.',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&h=1200&fit=crop',
+    image: gosfordImg.url,
     result: 'Major venue transformation',
     stats: [
       { value: '4', label: 'Destination drivers: dining, events, sport and brewery' },
@@ -57,7 +63,7 @@ const fullCases: FullCase[] = [
     headline: 'A more dynamic, multi-generational venue experience',
     intro:
       'A revitalised sports and entertainment concept designed to broaden appeal while strengthening the club’s role as a social destination.',
-    image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1600&h=1200&fit=crop',
+    image: yogisImg.url,
     result: 'Broader audience appeal',
     stats: [
       { value: '200%', label: 'Increase in visitation' },
@@ -85,7 +91,7 @@ const fullCases: FullCase[] = [
     headline: 'A regional food and beverage destination',
     intro:
       'A locally led hospitality concept designed to broaden appeal, strengthen community connection and create a more distinctive venue experience.',
-    image: 'https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1600&h=1200&fit=crop',
+    image: shoalhavenImg.url,
     result: 'Regional destination positioning',
     stats: [
       { value: '2', label: 'Visitor markets targeted: Sydney and Canberra' },
@@ -113,7 +119,7 @@ const fullCases: FullCase[] = [
     headline: 'Revitalising a historic club space for modern community use',
     intro:
       'A repositioned sports bar and community hub that gave an underutilised area a clearer role in the venue.',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&h=1200&fit=crop',
+    image: mudgeeImg.url,
     result: 'Improved venue utilisation',
     stats: [
       { value: 'Local', label: 'Sports-led concept to bring new energy into the venue' },
@@ -141,7 +147,7 @@ const fullCases: FullCase[] = [
     headline: 'Repositioning an underused space for a new audience',
     intro:
       'A craft beer and casual dining concept that helped shift the role of an existing sports bar and broaden the venue’s appeal.',
-    image: 'https://images.unsplash.com/photo-1546726747-421c6d69c929?w=1600&h=1200&fit=crop',
+    image: bankstownImg.url,
     result: 'Underused space repositioned',
     stats: [
       { value: '18–45', label: 'Younger demographic targeted through the new concept' },
@@ -169,7 +175,7 @@ const fullCases: FullCase[] = [
     headline: 'Bringing competitive socialising into the club environment',
     intro:
       'An entertainment-led hospitality concept designed to increase engagement, broaden appeal and create a more interactive venue experience.',
-    image: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=1600&h=1200&fit=crop',
+    image: doyloImg.url,
     result: 'Experience-led venue positioning',
     stats: [
       { value: '7', label: 'Interactive sports simulations increasing reasons to visit' },
