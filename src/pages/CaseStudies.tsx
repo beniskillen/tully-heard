@@ -278,7 +278,7 @@ const CaseStudies = () => {
                 Our Work
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-white mb-6 italic">
-                Work that helps venues evolve, perform and stay relevant
+                Helping Clubs To Thrive
               </h1>
               <p className="text-white/80 font-sans text-lg leading-relaxed">
                 Selected projects across clubs and hospitality venues, from major redevelopments to targeted venue repositioning, feasibility, customer insight and implementation support.
