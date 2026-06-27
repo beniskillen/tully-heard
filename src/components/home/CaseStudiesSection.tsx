@@ -17,7 +17,7 @@ const caseStudies = [
       'A major redevelopment that repositioned the club as a leading dining, entertainment and community destination on the Central Coast.',
     result: 'Major venue transformation',
     image:
-      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&h=900&fit=crop',
+      gosfordImg.url,
   },
   {
     id: 'chatswood-rsl',
@@ -27,7 +27,7 @@ const caseStudies = [
       'A revitalised sports and entertainment concept designed to broaden appeal while strengthening the club’s role as a social destination.',
     result: 'Broader audience appeal',
     image:
-      'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&h=900&fit=crop',
+      yogisImg.url,
   },
   {
     id: 'shoalhaven',
@@ -37,7 +37,7 @@ const caseStudies = [
       'A locally led hospitality concept designed to broaden appeal, strengthen community connection and create a more distinctive venue experience.',
     result: 'Regional destination positioning',
     image:
-      'https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200&h=900&fit=crop',
+      shoalhavenImg.url,
   },
   {
     id: 'club-mudgee',
@@ -47,7 +47,7 @@ const caseStudies = [
       'A repositioned sports bar and community hub that gave an underutilised area a clearer role in the venue.',
     result: 'Improved venue utilisation',
     image:
-      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=900&fit=crop',
+      mudgeeImg.url,
   },
 ];
 
