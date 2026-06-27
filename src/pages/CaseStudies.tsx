@@ -53,6 +53,7 @@ const fullCases: FullCase[] = [
     intro:
       'A major redevelopment that repositioned the club as a leading dining, entertainment and community destination on the Central Coast.',
     image: gosfordImg.url,
+    logo: gosfordLogo.url,
     result: 'Major venue transformation',
     stats: [
       { value: '4', label: 'Destination drivers: dining, events, sport and brewery' },
@@ -81,6 +82,7 @@ const fullCases: FullCase[] = [
     intro:
       'A revitalised sports and entertainment concept designed to broaden appeal while strengthening the club’s role as a social destination.',
     image: yogisImg.url,
+    logo: yogisLogo.url,
     result: 'Broader audience appeal',
     stats: [
       { value: '200%', label: 'Increase in visitation' },
@@ -109,6 +111,7 @@ const fullCases: FullCase[] = [
     intro:
       'A locally led hospitality concept designed to broaden appeal, strengthen community connection and create a more distinctive venue experience.',
     image: shoalhavenImg.url,
+    logo: growersLogo.url,
     result: 'Regional destination positioning',
     stats: [
       { value: '2', label: 'Visitor markets targeted: Sydney and Canberra' },
@@ -137,6 +140,7 @@ const fullCases: FullCase[] = [
     intro:
       'A repositioned sports bar and community hub that gave an underutilised area a clearer role in the venue.',
     image: mudgeeImg.url,
+    logo: mudgeeLogo.url,
     result: 'Improved venue utilisation',
     stats: [
       { value: 'Local', label: 'Sports-led concept to bring new energy into the venue' },
@@ -165,6 +169,7 @@ const fullCases: FullCase[] = [
     intro:
       'A craft beer and casual dining concept that helped shift the role of an existing sports bar and broaden the venue’s appeal.',
     image: bankstownImg.url,
+    logo: bankstownLogo.url,
     result: 'Underused space repositioned',
     stats: [
       { value: '18–45', label: 'Younger demographic targeted through the new concept' },
@@ -193,6 +198,7 @@ const fullCases: FullCase[] = [
     intro:
       'An entertainment-led hospitality concept designed to increase engagement, broaden appeal and create a more interactive venue experience.',
     image: doyloImg.url,
+    logo: doyloLogo.url,
     result: 'Experience-led venue positioning',
     stats: [
       { value: '7', label: 'Interactive sports simulations increasing reasons to visit' },
