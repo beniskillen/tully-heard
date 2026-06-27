@@ -394,10 +394,13 @@ const CaseStudies = () => {
                   <div className="flex items-start gap-5 mb-4">
                     <div
                       aria-label={`${current.title} logo`}
-                      className="shrink-0 w-20 h-20 rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden shadow-sm"
+                      className="shrink-0 w-24 h-24 rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden shadow-sm p-3"
                     >
-                      {/* Replace with an <img src={current.logo} /> once club logos are uploaded */}
-                      <Building2 className="text-primary/60" size={28} strokeWidth={1.5} />
+                      {current.logo ? (
+                        <img src={current.logo} alt={`${current.title} logo`} className="max-w-full max-h-full object-contain" />
+                      ) : (
+                        <Building2 className="text-primary/60" size={28} strokeWidth={1.5} />
+                      )}
                     </div>
                     <div>
                       <h3 className="text-3xl lg:text-4xl font-display text-foreground leading-tight">
