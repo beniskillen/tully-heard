@@ -20,7 +20,10 @@ import {
 import { AnimatedStat } from '@/components/AnimatedStat';
 
 import bankstownLogo from '@/assets/logos/bankstown-sports.png.asset.json';
-import mudgeeLogo from '@/assets/logos/club-mudgee.png.asset.json';
+import mudgeeLogo from '@/assets/logos/club-mudgee.svg.asset.json';
+import clubsNswLogo from '@/assets/logos/clubsnsw.png.asset.json';
+import doyloLogo from '@/assets/logos/doylo-lifestyle-group.svg.asset.json';
+import yogisLogo from '@/assets/logos/doylos-sports-bar.png.asset.json';
 import clubsNswLogo from '@/assets/logos/clubs-nsw.png.asset.json';
 import doyloLogo from '@/assets/logos/doylo-lifestyle-group.png.asset.json';
 import yogisLogo from '@/assets/logos/doylos-sports-bar.png.asset.json';
