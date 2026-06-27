@@ -48,15 +48,6 @@ const team = [
       'She brings perspectives from multiple sectors including hospitality, FMCG, retail, consumer durables, technology and telecommunications.',
     ],
   },
-  {
-    name: 'Margaret Carew',
-    role: 'Consultant',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=600&fit=crop&crop=faces',
-    bio: [
-      'Margaret has over 30 years’ experience in the hospitality industry, including hands-on roles as Secretary Manager of clubs and General Manager of pubs.',
-      'Margaret has worked as a consultant in the registered club industry, advising on strategic and operational matters including gaming machine entitlement exchange. She brings technical and practical advice across accounting, financial consulting and club operations.',
-    ],
-  },
 ];
 
 const People = () => {
