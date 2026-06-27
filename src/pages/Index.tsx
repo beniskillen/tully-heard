@@ -1,50 +1,50 @@
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { HeroSection } from '@/components/home/HeroSection';
+import { CaseStudiesSection } from '@/components/home/CaseStudiesSection';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import {
+  ArrowRight,
+  Compass,
+  ShieldCheck,
+  Repeat,
+  LayoutGrid,
+  Users,
+  Rocket,
+} from 'lucide-react';
 
 const capabilities = [
   {
+    icon: Compass,
     title: 'Clarify the opportunity',
     body: 'Understand the commercial, customer and strategic opportunity before decisions are made.',
   },
   {
+    icon: ShieldCheck,
     title: 'Test major investment decisions',
     body: 'Assess feasibility, risk, staging and long-term return before capital is committed.',
   },
   {
+    icon: Repeat,
     title: 'Reposition venues for changing expectations',
     body: 'Help clubs and hospitality venues stay relevant to members, guests and emerging audiences.',
   },
   {
+    icon: LayoutGrid,
     title: 'Improve existing spaces',
     body: 'Identify how current assets can work harder through better utilisation, flow and customer experience.',
   },
   {
+    icon: Users,
     title: 'Support boards and management teams',
     body: 'Provide clear, independent advice for complex decisions and stakeholder alignment.',
   },
   {
+    icon: Rocket,
     title: 'Turn strategy into action',
     body: 'Stay involved beyond the plan so recommendations can move into practical implementation.',
-  },
-];
-
-const selectedWork = [
-  {
-    title: 'Gosford RSL',
-    body: 'A major venue transformation that repositioned the club as a leading dining, entertainment and community destination on the Central Coast.',
-  },
-  {
-    title: 'Chatswood RSL / Yogi’s Sports Bar',
-    body: 'A more dynamic, multi-generational venue experience built around sport, dining, social connection and entertainment.',
-  },
-  {
-    title: 'Shoalhaven Ex-Servos / The Growers',
-    body: 'A regionally led food and beverage destination designed to broaden appeal and strengthen community connection.',
   },
 ];
 
@@ -86,8 +86,9 @@ const Index = () => {
               <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
                 How we help
               </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6 uppercase tracking-[0.04em]">
-                We help venues move from uncertainty to a clear way forward
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6">
+                We help venues move from uncertainty to a{' '}
+                <span className="italic text-primary">clear way forward</span>
               </h2>
               <p className="text-muted-foreground font-sans text-lg leading-relaxed">
                 Whether the challenge is redevelopment, utilisation, market relevance, commercial performance or board decision-making, our role is to bring the analysis, judgement and practical industry experience needed to define the right path.
@@ -102,8 +103,11 @@ const Index = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.05 }}
-                  className="p-8 rounded-2xl bg-background border border-border"
+                  className="feature-card group"
                 >
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
+                    <c.icon className="text-primary" size={26} />
+                  </div>
                   <h3 className="text-xl font-display text-foreground mb-3">{c.title}</h3>
                   <p className="text-muted-foreground font-sans leading-relaxed">{c.body}</p>
                 </motion.div>
@@ -112,48 +116,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Selected Work */}
-        <section className="section-padding bg-background">
-          <div className="container-narrow">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="max-w-3xl mb-12"
-            >
-              <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
-                Selected work
-              </p>
-              <p className="text-muted-foreground font-sans text-lg leading-relaxed">
-                Our work spans major club redevelopments, sports bar concepts, food and beverage destinations, feasibility studies, venue optimisation, entertainment concepts and long-term strategic planning.
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              {selectedWork.map((w, i) => (
-                <motion.div
-                  key={w.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.08 }}
-                  className="p-8 rounded-2xl bg-card border border-border"
-                >
-                  <h3 className="text-xl font-display text-foreground mb-3">{w.title}</h3>
-                  <p className="text-muted-foreground font-sans leading-relaxed">{w.body}</p>
-                </motion.div>
-              ))}
-            </div>
-
-            <div>
-              <Link to="/case-studies">
-                <Button variant="navy" size="lg" className="gap-2">
-                  View our work <ArrowRight size={18} />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Selected Work — Carousel */}
+        <CaseStudiesSection />
 
         {/* CTA */}
         <section className="section-padding bg-card">
@@ -163,8 +127,9 @@ const Index = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6 uppercase tracking-[0.04em]">
-                Have a venue decision to work through?
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6">
+                Have a venue decision to{' '}
+                <span className="italic text-primary">work through?</span>
               </h2>
               <div className="space-y-5 text-muted-foreground font-sans text-lg leading-relaxed mb-8">
                 <p>
