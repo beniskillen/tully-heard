@@ -5,6 +5,12 @@ import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import gosfordImg from '@/assets/cases/gosford-rsl.jpeg.asset.json';
+import yogisImg from '@/assets/cases/yogis-chatswood.webp.asset.json';
+import shoalhavenImg from '@/assets/cases/shoalhaven.png.asset.json';
+import mudgeeImg from '@/assets/cases/club-mudgee.webp.asset.json';
+import bankstownImg from '@/assets/cases/bankstown.jpg.asset.json';
+import doyloImg from '@/assets/cases/doylo.jpg.asset.json';
 
 type Stat = { value: string; label: string };
 
