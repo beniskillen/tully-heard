@@ -1,5 +1,6 @@
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
+import { CaseStudiesSection } from '@/components/home/CaseStudiesSection';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -133,7 +134,10 @@ const Services = () => {
           </div>
         </section>
 
+        <CaseStudiesSection />
+
         <section className="section-padding bg-background">
+
           <div className="container-narrow max-w-2xl text-center">
             <h2 className="text-3xl sm:text-4xl font-display text-foreground mb-6">
               Not sure where to <span className="italic text-primary">start?</span>
