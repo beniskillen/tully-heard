@@ -21,6 +21,12 @@ import shoalhavenImg from '@/assets/cases/shoalhaven.png.asset.json';
 import mudgeeImg from '@/assets/cases/club-mudgee.webp.asset.json';
 import bankstownImg from '@/assets/cases/bankstown.jpg.asset.json';
 import doyloImg from '@/assets/cases/doylo.jpg.asset.json';
+import gosfordLogo from '@/assets/logos/gosford-rsl.png.asset.json';
+import yogisLogo from '@/assets/logos/doylos-sports-bar.png.asset.json';
+import growersLogo from '@/assets/logos/the-growers-by-ponte.png.asset.json';
+import mudgeeLogo from '@/assets/logos/club-mudgee.png.asset.json';
+import bankstownLogo from '@/assets/logos/bankstown-sports.png.asset.json';
+import doyloLogo from '@/assets/logos/doylo-lifestyle-group.png.asset.json';
 
 type Stat = { value: string; label: string };
 
