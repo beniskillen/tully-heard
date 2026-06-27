@@ -1,6 +1,16 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
+import {
+  ArrowLeft,
+  ArrowRight,
+  TrendingUp,
+  Users,
+  Award,
+  CheckCircle2,
+  Sparkles,
+  Building2,
+  MapPin,
+} from 'lucide-react';
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
