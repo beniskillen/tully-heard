@@ -186,15 +186,22 @@ const Index = () => {
               {capabilities.map((c, i) => (
                 <motion.div
                   key={c.title}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ delay: i * 0.08, duration: 0.6, ease: 'easeOut' }}
+                  whileHover={{ y: -6 }}
                   className="feature-card group"
                 >
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
+                  <motion.div
+                    initial={{ scale: 0, rotate: -15 }}
+                    whileInView={{ scale: 1, rotate: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.08 + 0.2, type: 'spring', stiffness: 200, damping: 14 }}
+                    className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300"
+                  >
                     <c.icon className="text-primary" size={26} />
-                  </div>
+                  </motion.div>
                   <h3 className="text-xl font-display text-foreground mb-3">{c.title}</h3>
                   <p className="text-muted-foreground font-sans leading-relaxed">{c.body}</p>
                 </motion.div>
