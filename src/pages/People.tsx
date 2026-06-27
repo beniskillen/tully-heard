@@ -65,7 +65,7 @@ const People = () => {
       <Navigation />
       <main>
         <section className="pt-40 pb-20 bg-background">
-          <div className="container-narrow max-w-3xl">
+          <div className="container-narrow max-w-3xl mx-auto text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
               <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
                 People

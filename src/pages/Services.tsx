@@ -89,7 +89,7 @@ const Services = () => {
             <div className="absolute inset-0 bg-black/50 z-10" />
           </div>
           <div className="relative z-10 container-narrow max-w-3xl">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mx-auto">
               <p className="text-white/80 text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
                 Services
               </p>
