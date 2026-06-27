@@ -3,6 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import gosfordImg from '@/assets/cases/gosford-rsl.jpeg.asset.json';
+import yogisImg from '@/assets/cases/yogis-chatswood.webp.asset.json';
+import shoalhavenImg from '@/assets/cases/shoalhaven.png.asset.json';
+import mudgeeImg from '@/assets/cases/club-mudgee.webp.asset.json';
 
 const caseStudies = [
   {
