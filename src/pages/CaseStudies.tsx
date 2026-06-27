@@ -1,29 +1,26 @@
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 type Stat = { value: string; label: string };
-type Proof = string[];
 
 interface FullCase {
   id: string;
   title: string;
   headline: string;
   intro: string;
+  image: string;
+  result: string;
   stats: Stat[];
   challenge: string;
   role: string;
   outcome: string;
-  proof: Proof;
+  proof: string[];
 }
-
-const featured = [
-  { title: 'Gosford RSL', body: 'Strategic direction for a major venue transformation', anchor: 'gosford-rsl' },
-  { title: 'Chatswood RSL / Yogi’s Sports Bar', body: 'Creating a more dynamic, multi-generational venue experience', anchor: 'chatswood-rsl' },
-  { title: 'Shoalhaven Ex-Servos / The Growers', body: 'Creating a regional food and beverage destination', anchor: 'shoalhaven' },
-];
 
 const fullCases: FullCase[] = [
   {
@@ -32,17 +29,19 @@ const fullCases: FullCase[] = [
     headline: 'Strategic direction for a major venue transformation',
     intro:
       'A major redevelopment that repositioned the club as a leading dining, entertainment and community destination on the Central Coast.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&h=1200&fit=crop',
+    result: 'Major venue transformation',
     stats: [
       { value: '4', label: 'Destination drivers: dining, events, sport and brewery' },
-      { value: '36,000+', label: 'Member community reached by the new venue experience' },
-      { value: 'Regional draw', label: 'Broader visitation appeal across the Central Coast' },
+      { value: '36,000+', label: 'Member community reached by the new venue' },
+      { value: 'Regional', label: 'Broader visitation across the Central Coast' },
     ],
     challenge:
       'Gosford RSL needed to make a major long-term decision about the future of its venue. The opportunity was not simply to refresh the existing club, but to assess whether a more substantial redevelopment could better serve members, attract new audiences and position the club for future relevance.',
     role:
       'Tully Heard supported the strategic research and feasibility process, helping the club test the market opportunity, understand member and guest expectations, and evaluate the commercial logic of a more substantial transformation.',
     outcome:
-      'The completed venue now brings together modern dining, event facilities, a sports bar, alfresco areas, a brewery and community-focused spaces. The project has helped reposition Gosford RSL as a stronger regional destination and a more contemporary club experience for members, guests and visitors.',
+      'The completed venue now brings together modern dining, event facilities, a sports bar, alfresco areas, a brewery and community-focused spaces. The project has helped reposition Gosford RSL as a stronger regional destination and a more contemporary club experience.',
     proof: [
       'Major venue transformation',
       'Stronger regional destination positioning',
@@ -55,9 +54,11 @@ const fullCases: FullCase[] = [
   {
     id: 'chatswood-rsl',
     title: 'Chatswood RSL / Yogi’s Sports Bar',
-    headline: 'Creating a more dynamic, multi-generational venue experience',
+    headline: 'A more dynamic, multi-generational venue experience',
     intro:
       'A revitalised sports and entertainment concept designed to broaden appeal while strengthening the club’s role as a social destination.',
+    image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1600&h=1200&fit=crop',
+    result: 'Broader audience appeal',
     stats: [
       { value: '200%', label: 'Increase in visitation' },
       { value: '18–45', label: 'Younger audience attendance focus' },
@@ -68,7 +69,7 @@ const fullCases: FullCase[] = [
     role:
       'Tully Heard supported the strategic development of a concept that combined sports viewing, casual dining, bar service, events and interactive entertainment into a more engaging and flexible venue experience.',
     outcome:
-      'Yogi’s Sports Bar has helped Chatswood RSL present a more modern, multi-generational offer. The concept supports social dining, sports viewing, events and interactive entertainment, giving the venue a stronger platform to connect with younger audiences and increase the vibrancy of the club.',
+      'Yogi’s Sports Bar has helped Chatswood RSL present a more modern, multi-generational offer. The concept supports social dining, sports viewing, events and interactive entertainment, giving the venue a stronger platform to connect with younger audiences.',
     proof: [
       'Younger audience engagement',
       'Stronger sports and entertainment offer',
@@ -81,20 +82,22 @@ const fullCases: FullCase[] = [
   {
     id: 'shoalhaven',
     title: 'Shoalhaven Ex-Servos / The Growers',
-    headline: 'Creating a regional food and beverage destination',
+    headline: 'A regional food and beverage destination',
     intro:
       'A locally led hospitality concept designed to broaden appeal, strengthen community connection and create a more distinctive venue experience.',
+    image: 'https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1600&h=1200&fit=crop',
+    result: 'Regional destination positioning',
     stats: [
       { value: '2', label: 'Visitor markets targeted: Sydney and Canberra' },
       { value: '30s', label: 'Younger female audience opportunity' },
-      { value: 'Local-first', label: 'Produce, suppliers and regional identity built into the concept' },
+      { value: 'Local-first', label: 'Produce, suppliers and regional identity' },
     ],
     challenge:
       'Shoalhaven Ex-Servos had an opportunity to elevate a venue asset into a more distinctive dining and social experience. The challenge was to create a concept that felt authentic to the region, appealed to both locals and visitors, and strengthened the club’s broader hospitality offer.',
     role:
       'Tully Heard supported the concept and strategic direction, with a focus on local produce, destination appeal, brand positioning and a more contemporary customer experience.',
     outcome:
-      'The Growers helped create a more regionally distinctive hospitality offer, with stronger links to local producers, a broader dining experience and a clearer destination proposition. The project demonstrates how clubs can build relevance by aligning hospitality, place, community and customer expectations.',
+      'The Growers helped create a more regionally distinctive hospitality offer, with stronger links to local producers, a broader dining experience and a clearer destination proposition.',
     proof: [
       'Regional destination positioning',
       'Local produce and supplier story',
@@ -108,23 +111,26 @@ const fullCases: FullCase[] = [
     id: 'club-mudgee',
     title: 'Club Mudgee / The Hub Sports Bar',
     headline: 'Revitalising a historic club space for modern community use',
-    intro: 'A repositioned sports bar and community hub that gave an underutilised area a clearer role in the venue.',
+    intro:
+      'A repositioned sports bar and community hub that gave an underutilised area a clearer role in the venue.',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&h=1200&fit=crop',
+    result: 'Improved venue utilisation',
     stats: [
-      { value: 'Younger locals', label: 'Sports-led concept to bring new energy into the venue' },
-      { value: '3', label: 'Connected social zones: sports bar, beer garden and gaming room' },
-      { value: '70+ years', label: 'Community relevance modernised for the next generation' },
+      { value: 'Local', label: 'Sports-led concept to bring new energy into the venue' },
+      { value: '3', label: 'Connected zones: sports bar, beer garden and gaming' },
+      { value: '70+ yrs', label: 'Community relevance modernised for the next generation' },
     ],
     challenge:
       'Club Mudgee wanted to revitalise a historic section of the club and make better use of space that had previously served different purposes over time. The goal was to respect the club’s history while creating a more contemporary and relevant venue experience.',
     role:
       'Tully Heard supported the planning and strategic direction for a sports and community hub that could improve utilisation, create stronger social energy and support the club’s broader role in the local community.',
     outcome:
-      'The Hub Sports Bar created a more active and engaging area within the club, supporting sport, casual dining, social connection and community use. The project shows how thoughtful adaptation of existing spaces can strengthen relevance without losing the character of the venue.',
+      'The Hub Sports Bar created a more active and engaging area within the club, supporting sport, casual dining, social connection and community use. The project shows how thoughtful adaptation of existing spaces can strengthen relevance.',
     proof: [
       'Improved use of an existing venue area',
       'Stronger community and sports positioning',
       'More active social environment',
-      'Better alignment with member and guest behaviour',
+      'Better alignment with member behaviour',
       'Adaptive reuse of a historic club space',
       'Clearer role for an existing asset',
     ],
@@ -133,18 +139,21 @@ const fullCases: FullCase[] = [
     id: 'bankstown',
     title: 'Bankstown Sports / Basement Brewhouse',
     headline: 'Repositioning an underused space for a new audience',
-    intro: 'A craft beer and casual dining concept that helped shift the role of an existing sports bar and broaden the venue’s appeal.',
+    intro:
+      'A craft beer and casual dining concept that helped shift the role of an existing sports bar and broaden the venue’s appeal.',
+    image: 'https://images.unsplash.com/photo-1546726747-421c6d69c929?w=1600&h=1200&fit=crop',
+    result: 'Underused space repositioned',
     stats: [
       { value: '18–45', label: 'Younger demographic targeted through the new concept' },
-      { value: '30', label: 'Beers on tap to create a stronger craft-led experience' },
-      { value: '7', label: 'House-brewed beers creating a distinct reason to visit' },
+      { value: '30', label: 'Beers on tap creating a stronger craft-led experience' },
+      { value: '7', label: 'House-brewed beers — a distinct reason to visit' },
     ],
     challenge:
       'The existing sports bar environment had become less aligned with changing customer expectations. The opportunity was to create a more relevant venue that could appeal to a younger and more diverse audience while still fitting within the broader club ecosystem.',
     role:
       'Tully Heard supported the strategic thinking behind a more contemporary hospitality concept, drawing on trends in craft beer, casual dining, social experience and venue repositioning.',
     outcome:
-      'The Basement Brewhouse helped create a more distinctive hospitality offer within Bankstown Sports. The concept gave the club a stronger platform to engage new audiences, activate an underused space and present a more modern experience within the broader venue.',
+      'The Basement Brewhouse helped create a more distinctive hospitality offer within Bankstown Sports. The concept gave the club a stronger platform to engage new audiences, activate an underused space and present a more modern experience.',
     proof: [
       'Underused space repositioned',
       'Broader customer appeal',
@@ -158,7 +167,10 @@ const fullCases: FullCase[] = [
     id: 'doylo',
     title: 'The Doylo / Ready’s Bar',
     headline: 'Bringing competitive socialising into the club environment',
-    intro: 'An entertainment-led hospitality concept designed to increase engagement, broaden appeal and create a more interactive venue experience.',
+    intro:
+      'An entertainment-led hospitality concept designed to increase engagement, broaden appeal and create a more interactive venue experience.',
+    image: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=1600&h=1200&fit=crop',
+    result: 'Experience-led venue positioning',
     stats: [
       { value: '7', label: 'Interactive sports simulations increasing reasons to visit' },
       { value: '3', label: 'Experience layers: sport, dining and games' },
@@ -169,7 +181,7 @@ const fullCases: FullCase[] = [
     role:
       'Tully Heard supported the strategic direction behind a competitive socialising concept that could sit naturally within the club environment and appeal to a broader customer base.',
     outcome:
-      'Ready’s Bar created a more dynamic entertainment and dining experience, giving the venue a new way to engage guests through live sport, simulated games, casual dining and social activity. It positions The Doylo as part of a broader movement toward more interactive hospitality experiences.',
+      'Ready’s Bar created a more dynamic entertainment and dining experience, giving the venue a new way to engage guests through live sport, simulated games, casual dining and social activity.',
     proof: [
       'Competitive socialising concept',
       'Broader entertainment offer',
@@ -182,9 +194,6 @@ const fullCases: FullCase[] = [
 ];
 
 const moreWork = [
-  { title: 'Club Mudgee / The Hub Sports Bar', body: 'A repositioned sports bar and community hub that gave an underutilised area a clearer role in the venue.' },
-  { title: 'Bankstown Sports / Basement Brewhouse', body: 'A craft beer and casual dining concept that helped shift the role of an existing sports bar and broaden the venue’s appeal.' },
-  { title: 'The Doylo / Ready’s Bar', body: 'An entertainment-led hospitality concept designed to increase engagement, broaden appeal and create a more interactive venue experience.' },
   { title: 'Cabra Vale Diggers', body: 'Strategic planning and feasibility support for major club development decisions.' },
   { title: 'Karuah RSL', body: 'Premises optimisation and redevelopment planning to support future growth opportunities.' },
   { title: 'Oaks Hotel Neutral Bay', body: 'Site and premises planning, concept development and execution support, including Taffy’s Sports Bar.' },
@@ -193,64 +202,19 @@ const moreWork = [
   { title: 'Central Real Capital', body: 'Integrated resort feasibility and assessment support.' },
 ];
 
-const CaseBlock = ({ c }: { c: FullCase }) => (
-  <section id={c.id} className="section-padding scroll-mt-32 odd:bg-background even:bg-card">
-    <div className="container-narrow">
-      <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
-        {c.title}
-      </p>
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6 italic">
-        {c.headline}
-      </h2>
-      <p className="text-muted-foreground font-sans text-lg leading-relaxed max-w-3xl mb-10">
-        {c.intro}
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-        {c.stats.map((s) => (
-          <div key={s.label} className="p-6 rounded-2xl bg-background border border-border">
-            <div className="text-2xl font-display text-foreground mb-2">{s.value}</div>
-            <div className="text-sm text-muted-foreground font-sans">{s.label}</div>
-          </div>
-        ))}
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        <div>
-          <h3 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-3">Challenge</h3>
-          <p className="text-muted-foreground font-sans leading-relaxed">{c.challenge}</p>
-        </div>
-        <div>
-          <h3 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-3">Tully Heard’s role</h3>
-          <p className="text-muted-foreground font-sans leading-relaxed">{c.role}</p>
-        </div>
-        <div>
-          <h3 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-3">Outcome</h3>
-          <p className="text-muted-foreground font-sans leading-relaxed">{c.outcome}</p>
-        </div>
-      </div>
-
-      <div>
-        <h3 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-4">Proof points</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-          {c.proof.map((p) => (
-            <div key={p} className="px-5 py-3 rounded-full border border-border bg-background text-foreground font-sans text-sm">
-              {p}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
 const CaseStudies = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const current = fullCases[currentIndex];
+
+  const next = () => setCurrentIndex((p) => (p + 1) % fullCases.length);
+  const prev = () => setCurrentIndex((p) => (p - 1 + fullCases.length) % fullCases.length);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
         {/* Hero */}
-        <section className="pt-40 pb-20 bg-background">
+        <section className="pt-40 pb-16 bg-background">
           <div className="container-narrow max-w-3xl">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
               <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
@@ -259,48 +223,167 @@ const CaseStudies = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-foreground mb-6 italic">
                 Work that helps venues evolve, perform and stay relevant
               </h1>
-              <p className="text-muted-foreground font-sans text-lg leading-relaxed mb-4">
-                Selected projects across clubs and hospitality venues, from major redevelopments to targeted venue repositioning, feasibility, customer insight and implementation support.
-              </p>
               <p className="text-muted-foreground font-sans text-lg leading-relaxed">
-                Tully Heard works with clients across strategy, research, feasibility, redevelopment and operational performance. The examples below highlight the type of work we support and the strategic outcomes venues can pursue when customer insight, commercial discipline and execution are aligned.
+                Selected projects across clubs and hospitality venues, from major redevelopments to targeted venue repositioning, feasibility, customer insight and implementation support.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Featured Work */}
+        {/* Carousel */}
         <section className="section-padding bg-card">
           <div className="container-narrow">
-            <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-8">
-              Featured work
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {featured.map((f) => (
-                <a
-                  key={f.title}
-                  href={`#${f.anchor}`}
-                  className="p-8 rounded-2xl bg-background border border-border hover:border-primary transition-colors block"
+            <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 mb-12">
+              <div className="max-w-2xl">
+                <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
+                  Selected work
+                </p>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground">
+                  Strategic outcomes across{' '}
+                  <span className="italic text-primary">clubs and hospitality</span>
+                </h2>
+              </div>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={prev}
+                  aria-label="Previous case study"
+                  className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
                 >
-                  <h3 className="text-xl font-display text-foreground mb-3">{f.title}</h3>
-                  <p className="text-muted-foreground font-sans leading-relaxed">{f.body}</p>
-                </a>
+                  <ArrowLeft size={20} />
+                </button>
+                <button
+                  onClick={next}
+                  aria-label="Next case study"
+                  className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+                >
+                  <ArrowRight size={20} />
+                </button>
+              </div>
+            </div>
+
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={current.id}
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -40 }}
+                transition={{ duration: 0.4 }}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start"
+              >
+                <div className="lg:sticky lg:top-32">
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden group">
+                    <img
+                      src={current.image}
+                      alt={current.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute bottom-6 left-6 right-6">
+                      <div className="inline-block px-4 py-2 rounded-full bg-background/90 backdrop-blur-sm border border-border">
+                        <span className="text-primary font-sans font-semibold text-sm">
+                          {current.result}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-3 mt-6">
+                    {current.stats.map((s) => (
+                      <div key={s.label} className="p-4 rounded-2xl bg-background border border-border">
+                        <div className="text-xl font-display text-foreground mb-1">{s.value}</div>
+                        <div className="text-xs text-muted-foreground font-sans leading-snug">{s.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <div className="text-muted-foreground text-sm font-sans mb-2">
+                    {String(currentIndex + 1).padStart(2, '0')} /{' '}
+                    {String(fullCases.length).padStart(2, '0')}
+                  </div>
+                  <h3 className="text-3xl lg:text-4xl font-display text-foreground mb-3">
+                    {current.title}
+                  </h3>
+                  <p className="text-primary text-lg font-sans mb-5">{current.headline}</p>
+                  <p className="text-muted-foreground font-sans leading-relaxed mb-8">
+                    {current.intro}
+                  </p>
+
+                  <div className="space-y-6 mb-8">
+                    <div>
+                      <h4 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-2">Challenge</h4>
+                      <p className="text-muted-foreground font-sans leading-relaxed">{current.challenge}</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-2">Tully Heard’s role</h4>
+                      <p className="text-muted-foreground font-sans leading-relaxed">{current.role}</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-2">Outcome</h4>
+                      <p className="text-muted-foreground font-sans leading-relaxed">{current.outcome}</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-3">Proof points</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {current.proof.map((p) => (
+                        <span key={p} className="px-4 py-2 rounded-full border border-border bg-background text-foreground font-sans text-sm">
+                          {p}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+
+            <div className="flex items-center justify-center gap-2 mt-12">
+              {fullCases.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  aria-label={`Go to case study ${index + 1}`}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    index === currentIndex
+                      ? 'w-8 bg-primary'
+                      : 'w-2 bg-border hover:bg-muted-foreground/50'
+                  }`}
+                />
+              ))}
+            </div>
+
+            {/* Thumbnails */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-10">
+              {fullCases.map((c, i) => (
+                <button
+                  key={c.id}
+                  onClick={() => setCurrentIndex(i)}
+                  className={`text-left p-4 rounded-xl border transition-colors ${
+                    i === currentIndex
+                      ? 'border-primary bg-background'
+                      : 'border-border bg-background/50 hover:border-primary/50'
+                  }`}
+                >
+                  <div className="text-xs font-sans uppercase tracking-[0.1em] text-muted-foreground mb-1">
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+                  <div className="text-sm font-display text-foreground leading-snug">{c.title}</div>
+                </button>
               ))}
             </div>
           </div>
         </section>
 
-        {fullCases.map((c) => <CaseBlock key={c.id} c={c} />)}
-
         {/* More Selected Work */}
-        <section className="section-padding bg-card">
+        <section className="section-padding bg-background">
           <div className="container-narrow">
-            <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
+            <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-6">
               More selected work
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {moreWork.map((w) => (
-                <div key={w.title} className="p-8 rounded-2xl bg-background border border-border">
+                <div key={w.title} className="p-8 rounded-2xl bg-card border border-border">
                   <h3 className="text-lg font-display text-foreground mb-3">{w.title}</h3>
                   <p className="text-muted-foreground font-sans leading-relaxed text-sm">{w.body}</p>
                 </div>
@@ -309,29 +392,17 @@ const CaseStudies = () => {
           </div>
         </section>
 
-        {/* See in context */}
-        <section className="section-padding bg-background">
-          <div className="container-narrow max-w-3xl text-center">
-            <h2 className="text-2xl sm:text-3xl font-display text-foreground mb-4 uppercase tracking-[0.04em]">
-              See the work in context
-            </h2>
-            <p className="text-muted-foreground font-sans text-lg leading-relaxed">
-              Selected videos and public features are included where they help show the venue experience, project context and customer-facing outcome.
-            </p>
-          </div>
-        </section>
-
         {/* CTA */}
         <section className="section-padding bg-card">
           <div className="container-narrow max-w-3xl text-center">
-            <h2 className="text-3xl sm:text-4xl font-display text-foreground mb-6 uppercase tracking-[0.04em]">
-              Have a venue decision to work through?
+            <h2 className="text-3xl sm:text-4xl font-display text-foreground mb-4 italic">
+              Have a venue challenge to work through?
             </h2>
             <p className="text-muted-foreground font-sans text-lg leading-relaxed mb-8">
-              If you are considering a redevelopment, repositioning, feasibility review or strategic planning process, Tully Heard can help define the opportunity and the practical next step.
+              Let’s talk about how clarity, insight and disciplined execution can move your venue forward.
             </p>
             <Link to="/contact">
-              <Button variant="navy" size="xl" className="px-10">Contact us</Button>
+              <Button variant="navy" size="lg">Contact us</Button>
             </Link>
           </div>
         </section>
