@@ -1,6 +1,16 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
+import {
+  ArrowLeft,
+  ArrowRight,
+  TrendingUp,
+  Users,
+  Award,
+  CheckCircle2,
+  Sparkles,
+  Building2,
+  MapPin,
+} from 'lucide-react';
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -208,6 +218,35 @@ const moreWork = [
   { title: 'Central Real Capital', body: 'Integrated resort feasibility and assessment support.' },
 ];
 
+const statIcons = [TrendingUp, Users, Award];
+const moreWorkIcons = [Building2, MapPin, Sparkles, Award, TrendingUp, Users];
+
+// Animates the numeric prefix of a stat value (e.g. "36,000+" -> counts 0 → 36000, keeps "+").
+const AnimatedStat = ({ value }: { value: string }) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: '-40px' });
+  const match = value.match(/^([\d,.]+)(.*)$/);
+  const numeric = match ? parseFloat(match[1].replace(/,/g, '')) : null;
+  const suffix = match ? match[2] : '';
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => {
+    const n = Math.round(latest);
+    return n.toLocaleString() + suffix;
+  });
+
+  useEffect(() => {
+    if (inView && numeric !== null) {
+      const controls = animate(count, numeric, { duration: 1.6, ease: 'easeOut' });
+      return controls.stop;
+    }
+  }, [inView, numeric, count]);
+
+  if (numeric === null) {
+    return <span ref={ref}>{value}</span>;
+  }
+  return <motion.span ref={ref}>{rounded}</motion.span>;
+};
+
 const CaseStudies = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const current = fullCases[currentIndex];
@@ -306,24 +345,55 @@ const CaseStudies = () => {
                   </div>
 
                   <div className="grid grid-cols-3 gap-3 mt-6">
-                    {current.stats.map((s) => (
-                      <div key={s.label} className="p-4 rounded-2xl bg-background border border-border">
-                        <div className="text-xl font-display text-foreground mb-1">{s.value}</div>
-                        <div className="text-xs text-muted-foreground font-sans leading-snug">{s.label}</div>
-                      </div>
-                    ))}
+                    {current.stats.map((s, i) => {
+                      const Icon = statIcons[i % statIcons.length];
+                      return (
+                        <motion.div
+                          key={s.label}
+                          initial={{ opacity: 0, y: 12 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.1 + i * 0.08, duration: 0.4 }}
+                          className="relative p-5 rounded-2xl bg-background border border-border overflow-hidden group hover:border-primary/40 hover:shadow-sm transition-all"
+                        >
+                          <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/15 transition-colors">
+                            <Icon className="text-primary" size={16} />
+                          </div>
+                          <div className="text-2xl font-display text-foreground mb-1 tabular-nums">
+                            <AnimatedStat value={s.value} />
+                          </div>
+                          <div className="text-xs text-muted-foreground font-sans leading-snug">
+                            {s.label}
+                          </div>
+                        </motion.div>
+                      );
+                    })}
                   </div>
                 </div>
 
                 <div>
-                  <div className="text-muted-foreground text-sm font-sans mb-2">
+                  <div className="text-muted-foreground text-sm font-sans mb-4 flex items-center gap-3">
+                    <span className="h-px w-8 bg-border" />
                     {String(currentIndex + 1).padStart(2, '0')} /{' '}
                     {String(fullCases.length).padStart(2, '0')}
                   </div>
-                  <h3 className="text-3xl lg:text-4xl font-display text-foreground mb-3">
-                    {current.title}
-                  </h3>
-                  <p className="text-primary text-lg font-sans mb-5">{current.headline}</p>
+
+                  {/* Club logo slot + title */}
+                  <div className="flex items-start gap-5 mb-4">
+                    <div
+                      aria-label={`${current.title} logo`}
+                      className="shrink-0 w-20 h-20 rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden shadow-sm"
+                    >
+                      {/* Replace with an <img src={current.logo} /> once club logos are uploaded */}
+                      <Building2 className="text-primary/60" size={28} strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <h3 className="text-3xl lg:text-4xl font-display text-foreground leading-tight">
+                        {current.title}
+                      </h3>
+                      <p className="text-primary text-lg font-sans mt-1">{current.headline}</p>
+                    </div>
+                  </div>
+
                   <p className="text-muted-foreground font-sans leading-relaxed mb-8">
                     {current.intro}
                   </p>
@@ -347,7 +417,11 @@ const CaseStudies = () => {
                     <h4 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-3">Proof points</h4>
                     <div className="flex flex-wrap gap-2">
                       {current.proof.map((p) => (
-                        <span key={p} className="px-4 py-2 rounded-full border border-border bg-background text-foreground font-sans text-sm">
+                        <span
+                          key={p}
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background text-foreground font-sans text-sm hover:border-primary/50 hover:text-primary transition-colors"
+                        >
+                          <CheckCircle2 size={14} className="text-primary" />
                           {p}
                         </span>
                       ))}
@@ -397,16 +471,47 @@ const CaseStudies = () => {
         {/* More Selected Work */}
         <section className="section-padding bg-background">
           <div className="container-narrow">
-            <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-6">
-              More selected work
-            </p>
+            <div className="flex items-end justify-between mb-8 flex-wrap gap-4">
+              <div>
+                <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-3">
+                  More selected work
+                </p>
+                <h2 className="text-2xl sm:text-3xl font-display text-foreground">
+                  A broader portfolio of <span className="italic text-primary">venue and precinct</span> engagements
+                </h2>
+              </div>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {moreWork.map((w) => (
-                <div key={w.title} className="p-8 rounded-2xl bg-card border border-border">
-                  <h3 className="text-lg font-display text-foreground mb-3">{w.title}</h3>
-                  <p className="text-muted-foreground font-sans leading-relaxed text-sm">{w.body}</p>
-                </div>
-              ))}
+              {moreWork.map((w, i) => {
+                const Icon = moreWorkIcons[i % moreWorkIcons.length];
+                return (
+                  <motion.div
+                    key={w.title}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    transition={{ duration: 0.4, delay: i * 0.05 }}
+                    className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                  >
+                    {/* Logo slot */}
+                    <div className="flex items-center justify-between mb-5">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                        <Icon className="text-primary" size={20} />
+                      </div>
+                      <div
+                        aria-label={`${w.title} logo`}
+                        className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center overflow-hidden"
+                      >
+                        {/* Replace with an <img src={w.logo} /> once club logos are uploaded */}
+                        <Building2 className="text-muted-foreground/60" size={16} strokeWidth={1.5} />
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-display text-foreground mb-3">{w.title}</h3>
+                    <p className="text-muted-foreground font-sans leading-relaxed text-sm">{w.body}</p>
+                    <div className="mt-5 h-px bg-gradient-to-r from-primary/30 to-transparent" />
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </section>
