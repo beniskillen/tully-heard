@@ -13,7 +13,12 @@ import {
   LayoutGrid,
   Users,
   Rocket,
+  TrendingUp,
+  Award,
+  Calendar,
 } from 'lucide-react';
+import { AnimatedStat } from '@/components/AnimatedStat';
+
 import bankstownLogo from '@/assets/logos/bankstown-sports.png.asset.json';
 import mudgeeLogo from '@/assets/logos/club-mudgee.png.asset.json';
 import clubsNswLogo from '@/assets/logos/clubs-nsw.png.asset.json';
@@ -115,6 +120,40 @@ const Index = () => {
             </motion.div>
           </div>
         </section>
+
+        {/* Animated Stats Band */}
+        <section className="py-16 bg-card border-y border-border">
+          <div className="container-narrow">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { icon: Calendar, value: '25+', label: 'Years industry experience' },
+                { icon: Users, value: '36,000+', label: 'Members reached across projects' },
+                { icon: Award, value: '20+', label: 'Major venue engagements' },
+                { icon: TrendingUp, value: '200+', label: 'Million in capital advised' },
+              ].map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08 }}
+                  className="text-center"
+                >
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <stat.icon className="text-primary" size={22} />
+                  </div>
+                  <div className="text-4xl md:text-5xl font-display text-foreground mb-2">
+                    <AnimatedStat value={stat.value} />
+                  </div>
+                  <p className="text-xs md:text-sm font-sans uppercase tracking-[0.15em] text-muted-foreground">
+                    {stat.label}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
 
         {/* Uncertainty to clarity */}
         <section className="section-padding bg-card">
