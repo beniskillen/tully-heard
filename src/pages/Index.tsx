@@ -14,6 +14,25 @@ import {
   Users,
   Rocket,
 } from 'lucide-react';
+import bankstownLogo from '@/assets/logos/bankstown-sports.png.asset.json';
+import mudgeeLogo from '@/assets/logos/club-mudgee.png.asset.json';
+import clubsNswLogo from '@/assets/logos/clubs-nsw.png.asset.json';
+import doyloLogo from '@/assets/logos/doylo-lifestyle-group.png.asset.json';
+import yogisLogo from '@/assets/logos/doylos-sports-bar.png.asset.json';
+import gosfordLogo from '@/assets/logos/gosford-rsl.png.asset.json';
+import northBondiLogo from '@/assets/logos/north-bondi-rsl-club.png.asset.json';
+import growersLogo from '@/assets/logos/the-growers-by-ponte.png.asset.json';
+
+const trustLogos = [
+  { name: 'Gosford RSL', src: gosfordLogo.url },
+  { name: 'Bankstown Sports', src: bankstownLogo.url },
+  { name: 'North Bondi RSL Club', src: northBondiLogo.url },
+  { name: 'ClubsNSW', src: clubsNswLogo.url },
+  { name: 'The Growers by Ponte', src: growersLogo.url },
+  { name: 'Club Mudgee', src: mudgeeLogo.url },
+  { name: "Yogi's Sports Bar", src: yogisLogo.url },
+  { name: 'Doylo Lifestyle Group', src: doyloLogo.url },
+];
 
 const capabilities = [
   {
