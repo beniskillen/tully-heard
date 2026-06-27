@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/services', label: 'Services' },
   { href: '/case-studies', label: 'Our Work' },
   { href: '/people', label: 'People' },
-  { href: '/contact', label: 'Contact' },
+  
 ];
 
 export const Navigation = () => {
