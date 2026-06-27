@@ -80,9 +80,9 @@ const Index = () => {
         <HeroSection />
 
         {/* Trusted By */}
-        <section className="py-12 bg-card border-y border-border overflow-hidden">
+        <section className="py-12 bg-[#1f2a3a] border-y border-border overflow-hidden">
           <div className="container-narrow">
-            <p className="text-center text-xs font-sans uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-8">
+            <p className="text-center text-xs font-sans uppercase tracking-[0.2em] font-semibold text-white/70 mb-8">
               Trusted by leading clubs and hospitality venues
             </p>
           </div>
@@ -93,7 +93,7 @@ const Index = () => {
                   key={`${logo.name}-${i}`}
                   src={logo.src}
                   alt={logo.name}
-                  className="h-14 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity shrink-0"
+                  className="h-14 md:h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity shrink-0"
                 />
               ))}
             </div>
