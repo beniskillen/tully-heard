@@ -27,6 +27,12 @@ import clubsNswLogo from '@/assets/logos/clubs-nsw.png.asset.json';
 import gosfordLogo from '@/assets/logos/gosford-rsl.png.asset.json';
 import northBondiLogo from '@/assets/logos/north-bondi-rsl-club.png.asset.json';
 import growersLogo from '@/assets/logos/the-growers-by-ponte.png.asset.json';
+import cabraValeLogo from '@/assets/logos/cabra-vale-diggers.svg.asset.json';
+import centralRealLogo from '@/assets/logos/central-real-capital.svg.asset.json';
+import karuahLogo from '@/assets/logos/karuah-rsl-club.svg.asset.json';
+import moorePark from '@/assets/logos/moore-park.svg.asset.json';
+import oaksHotelLogo from '@/assets/logos/the-oaks-hotel.svg.asset.json';
+import wollongongLogo from '@/assets/logos/wollongong-city-of-innovation.svg.asset.json';
 
 const trustLogos = [
   { name: 'Gosford RSL', src: gosfordLogo.url },
@@ -37,6 +43,12 @@ const trustLogos = [
   { name: 'Club Mudgee', src: mudgeeLogo.url },
   { name: "Yogi's Sports Bar", src: yogisLogo.url },
   { name: 'Doylo Lifestyle Group', src: doyloLogo.url },
+  { name: 'Cabra Vale Diggers', src: cabraValeLogo.url },
+  { name: 'Central Real Capital', src: centralRealLogo.url },
+  { name: 'Karuah RSL Club', src: karuahLogo.url },
+  { name: 'Moore Park', src: moorePark.url },
+  { name: 'The Oaks Hotel', src: oaksHotelLogo.url },
+  { name: 'Wollongong City of Innovation', src: wollongongLogo.url },
 ];
 
 const capabilities = [
