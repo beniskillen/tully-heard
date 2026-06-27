@@ -1,94 +1,49 @@
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
-import { BarChart3, Palette, Users2, Building2, Megaphone, PieChart, CheckCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const services = [
   {
-    id: 'strategic-planning',
-    icon: BarChart3,
-    title: 'Strategic Planning',
-    description: "Long-term roadmaps that align with your venue's vision and market position. We help you make informed decisions about where to invest for maximum impact.",
-    features: [
-      'Market analysis & competitive research',
-      'Growth strategy development',
-      'Capital investment planning',
-      'Performance benchmarking',
-      'Risk assessment and mitigation',
-      'Board presentations and stakeholder alignment',
-    ],
+    title: 'Strategic planning',
+    body: 'Clear, practical strategies that help boards and management teams define where the venue is going, why it matters, and what needs to happen next.',
   },
   {
-    id: 'redevelopment',
-    icon: Palette,
-    title: 'Venue Redevelopment',
-    description: 'Transform underperforming spaces into thriving destinations. From concept to completion, we guide your redevelopment journey.',
-    features: [
-      'Concept development and design briefs',
-      'F&B strategy and menu engineering',
-      'Brand positioning and identity',
-      'Space planning and layout optimisation',
-      'Project management oversight',
-      'Launch strategy and marketing',
-    ],
+    title: 'Capital investment advisory and feasibility',
+    body: 'Independent assessment of major investment decisions, including feasibility, commercial logic, staging, funding considerations and risk.',
   },
   {
-    id: 'experience',
-    icon: Users2,
-    title: 'Customer Experience',
-    description: 'Create memorable experiences that drive loyalty and word-of-mouth. Understanding your customers is the key to sustainable growth.',
-    features: [
-      'Member and patron research',
-      'Customer journey mapping',
-      'Service design and standards',
-      'Loyalty program development',
-      'Staff training programs',
-      'Experience measurement and optimisation',
-    ],
+    title: 'Site redevelopment and delivery',
+    body: 'End-to-end support across redevelopment projects, from early concept and strategic direction through to delivery planning and implementation.',
   },
   {
-    id: 'operations',
-    icon: Building2,
-    title: 'Operational Excellence',
-    description: 'Optimise operations for efficiency and sustainable growth. Better systems mean better results and happier teams.',
-    features: [
-      'Process improvement and automation',
-      'Cost optimisation strategies',
-      'Staff training and development',
-      'Technology integration',
-      'Supplier and vendor management',
-      'Compliance and governance',
-    ],
+    title: 'Premises optimisation',
+    body: 'Improving how existing spaces are used so venues can increase relevance, improve customer flow and unlock stronger commercial performance.',
   },
   {
-    id: 'marketing',
-    icon: Megaphone,
-    title: 'Marketing & Communications',
-    description: 'Reach the right audiences with compelling messages. We help you tell your story and attract new patrons.',
-    features: [
-      'Brand strategy and positioning',
-      'Digital marketing campaigns',
-      'Content strategy and creation',
-      'Social media management',
-      'Event marketing and promotions',
-      'Member communications',
-    ],
+    title: 'Financial modelling',
+    body: 'Decision-ready models that help test scenarios, compare options and understand the long-term implications of major strategic choices.',
   },
   {
-    id: 'analytics',
-    icon: PieChart,
-    title: 'Data & Analytics',
-    description: 'Turn data into actionable insights. Make decisions with confidence using evidence-based recommendations.',
-    features: [
-      'Customer data analysis',
-      'Performance dashboards',
-      'Trend identification and forecasting',
-      'Benchmarking and reporting',
-      'Market opportunity assessment',
-      'ROI measurement and tracking',
-    ],
+    title: 'Performance diagnostics and benchmarking',
+    body: 'A structured view of what is driving performance, where constraints exist, and where improvement opportunities are most likely to come from.',
+  },
+  {
+    title: 'Commercial viability and performance',
+    body: 'Assessing business sustainability and identifying practical initiatives to strengthen earnings, customer engagement and long-term resilience.',
+  },
+  {
+    title: 'Gaming strategy, optimisation and management',
+    body: 'Specialist advice on gaming performance, layout, product mix and operational settings, handled with appropriate commercial sensitivity.',
+  },
+  {
+    title: 'Board advisory and decision support',
+    body: 'Clear analysis and independent advice to support board-level decisions, stakeholder alignment and major strategic choices.',
+  },
+  {
+    title: 'Project delivery and implementation support',
+    body: 'Ongoing involvement beyond strategy to help turn plans into delivered outcomes.',
   },
 ];
 
@@ -97,102 +52,53 @@ const Services = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
-        {/* Hero */}
-        <section className="pt-32 pb-20 bg-gradient-to-b from-card to-background">
-          <div className="container-narrow text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-            >
-              <p className="text-primary text-sm uppercase tracking-wider font-medium mb-4">
-                Our Services
+        <section className="pt-40 pb-20 bg-background">
+          <div className="container-narrow max-w-3xl">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+              <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
+                Services
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-semibold text-foreground mb-6">
-                Comprehensive{' '}
-                <span className="italic text-primary">Solutions</span>{' '}
-                for Hospitality Leaders
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-foreground mb-6 italic">
+                Practical strategic advice for complex venue decisions
               </h1>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                From strategic planning to operational excellence, we provide end-to-end consulting services tailored to the hospitality industry.
+              <p className="text-muted-foreground font-sans text-lg leading-relaxed">
+                Tully Heard provides specialist advisory services across hospitality, leisure, clubs and related property-backed businesses.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Services List */}
-        <section className="section-padding">
+        <section className="section-padding bg-card">
           <div className="container-narrow">
-            <div className="space-y-20">
-              {services.map((service, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {services.map((s, i) => (
                 <motion.div
-                  key={service.id}
-                  id={service.id}
-                  initial={{ opacity: 0, y: 30 }}
+                  key={s.title}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="scroll-mt-32"
+                  transition={{ delay: i * 0.04 }}
+                  className="p-8 rounded-2xl bg-background border border-border"
                 >
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <div>
-                      <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
-                        <service.icon className="text-primary" size={32} />
-                      </div>
-                      <h2 className="text-3xl font-display font-semibold text-foreground mb-4">
-                        {service.title}
-                      </h2>
-                      <p className="text-muted-foreground leading-relaxed mb-6">
-                        {service.description}
-                      </p>
-                      <Link to="/contact">
-                        <Button variant="outline" className="gap-2">
-                          Enquire About This Service
-                          <ArrowRight size={18} />
-                        </Button>
-                      </Link>
-                    </div>
-                    <div className="p-8 rounded-2xl bg-card border border-border">
-                      <h3 className="text-lg font-semibold text-foreground mb-4">What We Deliver</h3>
-                      <ul className="space-y-3">
-                        {service.features.map((feature) => (
-                          <li key={feature} className="flex items-start gap-3 text-muted-foreground">
-                            <CheckCircle className="text-primary flex-shrink-0 mt-0.5" size={20} />
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  {index < services.length - 1 && (
-                    <div className="border-b border-border mt-20" />
-                  )}
+                  <h2 className="text-xl font-display text-foreground mb-3">{s.title}</h2>
+                  <p className="text-muted-foreground font-sans leading-relaxed">{s.body}</p>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="section-padding bg-card">
-          <div className="container-narrow text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl sm:text-4xl font-display font-semibold text-foreground mb-6">
-                Not Sure Where to Start?
-              </h2>
-              <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
-                Book a free consultation and we'll help identify the right approach for your venue.
-              </p>
-              <Link to="/contact">
-                <Button variant="heroPrimary" size="xl" className="gap-2">
-                  Book a Free Consultation
-                  <ArrowRight size={20} />
-                </Button>
-              </Link>
-            </motion.div>
+        <section className="section-padding bg-background">
+          <div className="container-narrow max-w-2xl text-center">
+            <h2 className="text-3xl sm:text-4xl font-display text-foreground mb-6 uppercase tracking-[0.04em]">
+              Not sure where to start?
+            </h2>
+            <p className="text-muted-foreground font-sans text-lg leading-relaxed mb-8">
+              If the challenge is unclear, complex or politically sensitive, we can help define the issue and get to a practical way forward.
+            </p>
+            <Link to="/contact">
+              <Button variant="navy" size="xl" className="px-10">Contact us</Button>
+            </Link>
           </div>
         </section>
       </main>

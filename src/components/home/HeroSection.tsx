@@ -41,7 +41,7 @@ export const HeroSection = () => {
           >
             <Link to="/contact">
               <Button variant="navy" size="xl" className="text-base px-10 py-4">
-                GET IN TOUCH
+                Contact us
               </Button>
             </Link>
           </motion.div>
