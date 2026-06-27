@@ -345,24 +345,55 @@ const CaseStudies = () => {
                   </div>
 
                   <div className="grid grid-cols-3 gap-3 mt-6">
-                    {current.stats.map((s) => (
-                      <div key={s.label} className="p-4 rounded-2xl bg-background border border-border">
-                        <div className="text-xl font-display text-foreground mb-1">{s.value}</div>
-                        <div className="text-xs text-muted-foreground font-sans leading-snug">{s.label}</div>
-                      </div>
-                    ))}
+                    {current.stats.map((s, i) => {
+                      const Icon = statIcons[i % statIcons.length];
+                      return (
+                        <motion.div
+                          key={s.label}
+                          initial={{ opacity: 0, y: 12 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.1 + i * 0.08, duration: 0.4 }}
+                          className="relative p-5 rounded-2xl bg-background border border-border overflow-hidden group hover:border-primary/40 hover:shadow-sm transition-all"
+                        >
+                          <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/15 transition-colors">
+                            <Icon className="text-primary" size={16} />
+                          </div>
+                          <div className="text-2xl font-display text-foreground mb-1 tabular-nums">
+                            <AnimatedStat value={s.value} />
+                          </div>
+                          <div className="text-xs text-muted-foreground font-sans leading-snug">
+                            {s.label}
+                          </div>
+                        </motion.div>
+                      );
+                    })}
                   </div>
                 </div>
 
                 <div>
-                  <div className="text-muted-foreground text-sm font-sans mb-2">
+                  <div className="text-muted-foreground text-sm font-sans mb-4 flex items-center gap-3">
+                    <span className="h-px w-8 bg-border" />
                     {String(currentIndex + 1).padStart(2, '0')} /{' '}
                     {String(fullCases.length).padStart(2, '0')}
                   </div>
-                  <h3 className="text-3xl lg:text-4xl font-display text-foreground mb-3">
-                    {current.title}
-                  </h3>
-                  <p className="text-primary text-lg font-sans mb-5">{current.headline}</p>
+
+                  {/* Club logo slot + title */}
+                  <div className="flex items-start gap-5 mb-4">
+                    <div
+                      aria-label={`${current.title} logo`}
+                      className="shrink-0 w-20 h-20 rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden shadow-sm"
+                    >
+                      {/* Replace with an <img src={current.logo} /> once club logos are uploaded */}
+                      <Building2 className="text-primary/60" size={28} strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <h3 className="text-3xl lg:text-4xl font-display text-foreground leading-tight">
+                        {current.title}
+                      </h3>
+                      <p className="text-primary text-lg font-sans mt-1">{current.headline}</p>
+                    </div>
+                  </div>
+
                   <p className="text-muted-foreground font-sans leading-relaxed mb-8">
                     {current.intro}
                   </p>
@@ -386,7 +417,11 @@ const CaseStudies = () => {
                     <h4 className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-primary mb-3">Proof points</h4>
                     <div className="flex flex-wrap gap-2">
                       {current.proof.map((p) => (
-                        <span key={p} className="px-4 py-2 rounded-full border border-border bg-background text-foreground font-sans text-sm">
+                        <span
+                          key={p}
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background text-foreground font-sans text-sm hover:border-primary/50 hover:text-primary transition-colors"
+                        >
+                          <CheckCircle2 size={14} className="text-primary" />
                           {p}
                         </span>
                       ))}
