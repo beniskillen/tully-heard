@@ -94,7 +94,7 @@ const Services = () => {
                 Services
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-white mb-6 italic">
-                Practical strategic advice for complex venue decisions
+                Practical strategy for complex decisions
               </h1>
               <p className="text-white/80 font-sans text-lg leading-relaxed">
                 Tully Heard provides specialist advisory services across hospitality, leisure, clubs and related property-backed businesses.
