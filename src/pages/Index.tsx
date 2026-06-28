@@ -345,33 +345,72 @@ const Index = () => {
 
         {/* CTA */}
         <section className="section-padding bg-card">
-          <div className="container-narrow max-w-3xl text-center">
+          <div className="container-narrow">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#122033]/[0.04] border border-[#122033]/10 mb-6">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#479E92]" />
+                  <p className="text-xs font-sans uppercase tracking-[0.16em] font-semibold text-[#122033]">
+                    Start the conversation
+                  </p>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#479E92]" />
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6">
+                  Have a venue decision to{' '}
+                  <span className="italic text-primary">work through?</span>
+                </h2>
+              </motion.div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  icon: Compass,
+                  title: 'Define the opportunity',
+                  body: 'We help clarify the commercial, customer and strategic opportunity before decisions are made.',
+                },
+                {
+                  icon: Users,
+                  title: 'Consultative approach',
+                  body: 'A relationship-driven process that ensures recommendations are the right fit for your venue.',
+                },
+                {
+                  icon: TrendingUp,
+                  title: 'Invest with clarity',
+                  body: 'Data-backed insights and practical next steps that help you invest with confidence.',
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ delay: i * 0.1, duration: 0.6, ease: 'easeOut' }}
+                  whileHover={{ y: -6 }}
+                  className="bg-background rounded-2xl p-8 border border-border/40 hover:border-primary/30 hover:shadow-lg transition-all duration-300 text-center group"
+                >
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <item.icon className="text-primary" size={26} />
+                  </div>
+                  <h3 className="text-xl font-display text-foreground mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground font-sans leading-relaxed">{item.body}</p>
+                </motion.div>
+              ))}
+            </div>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              className="text-center max-w-2xl mx-auto"
             >
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6">
-                Have a venue decision to{' '}
-                <span className="italic text-primary">work through?</span>
-              </h2>
-              <div className="space-y-5 text-muted-foreground font-sans text-lg leading-relaxed mb-8">
-                <p>
-                  If you are considering a redevelopment, repositioning, feasibility review or strategic planning process, Tully Heard can help define the opportunity and the practical next step.
-                </p>
-                <p>
-                  Our 25 years of experience have taught us to take a relationship-driven, consultative approach to every engagement.
-                </p>
-                <p>
-                  This approach ensures our recommendations are the right fit for your club or venue, not just the most obvious solution.
-                </p>
-                <p>
-                  Whether you’re exploring new opportunities or assessing how to make the best use of available capital, book a time to chat.
-                </p>
-                <p>
-                  We’ll listen, ask the right questions, and share data-backed insights that help you invest with clarity.
-                </p>
-              </div>
+              <p className="text-muted-foreground font-sans text-lg leading-relaxed mb-8">
+                Whether you’re considering redevelopment, repositioning, feasibility or strategic planning, book a time to chat. We’ll listen, ask the right questions, and share data-backed insights that help you invest with clarity.
+              </p>
               <Link to="/contact">
                 <Button variant="navy" size="xl" className="px-10">
                   Contact us
@@ -379,7 +418,6 @@ const Index = () => {
               </Link>
             </motion.div>
           </div>
-
         </section>
       </main>
       <Footer />
