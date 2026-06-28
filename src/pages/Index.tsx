@@ -55,32 +55,32 @@ const capabilities = [
   {
     icon: Compass,
     title: 'Clarify the opportunity',
-    body: 'Understand the commercial, customer and strategic opportunity before decisions are made.',
+    body: 'Understand the commercial, customer and strategic opportunity by identifying the core target market. ',
   },
   {
     icon: ShieldCheck,
-    title: 'Test major investment decisions',
-    body: 'Assess feasibility, risk, staging and long-term return before capital is committed.',
+    title: 'Site positioning & product',
+    body: "Find the 'why' behind the opportunity with our proprietary market diagnostic we asses feasibility, risk and return. ",
   },
   {
     icon: Repeat,
-    title: 'Reposition venues for changing expectations',
-    body: 'Help clubs and hospitality venues stay relevant to members, guests and emerging audiences.',
+    title: 'Capital requirements & Options',
+    body: 'With data backed insights, we then go deep into the options available to ensure feasibility on all projects. ',
   },
   {
     icon: LayoutGrid,
-    title: 'Improve existing spaces',
-    body: 'Identify how current assets can work harder through better utilisation, flow and customer experience.',
+    title: 'Financial assessment ',
+    body: 'With options on the table, we then put our financial modelling tools into work to help produce a clear assessment on expected returns. ',
   },
   {
     icon: Users,
-    title: 'Support boards and management teams',
-    body: 'Provide clear, independent advice for complex decisions and stakeholder alignment.',
+    title: 'Recommendations & strategy',
+    body: 'Once the model is complete we produce a clear strategy, grounded in reality.  ',
   },
   {
     icon: Rocket,
-    title: 'Turn strategy into action',
-    body: 'Stay involved beyond the plan so recommendations can move into practical implementation.',
+    title: 'Deploy',
+    body: 'With the strategy complete we leverage our extensive network to help ensure our recommendations can be deployed. ',
   },
 ];
 
