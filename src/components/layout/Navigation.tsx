@@ -34,10 +34,10 @@ export const Navigation = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4"
+        className="fixed top-6 inset-x-0 z-50 px-4 pointer-events-none"
       >
         <nav
-          className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[95%] max-w-5xl px-8 py-4 rounded-full transition-all duration-300 ${
+          className={`pointer-events-auto mx-auto flex items-center justify-between w-full max-w-5xl px-8 py-4 rounded-full transition-all duration-300 ${
             isScrolled
               ? 'bg-background/60 backdrop-blur-xl border border-border shadow-md'
               : 'bg-background/30 backdrop-blur-md border border-border/50'
