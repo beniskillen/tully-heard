@@ -209,11 +209,16 @@ const Index = () => {
               </p>
             </motion.div>
 
-            <div className="text-center mb-10 lg:mb-12">
-              <p className="text-sm font-sans uppercase tracking-[0.125em] font-semibold text-[#122033]">
-                How we deliver measured growth
-              </p>
+            <div className="text-center mb-10 lg:mb-14">
+              <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#122033]/[0.04] border border-[#122033]/10">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#479E92]" />
+                <p className="text-xs font-sans uppercase tracking-[0.16em] font-semibold text-[#122033]">
+                  How we deliver measured growth
+                </p>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#479E92]" />
+              </div>
             </div>
+
 
             <div className="relative">
               {/* Connecting line - top row */}
