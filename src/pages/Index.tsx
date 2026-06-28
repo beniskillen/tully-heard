@@ -205,7 +205,7 @@ const Index = () => {
                 <span className="italic text-primary">clear way forward</span>
               </h2>
               <p className="text-muted-foreground font-sans text-lg leading-relaxed">
-                Whether the challenge is redevelopment, utilisation, market relevance, commercial performance or board decision-making, our role is to bring the analysis, judgement and practical industry experience needed to define the right path.
+                Our unique process blends lived industry experience with a contemporary, insights-led approach to decision-making. By combining data analysis, customer research, and strategic foresight, we help venues create exceptional customer experiences and achieve enduring commercial success.
               </p>
             </motion.div>
 
