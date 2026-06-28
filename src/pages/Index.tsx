@@ -209,30 +209,48 @@ const Index = () => {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {capabilities.map((c, i) => (
-                <motion.div
-                  key={c.title}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-40px' }}
-                  transition={{ delay: i * 0.08, duration: 0.6, ease: 'easeOut' }}
-                  whileHover={{ y: -6 }}
-                  className="feature-card group"
-                >
+            <div className="relative">
+              {/* Connecting line - desktop */}
+              <div className="hidden lg:block absolute top-7 left-0 right-0 h-px pointer-events-none">
+                <div className="mx-[8.333%] h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-4 relative">
+                {capabilities.map((c, i) => (
                   <motion.div
-                    initial={{ scale: 0, rotate: -15 }}
-                    whileInView={{ scale: 1, rotate: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.08 + 0.2, type: 'spring', stiffness: 200, damping: 14 }}
-                    className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300"
+                    key={c.title}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-40px' }}
+                    transition={{ delay: i * 0.1, duration: 0.6, ease: 'easeOut' }}
+                    className="relative group flex flex-col items-center text-center"
                   >
-                    <c.icon className="text-primary" size={26} />
+                    {/* Step circle with number */}
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      whileInView={{ scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.1 + 0.2, type: 'spring', stiffness: 200, damping: 14 }}
+                      className="relative z-10 w-14 h-14 rounded-full bg-card border-2 border-primary flex items-center justify-center mb-5 shadow-sm group-hover:bg-primary group-hover:scale-110 transition-all duration-300"
+                    >
+                      <c.icon className="text-primary group-hover:text-primary-foreground transition-colors" size={24} />
+                      <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#122033] text-white text-xs font-sans font-semibold flex items-center justify-center">
+                        {i + 1}
+                      </span>
+                    </motion.div>
+
+                    {/* Arrow between steps (desktop only, not after last) */}
+                    {i < capabilities.length - 1 && (
+                      <div className="hidden lg:flex absolute top-7 -right-2 z-20 items-center justify-center">
+                        <ArrowRight className="text-primary/50" size={16} />
+                      </div>
+                    )}
+
+                    <h3 className="text-lg font-display text-foreground mb-2 px-2">{c.title}</h3>
+                    <p className="text-muted-foreground font-sans text-sm leading-relaxed px-2">{c.body}</p>
                   </motion.div>
-                  <h3 className="text-xl font-display text-foreground mb-3">{c.title}</h3>
-                  <p className="text-muted-foreground font-sans leading-relaxed">{c.body}</p>
-                </motion.div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </section>
