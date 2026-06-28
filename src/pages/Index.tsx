@@ -84,6 +84,21 @@ const capabilities = [
   },
 ];
 
+const directors = [
+  {
+    name: 'John Tully',
+    role: 'Director',
+    image: '/jt-headshot.jpg',
+    bio: 'John has over 20 years’ experience in leadership, consulting, venue ownership and operational improvement across the hospitality, entertainment and leisure industry.',
+  },
+  {
+    name: 'Luke Heard',
+    role: 'Director',
+    image: '/lh-headshot.png',
+    bio: 'Luke has first-hand experience in starting and establishing hospitality businesses, alongside technical expertise in business advisory, management consulting, private equity and law.',
+  },
+];
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
