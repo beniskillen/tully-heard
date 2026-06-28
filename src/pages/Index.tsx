@@ -240,6 +240,70 @@ const Index = () => {
         {/* Selected Work — Carousel */}
         <CaseStudiesSection />
 
+        {/* Our Directors */}
+        <section className="section-padding bg-background">
+          <div className="container-narrow">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12 max-w-3xl mx-auto"
+            >
+              <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
+                Our Directors
+              </p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-foreground mb-6">
+                Led by operators who understand the{' '}
+                <span className="italic text-primary">club and hospitality sector</span>
+              </h2>
+              <p className="text-muted-foreground font-sans text-lg leading-relaxed">
+                John and Luke combine practical venue ownership experience with strategic advisory capability to guide complex decisions from start to finish.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {directors.map((d, i) => (
+                <motion.div
+                  key={d.name}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ delay: i * 0.12, duration: 0.6, ease: 'easeOut' }}
+                  whileHover={{ y: -6 }}
+                  className="feature-card text-center group"
+                >
+                  <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-5">
+                    <img
+                      src={d.image}
+                      alt={d.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-display text-foreground mb-1">{d.name}</h3>
+                  <p className="text-primary font-sans uppercase tracking-[0.125em] font-semibold text-sm mb-3">
+                    {d.role}
+                  </p>
+                  <p className="text-muted-foreground font-sans leading-relaxed">{d.bio}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-12"
+            >
+              <Link to="/people">
+                <Button variant="navy" size="lg" className="gap-2">
+                  View full team
+                  <ArrowRight size={18} />
+                </Button>
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="section-padding bg-card">
           <div className="container-narrow max-w-3xl text-center">
