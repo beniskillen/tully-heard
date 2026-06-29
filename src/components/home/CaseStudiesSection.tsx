@@ -126,13 +126,27 @@ export const CaseStudiesSection = () => {
             </div>
 
             <div className="lg:pl-8">
-              <div className="text-muted-foreground text-sm font-sans mb-2">
-                {String(currentIndex + 1).padStart(2, '0')} /{' '}
-                {String(caseStudies.length).padStart(2, '0')}
+              <div className="flex items-start gap-5 mb-4">
+                <div
+                  aria-label={`${currentCase.title} logo`}
+                  className="shrink-0 w-20 h-20 rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden shadow-sm p-3"
+                >
+                  {currentCase.logo ? (
+                    <img src={currentCase.logo} alt={`${currentCase.title} logo`} className="max-w-full max-h-full object-contain" />
+                  ) : (
+                    <Building2 className="text-primary/60" size={24} strokeWidth={1.5} />
+                  )}
+                </div>
+                <div>
+                  <div className="text-muted-foreground text-sm font-sans mb-2">
+                    {String(currentIndex + 1).padStart(2, '0')} /{' '}
+                    {String(caseStudies.length).padStart(2, '0')}
+                  </div>
+                  <h3 className="text-3xl lg:text-4xl font-display text-foreground leading-tight">
+                    {currentCase.title}
+                  </h3>
+                </div>
               </div>
-              <h3 className="text-3xl lg:text-4xl font-display text-foreground mb-2">
-                {currentCase.title}
-              </h3>
               <p className="text-primary text-lg font-sans mb-4">
                 {currentCase.subtitle}
               </p>
