@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import gosfordImg from '@/assets/cases/gosford-rsl.jpeg.asset.json';
 import yogisImg from '@/assets/cases/yogis-chatswood.webp.asset.json';
 import shoalhavenImg from '@/assets/cases/shoalhaven.png.asset.json';
 import mudgeeImg from '@/assets/cases/club-mudgee.webp.asset.json';
+import gosfordLogo from '@/assets/logos/gosford-rsl.png.asset.json';
+import yogisLogo from '@/assets/logos/doylos-sports-bar.png.asset.json';
+import growersLogo from '@/assets/logos/the-growers-by-ponte.png.asset.json';
+import mudgeeLogo from '@/assets/logos/club-mudgee.svg.asset.json';
 
 const caseStudies = [
   {
@@ -16,8 +20,8 @@ const caseStudies = [
     description:
       'A major redevelopment that repositioned the club as a leading dining, entertainment and community destination on the Central Coast.',
     result: 'Major venue transformation',
-    image:
-      gosfordImg.url,
+    image: gosfordImg.url,
+    logo: gosfordLogo.url,
   },
   {
     id: 'chatswood-rsl',
@@ -26,8 +30,8 @@ const caseStudies = [
     description:
       'A revitalised sports and entertainment concept designed to broaden appeal while strengthening the club’s role as a social destination.',
     result: 'Broader audience appeal',
-    image:
-      yogisImg.url,
+    image: yogisImg.url,
+    logo: yogisLogo.url,
   },
   {
     id: 'shoalhaven',
@@ -36,8 +40,8 @@ const caseStudies = [
     description:
       'A locally led hospitality concept designed to broaden appeal, strengthen community connection and create a more distinctive venue experience.',
     result: 'Regional destination positioning',
-    image:
-      shoalhavenImg.url,
+    image: shoalhavenImg.url,
+    logo: growersLogo.url,
   },
   {
     id: 'club-mudgee',
@@ -46,8 +50,8 @@ const caseStudies = [
     description:
       'A repositioned sports bar and community hub that gave an underutilised area a clearer role in the venue.',
     result: 'Improved venue utilisation',
-    image:
-      mudgeeImg.url,
+    image: mudgeeImg.url,
+    logo: mudgeeLogo.url,
   },
 ];
 
@@ -122,13 +126,27 @@ export const CaseStudiesSection = () => {
             </div>
 
             <div className="lg:pl-8">
-              <div className="text-muted-foreground text-sm font-sans mb-2">
-                {String(currentIndex + 1).padStart(2, '0')} /{' '}
-                {String(caseStudies.length).padStart(2, '0')}
+              <div className="flex items-start gap-5 mb-4">
+                <div
+                  aria-label={`${currentCase.title} logo`}
+                  className="shrink-0 w-20 h-20 rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden shadow-sm p-3"
+                >
+                  {currentCase.logo ? (
+                    <img src={currentCase.logo} alt={`${currentCase.title} logo`} className="max-w-full max-h-full object-contain" />
+                  ) : (
+                    <Building2 className="text-primary/60" size={24} strokeWidth={1.5} />
+                  )}
+                </div>
+                <div>
+                  <div className="text-muted-foreground text-sm font-sans mb-2">
+                    {String(currentIndex + 1).padStart(2, '0')} /{' '}
+                    {String(caseStudies.length).padStart(2, '0')}
+                  </div>
+                  <h3 className="text-3xl lg:text-4xl font-display text-foreground leading-tight">
+                    {currentCase.title}
+                  </h3>
+                </div>
               </div>
-              <h3 className="text-3xl lg:text-4xl font-display text-foreground mb-2">
-                {currentCase.title}
-              </h3>
               <p className="text-primary text-lg font-sans mb-4">
                 {currentCase.subtitle}
               </p>

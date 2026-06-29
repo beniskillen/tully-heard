@@ -480,8 +480,20 @@ const CaseStudies = () => {
                       : 'border-border bg-background/50 hover:border-primary/50'
                   }`}
                 >
-                  <div className="text-xs font-sans uppercase tracking-[0.1em] text-muted-foreground mb-1">
-                    {String(i + 1).padStart(2, '0')}
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="text-xs font-sans uppercase tracking-[0.1em] text-muted-foreground">
+                      {String(i + 1).padStart(2, '0')}
+                    </div>
+                    <div
+                      aria-label={`${c.title} logo`}
+                      className="w-8 h-8 rounded-lg bg-background border border-border flex items-center justify-center overflow-hidden p-1"
+                    >
+                      {c.logo ? (
+                        <img src={c.logo} alt={`${c.title} logo`} className="max-w-full max-h-full object-contain" />
+                      ) : (
+                        <Building2 className="text-muted-foreground/60" size={12} strokeWidth={1.5} />
+                      )}
+                    </div>
                   </div>
                   <div className="text-sm font-display text-foreground leading-snug">{c.title}</div>
                 </button>
