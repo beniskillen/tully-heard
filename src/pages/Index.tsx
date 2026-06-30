@@ -60,7 +60,7 @@ const capabilities = [
   {
     icon: ShieldCheck,
     title: 'Site positioning & product',
-    body: "Find the 'why' behind the opportunity with our proprietary market diagnostic we asses feasibility, risk and return. ",
+    body: "Find the 'why' behind the opportunity with our proprietary market diagnostic we assess feasibility, risk and return. ",
   },
   {
     icon: Repeat,
