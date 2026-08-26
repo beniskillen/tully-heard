@@ -1,0 +1,2829 @@
+{
+  "generated_at": "2026-08-21T02:24:17Z",
+  "policy": "Official organisation websites and media kits only. No Google Images, social media, or third-party logo directories.",
+  "clients": [
+    {
+      "id": "lions-afl",
+      "name": "The Lions (AFL)",
+      "status": "sourced",
+      "official_site": "https://www.lions.com.au/",
+      "source_page": "https://www.lions.com.au/",
+      "source_asset_url": "https://www.lions.com.au/resources/v5.52.16/i/svg-output/icons.svg#icn-aflc-bl",
+      "local_file": "/clients/lions-afl.svg",
+      "notes": "Extracted the Brisbane Lions colour mark (icn-aflc-bl) from the official site SVG sprite. The header AFL wordmark was rejected as the wrong brand.",
+      "candidates_considered": [
+        {
+          "url": "https://www.lions.com.au/resources/v5.52.16/i/svg-output/icons.svg#icn-logo-vfl",
+          "score": 120,
+          "why": "retry"
+        },
+        {
+          "url": "https://www.lions.com.au/resources/v5.52.16/i/svg-output/icons.svg#icn-aflw-logo-white",
+          "score": 120,
+          "why": "retry"
+        },
+        {
+          "url": "https://www.lions.com.au/resources/club-watermarks/12358/aflc-bl-right-dark.png",
+          "score": 80,
+          "why": "retry"
+        }
+      ]
+    },
+    {
+      "id": "cabra-club-resort",
+      "name": "Cabra Club Resort",
+      "status": "sourced",
+      "official_site": "https://cabravale.com.au/",
+      "source_page": "https://cabravale.com.au/",
+      "source_asset_url": "https://cabravale.com.au/wp-content/uploads/2025/06/novotel-logo-full.svg",
+      "local_file": "/clients/cabra-club-resort.svg",
+      "notes": "Official trading name is Cabravale Club Resort.",
+      "candidates_considered": [
+        {
+          "url": "https://cabravale.com.au/wp-content/uploads/2025/06/novotel-logo-full.svg",
+          "score": 93,
+          "why": "img"
+        },
+        {
+          "url": "https://cabravale.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://cabravale.com.au/wp-content/themes/cabravale-v1.2/img/colour-logo-white.svg",
+          "score": 73,
+          "why": "img"
+        },
+        {
+          "url": "https://cabravale.com.au/wp-content/themes/cabravale-v1.2/img/favicon.svg",
+          "score": 45,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://cabravale.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://cabravale.com.au/wp-content/uploads/2025/05/cropped-cabravale-fav.png",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://cabravale.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://cabravale.com.au/wp-content/themes/cabravale-v1.2/img/icon-search.svg",
+          "score": 38,
+          "why": "img-header"
+        },
+        {
+          "url": "https://cabravale.com.au/wp-content/themes/cabravale-v1.2/img/icon-translate.svg",
+          "score": 38,
+          "why": "img-header"
+        },
+        {
+          "url": "https://cabravale.com.au/wp-content/uploads/2025/05/ig.svg",
+          "score": 23,
+          "why": "img"
+        },
+        {
+          "url": "https://cabravale.com.au/wp-content/uploads/2025/05/fb.svg",
+          "score": 23,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "bankstown-sports",
+      "name": "Bankstown Sports",
+      "status": "sourced",
+      "official_site": "https://www.bankstownsports.com/",
+      "source_page": "https://www.bankstownsports.com/",
+      "source_asset_url": "https://cdn.moble.com/w/3194/2142055/file/Bankstown-logo-white.png",
+      "local_file": "/clients/bankstown-sports.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://cdn.moble.com/w/3194/2142055/file/Bankstown-logo-white.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/1757271/file/0071_Mercure_Bankstown_11thJuly2022.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/2306458/file/2026_04_Marrow $59.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/2155170/file/Rib%20on%20the%20bone.jpg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.bankstownsports.com/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/2419877/file/2026_06_Fathers-Day-WebBanner-1440-x-810.jpg",
+          "score": 18,
+          "why": "img-header"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/2155261/file/favicon-32x32.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/2414027/file/2026_06_Chase%20the%20Jackpot%20Main.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/2311157/file/Greenfield%20Steak_1440x810.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/2434923/file/2026_09_BSC-30K-Fuel-Promo1440-x-810.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://cdn.moble.com/w/3194/2306449/file/1080X1920%20INSTA%20STORY.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "gosford-rsl",
+      "name": "Gosford RSL",
+      "status": "sourced",
+      "official_site": "https://grsl.com.au/",
+      "source_page": "https://grsl.com.au/",
+      "source_asset_url": "https://assets.cdn.filesafe.space/H30N2risJbsDtuCUkS0H/media/65fa027888f40069d284cc9b.svg",
+      "local_file": "/clients/gosford-rsl.svg",
+      "notes": "Official site is grsl.com.au (gosfordrsl.com.au does not resolve). Logo served from the club homepage CDN with alt \u201cGosford RSL Club\u201d.",
+      "candidates_considered": []
+    },
+    {
+      "id": "chatswood-rsl",
+      "name": "Chatswood RSL",
+      "status": "sourced",
+      "official_site": "https://www.chatswoodrsl.com.au/",
+      "source_page": "https://www.chatswoodrsl.com.au/",
+      "source_asset_url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png?format=1500w",
+      "local_file": "/clients/chatswood-rsl.webp",
+      "notes": "Used the official light-blue wordmark from the club Squarespace site so the mark remains visible on the light ticker. The cream reverse was rejected for contrast.",
+      "candidates_considered": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/1888cc92-8320-4d67-a1e3-f67ea5bb43c7/logo-Cream.png?format=1500w",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png?format=100w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png?format=300w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png?format=500w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png?format=750w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png?format=1000w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png?format=1500w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/b7ed6616-fb66-4cb4-84de-6f7890bebe57/logo-LightBlue.png?format=2500w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://www.chatswoodrsl.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "http://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/693a1e503ff92a6dc01ecd18/77bd8a49-6c09-4379-a4f7-4a82c6bd19ce/favicon.ico?format=100w",
+          "score": 12,
+          "why": "link:icon"
+        }
+      ]
+    },
+    {
+      "id": "oaks-taffeys",
+      "name": "Taffey's / The Oaks Hotel Neutral Bay",
+      "status": "sourced",
+      "official_site": "https://oakshotel.com.au/",
+      "source_page": "https://oakshotel.com.au/",
+      "source_asset_url": "https://oakshotel.com.au/wp-content/uploads/2026/05/oaks_logos_oaks_hori_green-1-scaled.png",
+      "local_file": "/clients/oaks-taffeys.webp",
+      "notes": "Official Oaks Hotel Neutral Bay horizontal green wordmark from oakshotel.com.au. No separate Taffey\u2019s logo is published on the official hotel site.",
+      "candidates_considered": [
+        {
+          "url": "https://oakshotel.com.au/wp-content/uploads/2026/05/oaks_logos_oaks_hori_green-1-scaled.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/uploads/2026/05/oaks_logos_crest_full_white-238x300.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/uploads/2026/04/HOME1.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/uploads/2026/04/HOME2.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/uploads/2026/04/Home3.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/themes/oaks/favicon.ico",
+          "score": 12,
+          "why": "link:shortcut icon"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/themes/oaks/apple_touch_icon.png",
+          "score": 12,
+          "why": "link:apple-touch-icon-precomposed"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/uploads/2026/05/cropped-Site-Icon-32x32.jpg",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/uploads/2026/05/cropped-Site-Icon-192x192.jpg",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://oakshotel.com.au/wp-content/uploads/2026/05/cropped-Site-Icon-180x180.jpg",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        }
+      ]
+    },
+    {
+      "id": "mulwala-water-ski-club",
+      "name": "Mulwala Water Ski Club",
+      "status": "sourced",
+      "official_site": "https://mulwalawaterski.com.au/",
+      "source_page": "https://mulwalawaterski.com.au/",
+      "source_asset_url": "https://mulwalawaterski.com.au/wp-content/uploads/2023/09/MWSC-logo_2-blue-250.png",
+      "local_file": "/clients/mulwala-water-ski-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://mulwalawaterski.com.au/wp-content/uploads/2023/09/MWSC-logo_2-blue-250.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/wp-content/uploads/2023/09/MWSC-logo_latest-V2-01-2-blue-300.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/wp-content/uploads/elementor/thumbs/571_mega-menu1_Melbourne_St__Ski_Club_-qedkjubg5dq38r28g36nro3bwdgazncvoh3yswregy.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/wp-content/uploads/elementor/thumbs/492_Open2view_ID841714-156_Melbourne_St__Ski_Club_-1-qid44jkhpqgv0o6m4qwaxyqo9xy2yiac4uuw5o7xmq.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/wp-content/uploads/elementor/thumbs/image00002-qid5jtnikco0etp2owvkz0vyyp6yw1v5uo4ip46q6a.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/wp-content/uploads/elementor/thumbs/538_Open2view_ID841714-156_Melbourne_St__Ski_Club_-qeeo4ghibvwzkpq7ovwvt67fpvpb50zevo2pkcgw02.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/wp-content/uploads/2023/10/583_Open2view_ID841714-156_Melbourne_St__Ski_Club_.jpg",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mulwalawaterski.com.au/wp-content/uploads/2024/01/kyffins-nature-1.webp",
+          "score": 40,
+          "why": "json-ld"
+        }
+      ]
+    },
+    {
+      "id": "dubbo-golf-club",
+      "name": "Dubbo Golf Club",
+      "status": "missing",
+      "official_site": "https://www.dubbogolfclub.com.au/cms/",
+      "source_page": "https://www.dubbogolfclub.com.au/cms/",
+      "source_asset_url": "https://www.dubbogolfclub.com.au/cms/wp-content/themes/contemporary/assets/images/logo.png",
+      "local_file": null,
+      "notes": "Official logo URL identified on dubbogolfclub.com.au/cms, but the asset timed out or returned 500 from this environment. Not substituted.",
+      "candidates_considered": []
+    },
+    {
+      "id": "corrimal-rsl",
+      "name": "Corrimal RSL",
+      "status": "sourced",
+      "official_site": "https://corrimalrsl.com.au/",
+      "source_page": "https://corrimalrsl.com.au/",
+      "source_asset_url": "https://corrimalrsl.com.au/wp-content/uploads/2022/04/corrimal-logo.png",
+      "local_file": "/clients/corrimal-rsl.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2022/04/corrimal-logo.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2024/09/DPG06638-1.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2024/09/DPG06638-1-980x1175.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2024/09/DPG06638-1-480x576.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2022/05/dance-1.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2022/05/calendar.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2022/05/tray.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2022/04/phone.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://corrimalrsl.com.au/wp-content/uploads/2022/04/address.png",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "ettalong-diggers",
+      "name": "Ettalong Diggers",
+      "status": "sourced",
+      "official_site": "https://www.ettalongdiggers.com/",
+      "source_page": "https://www.ettalongdiggers.com/",
+      "source_asset_url": "https://www.ettalongdiggers.com/wp-content/uploads/2020/11/Ettalong_DIggers_RGB-400.png",
+      "local_file": "/clients/ettalong-diggers.webp",
+      "notes": "Official Ettalong Beach Diggers header logo from ettalongdiggers.com.",
+      "candidates_considered": [
+        {
+          "url": "https://www.ettalongdiggers.com/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com/wp-content/uploads/2020/11/Ettalong_DIggers_RGB-400.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com/wp-content/uploads/2020/11/Ettalong_DIggers_RGB-400-300x196.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com/wp-content/uploads/2025/09/Old-White.svg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com/author/wpstaq-oddball_admin/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://secure.gravatar.com/avatar/7f71b5dbe105166dbd8369d6f715719be15226afd0fe626e7ae913d1fee24715?s=96&amp;d=mm&amp;r=g",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com/wp-content/uploads/2025/09/WO.svg",
+          "score": 23,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com/wp-content/uploads/2025/09/Old-Colour.svg",
+          "score": 23,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ettalongdiggers.com/wp-content/uploads/2020/11/FAVetta-150x150.png",
+          "score": 12,
+          "why": "link:icon"
+        }
+      ]
+    },
+    {
+      "id": "doylo-lifestyle-group",
+      "name": "Doylo Lifestyle Group",
+      "status": "ambiguous",
+      "official_site": "https://doylo.com.au/",
+      "source_page": "https://doylo.com.au/",
+      "source_asset_url": "https://doylo.com.au/wp-content/uploads/2021/06/Doylo-Logo-Vertical-Curves-page-001-682x1024-1.jpeg",
+      "local_file": "/clients/doylo-lifestyle-group.webp",
+      "notes": "Official homepage header asset is a photographic vertical lockup (JPEG), not a flat vector. Flagged as unclear and omitted from the ticker rather than substituting a cleaner mark.",
+      "candidates_considered": [
+        {
+          "url": "https://doylo.com.au/wp-content/uploads/2021/06/Doylo-Logo-Vertical-Curves-page-001-682x1024-1.jpeg",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://doylo.com.au/wp-content/uploads/2021/06/Doylo-Logo-Vertical-Curves-page-001-682x1024-1-288x300.jpeg",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://doylo.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.doylo.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://doylo.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://doylo.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://doylo.com.au/author/oddball_admin/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://secure.gravatar.com/avatar/e9c7ded0bb56cd3b8405ea6878b7d0cf2474da9ad714caf06b09994abb8c2283?s=96&amp;d=mm&amp;r=g",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "http://oddball-astra.flywheelsites.com",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://doylo.com.au/wp-content/uploads/2021/05/cropped-Favicon-logo-Doylo-32x32.png",
+          "score": 32,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://doylo.com.au/wp-content/uploads/2021/05/cropped-Favicon-logo-Doylo-192x192.png",
+          "score": 32,
+          "why": "link:icon"
+        }
+      ]
+    },
+    {
+      "id": "coast-golf-club",
+      "name": "Coast Golf Club",
+      "status": "missing",
+      "official_site": "https://www.coastgolf.com.au/cms/",
+      "source_page": "https://www.coastgolf.com.au/cms/",
+      "source_asset_url": "https://www.coastgolf.com.au/cms/wp-content/themes/contemporary/assets/images/logo.png",
+      "local_file": null,
+      "notes": "Official logo URL identified on coastgolf.com.au/cms (same CMS theme as Dubbo Golf Club), but the asset timed out or returned 500 from this environment. Not substituted.",
+      "candidates_considered": []
+    },
+    {
+      "id": "ballina-rsl",
+      "name": "Ballina RSL",
+      "status": "missing",
+      "official_site": "https://ballinarsl.com.au/",
+      "source_page": "https://ballinarsl.com.au/",
+      "source_asset_url": "https://ballinarsl.com.au/wp-content/uploads/2023/07/Logo.png",
+      "local_file": null,
+      "notes": "Official club logo identified on ballinarsl.com.au (wp-content/uploads/2023/07/Logo.png). Binary download returned 500 / timed out from this environment. Not substituted.",
+      "candidates_considered": [
+        {
+          "url": "https://ballinarsl.com.au/wp-content/uploads/2023/07/Logo.png",
+          "score": 100,
+          "why": "wp-media-title:Logo"
+        },
+        {
+          "url": "https://ballinarsl.com.au/wp-content/uploads/2023/09/rsl-logo.svg",
+          "score": 60,
+          "why": "wp-media-slug:rsl-logo (may be generic RSL, not club lockup)"
+        },
+        {
+          "url": "https://ballinarsl.com.au/wp-content/uploads/2023/07/Logo_dark.png",
+          "score": 80,
+          "why": "wp-media-title:Logo_dark"
+        }
+      ]
+    },
+    {
+      "id": "broken-hill-musicians-club",
+      "name": "Broken Hill Musicians Club",
+      "status": "sourced",
+      "official_site": "https://www.musiciansclub.com.au/",
+      "source_page": "https://www.musiciansclub.com.au/",
+      "source_asset_url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png",
+      "local_file": "/clients/broken-hill-musicians-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png?format=100w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png?format=300w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png?format=500w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png?format=750w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png?format=1000w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png?format=1500w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/2df9e684-f653-48b5-814f-5f67f67eb4ba/BrokenHillMusiciansClub_WebsiteLogo_LiveMusic.png?format=2500w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/c6af73ae-6168-46f8-8e3f-97b1c717708b/BrokenHillMusiciansClub_WebsiteLogo_Dinning.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/c6af73ae-6168-46f8-8e3f-97b1c717708b/BrokenHillMusiciansClub_WebsiteLogo_Dinning.png?format=100w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/c6af73ae-6168-46f8-8e3f-97b1c717708b/BrokenHillMusiciansClub_WebsiteLogo_Dinning.png?format=300w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/663c2349fefda111e16eb827/c6af73ae-6168-46f8-8e3f-97b1c717708b/BrokenHillMusiciansClub_WebsiteLogo_Dinning.png?format=500w",
+          "score": 78,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "south-tweed-sports",
+      "name": "South Tweed Sports",
+      "status": "missing",
+      "official_site": "https://southtweedsports.com.au/",
+      "source_page": "https://southtweedsports.com.au/",
+      "source_asset_url": "https://southtweedsports.com.au/wp-content/uploads/2026/03/South-Tweed-Logo-WhiteArtboard-29.png",
+      "local_file": null,
+      "notes": "Official South Tweed Sports wordmark identified in the club WordPress media library. Binary download returned 500 from this environment. Not substituted.",
+      "candidates_considered": [
+        {
+          "url": "https://southtweedsports.com.au/wp-content/uploads/2026/03/South-Tweed-Logo-WhiteArtboard-29.png",
+          "score": 100,
+          "why": "wp-media-title:South Tweed Logo White"
+        },
+        {
+          "url": "https://southtweedsports.com.au/wp-content/uploads/2024/09/tweed_logofiles_updated-08.png",
+          "score": 90,
+          "why": "wp-media-title:tweed_logofiles_updated-08"
+        },
+        {
+          "url": "https://southtweedsports.com.au/wp-content/uploads/2026/03/Asset-12.png",
+          "score": 70,
+          "why": "wp-media-title:South Tweed S logo white"
+        }
+      ]
+    },
+    {
+      "id": "toukley-rsl",
+      "name": "Toukley RSL",
+      "status": "sourced",
+      "official_site": "https://www.thearytoukley.com.au/",
+      "source_page": "https://www.thearytoukley.com.au/",
+      "source_asset_url": "https://www.thearytoukley.com.au/images/AryLogo.png",
+      "local_file": "/clients/toukley-rsl.webp",
+      "notes": "Official site trades as The Ary Toukley (thearytoukley.com.au). Logo is the current Ary wordmark, not a legacy \u201cToukley RSL\u201d lockup.",
+      "candidates_considered": [
+        {
+          "url": "https://www.thearytoukley.com.au/images/AryLogo.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/images/AryLogoRound.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/favicon/TheAryToukley/safari-pinned-tab.svg",
+          "score": 45,
+          "why": "link:mask-icon"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/images/Always.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/images/PlayCity.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/images/favicon.ico",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/favicon/TheAryToukley/apple-touch-icon.png",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/favicon/TheAryToukley/favicon-32x32.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/favicon/TheAryToukley/favicon-16x16.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/favicon/TheAryToukley/favicon.ico",
+          "score": 12,
+          "why": "link:shortcut icon"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/ViewDTEFile.png?Key=c52204aee013bab88d6dee4c94a27695e3d074fd40e9bdab6f0e78c80df6eb11a611f8a4e44273f414d1ffd1657730834f3188e10be37b7390da29506fae16da03b3471681689787a599bc5050e8ea90e2544b4b73f73849db9419dc2be4cba3043871854ad731e49f531a41e2cfe4327ee366049b137581e7f79be75f7b422e0e762218d009c98ff3f29a16",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.thearytoukley.com.au/ViewDTEFile.jpg?Key=c52204aee013bab88d6dee4c94a27695e3d074fd40e9bdab6f0e78c80df6eb11a611f8a4e44273f414d1ffd1657730834f3188e10be37b7390da29506fae16da03b3471681689787a599bc5050e8ea90e2544b4b73f73849db9419dc2be4cba3043871854ad731e49f531a41ecc9e7327ee366049b137581e7f79be75f7b422e0e762218d009ce88f3f29a16",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "club-sapphire",
+      "name": "Club Sapphire",
+      "status": "sourced",
+      "official_site": "https://clubsapphire.au/",
+      "source_page": "https://clubsapphire.au/",
+      "source_asset_url": "https://clubsapphire.au/wp-content/uploads/2024/08/club-sapphire-full-logo-e1723533010363.webp",
+      "local_file": "/clients/club-sapphire.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://clubsapphire.au/wp-content/uploads/2024/08/club-sapphire-full-logo-e1723533010363.webp",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://clubsapphire.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://clubsapphire.au/wp-content/uploads/2024/08/club-sapphire-logo-1.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://clubsapphire.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://clubsapphire.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://clubsapphire.au/wp-content/uploads/2026/02/club-sapphire-OG-image-v2.jpg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://secure.gravatar.com/avatar/e7c1045b0978d503e9517f8e0711bdef0818d4f7d970eecfe77b65c9fb40d58e?s=96&amp;d=mm&amp;r=g",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://clubsapphire.au/wp-content/uploads/2024/08/club-sapphire-logo-1-100x100.png",
+          "score": 32,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://clubsapphire.au/wp-content/uploads/2024/08/club-sapphire-logo-1-300x300.png",
+          "score": 32,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://clubsapphire.au/wp-content/uploads/2024/11/A3_bingo_clubsapphire_august-v2.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://clubsapphire.au/wp-content/uploads/2026/02/A3_MerimbulaKnightsCricketClubRaffles_ClubSapphire-2.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "east-maitland-bowling-club",
+      "name": "East Maitland Bowling Club",
+      "status": "sourced",
+      "official_site": "https://www.embc.com.au/",
+      "source_page": "https://www.embc.com.au/",
+      "source_asset_url": "https://www.embc.com.au/images/2022GroupLogo.png",
+      "local_file": "/clients/east-maitland-bowling-club.webp",
+      "notes": "Official site is embc.com.au. The club trades as Easts (East Maitland Bowling Club + Easts Leisure & Golf). Distinct from Eastern Suburbs Leagues Club, Bondi Junction.",
+      "candidates_considered": [
+        {
+          "url": "https://www.embc.com.au/images/2022GroupLogo.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.embc.com.au/ViewDTEFile.jpg?Key=ccc5637aa3462bc81eb72d477d14a94b6d9d82dae469a18131f444c9f36148117c7667536003ebd08944bc9a7ec6a5656c0089ed01b699d54926c3afac524a8f767d824e7710874ebffd77e332d717f8896db09becd6bf150360cf8e39a11608a99826aeb4f2ed9a70bd0f67daab9fa006392256beda395080147165e18c27b03a03f549a1f6a4c56694c295",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.embc.com.au/ViewDTEFile.jpg?Key=ccc5637aa3462bc81eb72d477d14a94b6d9d82dae469a18131f444c9f36148117c7667536003ebd08944bc9a7ec6a5656c0089ed01b699d54926c3afac524a8f767d824e7710874ebffd77e332d717f8896db09becd6bf150360cf8e39a11608a99826aeb4f2ed9a70bd0f67daab9ca006392256beda395080147165e18c27b03a03f04da1f9a5c56694c295",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.embc.com.au/ViewDTEFile.png?Key=ccc5637aa3462bc81eb72d477d14a94b6d9d82dae469a18131f444c9f36148117c7667536003ebd08944bc9a7ec6a5656c0089ed01b699d54926c3afac524a8f767d824e7710874ebffd77e332d717f8896db09becd6bf150360cf8e39a11608a99826aeb4f2ed9a70bd0f67daab9aa006392256beda395080147165e18c27b03a03f04da1f9a2c66694c295",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.embc.com.au/ViewDTEFile.jpg?Key=ccc5637aa3462bc81eb72d477d14a94b6d9d82dae469a18131f444c9f36148117c7667536003ebd08944bc9a7ec6a5656c0089ed01b699d54926c3afac524a8f767d824e7710874ebffd77e332d717f8896db09becd6bf150360cf8e39a11608a99826aeb4f2ed9a70bd0f67daab98a006392256beda395080147165e18c27b03a03f04da1f9a2c66694c295",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.embc.com.au/RenderCmsFile.jpg?File=56",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.embc.com.au/RenderCmsFile.jpg?File=59",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "st-georges-basin-country-club",
+      "name": "St Georges Basin Country Club",
+      "status": "missing",
+      "official_site": "https://thecountryclub.com.au/",
+      "source_page": "https://thecountryclub.com.au/",
+      "source_asset_url": "https://thecountryclub.com.au/wp-content/uploads/2017/02/the-country-club-logo.png",
+      "local_file": null,
+      "notes": "Official site is thecountryclub.com.au. Header/media logo identified at wp-content/uploads/2017/02/the-country-club-logo.png. Binary download returned 500. Not substituted.",
+      "candidates_considered": [
+        {
+          "url": "https://thecountryclub.com.au/wp-content/uploads/2017/02/the-country-club-logo.png",
+          "score": 100,
+          "why": "wp-media-slug:the-country-club-logo"
+        },
+        {
+          "url": "http://thecountryclubsgb.thymesoft.net/Account/LogOn?ReturnUrl=%2F",
+          "score": 0,
+          "why": "member portal, rejected"
+        }
+      ]
+    },
+    {
+      "id": "corowa-rsl",
+      "name": "Corowa RSL",
+      "status": "sourced",
+      "official_site": "https://www.corowarsl.com.au/",
+      "source_page": "https://www.corowarsl.com.au/",
+      "source_asset_url": "https://images.squarespace-cdn.com/content/v1/59e0364c8419c22034354118/f28000c0-5b4b-40c6-a484-b6ccaaf55acf/Corowa+RSL+Transparent+logo.png?format=1500w",
+      "local_file": "/clients/corowa-rsl.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/59e0364c8419c22034354118/f28000c0-5b4b-40c6-a484-b6ccaaf55acf/Corowa+RSL+Transparent+logo.png?format=1500w",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.corowarsl.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "http://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://static1.squarespace.com/static/59e0364c8419c22034354118/t/65542fec5d607a07529c40ba/1700015804481/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://assets.squarespace.com/universal/default-favicon.ico",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/59e0364c8419c22034354118/1700015672858-AW5MAHRPGRFAYZPGHPUK/New+Website.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "kiama-golf-club",
+      "name": "Kiama Golf Club",
+      "status": "sourced",
+      "official_site": "https://www.kiamagolfclub.com.au/",
+      "source_page": "https://www.kiamagolfclub.com.au/",
+      "source_asset_url": "https://www.kiamagolfclub.com.au/wp-content/uploads/2017/12/kiama-gc-logo.png",
+      "local_file": "/clients/kiama-golf-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://www.kiamagolfclub.com.au/wp-content/uploads/2017/12/kiama-gc-logo.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.kiamagolfclub.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.kiamagolfclub.com.au/wp-content/plugins/instagram-feed-pro/img/placeholder.png",
+          "score": 58,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.kiamagolfclub.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.kiamagolfclub.com.au/wp-content/uploads/2020/04/cropped-kiama-golf-club-32x32.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.kiamagolfclub.com.au/wp-content/uploads/2020/04/cropped-kiama-golf-club-192x192.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.kiamagolfclub.com.au/wp-content/uploads/2020/04/cropped-kiama-golf-club-180x180.png",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        },
+        {
+          "url": "https://www.kiamagolfclub.com.au/wp-content/uploads/sb-instagram-feed-images/kiamagolfclub.webp",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "twin-towns",
+      "name": "Twin Towns",
+      "status": "missing",
+      "official_site": "https://twintowns.com.au/",
+      "source_page": "https://twintowns.com.au/",
+      "source_asset_url": null,
+      "local_file": null,
+      "notes": "Official site twintowns.com.au is reachable via fetch. Isolated header wordmark was not captured; media library hits were campaign/EDM lockups (Twinnies Cash, Meet You There, Twin Towns + The Sebel). Local TLS timed out. Not substituted.",
+      "candidates_considered": [
+        {
+          "url": "https://twintowns.com.au/wp-content/uploads/tt-and-TS-logo.webp",
+          "score": 50,
+          "why": "Twin Towns + The Sebel lockup, not used"
+        },
+        {
+          "url": "https://twintowns.com.au/wp-content/uploads/MEET-YOU-THERE-LOGO-EMAIL.webp",
+          "score": 20,
+          "why": "campaign lockup, not used"
+        }
+      ]
+    },
+    {
+      "id": "wests-ashfield",
+      "name": "Wests Ashfield",
+      "status": "missing",
+      "official_site": "https://westsashfield.com.au/",
+      "source_page": null,
+      "source_asset_url": null,
+      "local_file": null,
+      "notes": "Official domain currently serves a hosting default/error page, so no brand logo is published. Not substituted from a group or third-party site.",
+      "candidates_considered": []
+    },
+    {
+      "id": "long-reef-golf-club",
+      "name": "Long Reef Golf Club",
+      "status": "sourced",
+      "official_site": "https://longreefgolfclub.com.au/",
+      "source_page": "https://longreefgolfclub.com.au/",
+      "source_asset_url": "https://longreefgolfclub.com.au/wp-content/uploads/2024/12/Long-Reef_Est_3@4x.png.webp",
+      "local_file": "/clients/long-reef-golf-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://longreefgolfclub.com.au/wp-content/uploads/2024/12/Long-Reef_Est_3@4x.png.webp",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://longreefgolfclub.com.au/wp-content/uploads/2015/10/logosmall.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "http://www.schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://longreefgolfclub.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://longreefgolfclub.com.au/wp-content/uploads/2018/08/DJI_0009-1903x1000.jpg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://goo.gl/maps/6hkZhNZndzA2",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://longreefgolfclub.com.au/wp-content/uploads/2024/11/LRGC_Golf_Emblem_Navy_logo-125x125.jpg",
+          "score": 32,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://longreefgolfclub.com.au/wp-content/uploads/2024/11/LRGC_Golf_Emblem_Navy_logo-300x300.jpg",
+          "score": 32,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://longreefgolfclub.com.au/wp-content/themes/longreef/images/Business Plaza web button_Mar14.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "narromine-usmc",
+      "name": "Narromine USMC",
+      "status": "sourced",
+      "official_site": "https://www.narromineusmc.com.au/",
+      "source_page": "https://www.narromineusmc.com.au/",
+      "source_asset_url": "https://b1931079.smushcdn.com/1931079/wp-content/uploads/2022/08/logo.png?lossy=1&strip=1&webp=1",
+      "local_file": "/clients/narromine-usmc.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://www.narromineusmc.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://b1931079.smushcdn.com/1931079/wp-content/uploads/2022/08/logo.png?lossy=1&strip=1&webp=1",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.narromineusmc.com.au/wp-content/uploads/2022/08/logo.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://b1931079.assetcdn.net/2.0/1931079/wp-content/uploads/2022/08/logo.png?lossy=2&strip=1&webp=1",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://www.narromineusmc.com.au/2x",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.narromineusmc.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.narromineusmc.com.au/contact-us/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.narromineusmc.com.au/search/{search_term_string}/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.narromineusmc.com.au/author/admin/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://b1931079.assetcdn.net/2.0/1931079/wp-content/uploads/2022/08/CATERING.png?lossy=2&strip=1&webp=1",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.narromineusmc.com.au/%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27512%27%20height%3D%27512%27%20viewBox%3D%270%200%20512%20512%27%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20fill-opacity%3D%220%22%2F%3E%3C%2Fsvg%3E",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "souths-juniors",
+      "name": "Souths Juniors",
+      "status": "sourced",
+      "official_site": "https://southsjuniors.com.au/",
+      "source_page": "https://southsjuniors.com.au/",
+      "source_asset_url": "https://southsjuniors.com.au/wp-content/uploads/2022/10/logo.png",
+      "local_file": "/clients/souths-juniors.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2022/10/logo.png",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2022/10/logo-75x99.png",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2022/10/logo-227x300.png",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://southsjuniors.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2020/04/36110M_SSJCUS_Alexandria-Rovers_Logo-150x150.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2020/04/36110M_SSJCUS_South-Eastern_Logo-150x150.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2020/04/36110M_SSJCUS_RAB_Logo-150x150.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2020/04/36110M_SSJCUS_Newtown-Jnr-Jets_Logo-150x150.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2020/04/36110M_SSJCUS_Moore-Park_Logo-150x150.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2020/04/36110M_SSJCUS_Matraville-Tigers_Logo-150x150.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2020/04/36110M_SSJCUS_Mascot-JRLFC_Logo-150x150.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://southsjuniors.com.au/wp-content/uploads/2020/04/36110M_SSJCUS_Maroubra-Lion_Logo-150x150.png",
+          "score": 78,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "strathfield-sports",
+      "name": "Strathfield Sports",
+      "status": "sourced",
+      "official_site": "https://strathfieldsportsclub.com.au/",
+      "source_page": "https://strathfieldsportsclub.com.au/",
+      "source_asset_url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo.png.webp",
+      "local_file": "/clients/strathfield-sports.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo.png.webp",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo-300x183.png.webp",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo-1024x624.png.webp",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo-768x468.png.webp",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo-1536x935.png.webp",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo-1400x853.png.webp",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo-450x274.png.webp",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/06/ssc-logo.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/wp-content/uploads/2024/11/InShot_20240902_130750830-1-scaled-e1730790732931.jpg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://strathfieldsportsclub.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        }
+      ]
+    },
+    {
+      "id": "karuah-ex-services",
+      "name": "Karuah Ex-Services",
+      "status": "sourced",
+      "official_site": "https://karuahrsl.com.au/",
+      "source_page": "https://karuahrsl.com.au/",
+      "source_asset_url": "https://karuahrsl.com.au/wp-content/uploads/2021/05/KaruahRSLlogo.png",
+      "local_file": "/clients/karuah-ex-services.webp",
+      "notes": "Official site brands as Karuah RSL / Karuah & District RSL Club (karuahrsl.com.au). No separate \u201cEx-Services\u201d wordmark published.",
+      "candidates_considered": [
+        {
+          "url": "https://karuahrsl.com.au/wp-content/uploads/2021/05/KaruahRSLlogo.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://karuahrsl.com.au/wp-content/uploads/2021/05/shield-logo-small.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://karuahrsl.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://karuahrsl.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://karuahrsl.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://karuahrsl.com.au/wp-content/uploads/2026/04/Karuah-RSL-OG-new.jpg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://secure.gravatar.com/avatar/b11f0c49d4e6cf1445c2c396a031deeed2e6aa1ef197f5bd23ebe52641bf003c?s=96&amp;d=mm&amp;r=g",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://karuahrsl.com.au/wp-content/uploads/2021/05/cropped-KaruahRSLlogo-32x32.png",
+          "score": 32,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://karuahrsl.com.au/wp-content/uploads/2021/05/cropped-KaruahRSLlogo-192x192.png",
+          "score": 32,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://karuahrsl.com.au/wp-content/uploads/2021/05/cropped-KaruahRSLlogo-180x180.png",
+          "score": 32,
+          "why": "link:apple-touch-icon"
+        },
+        {
+          "url": "https://karuahrsl.com.au/wp-content/uploads/2026/08/file.jpeg-1787189562.jpeg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "club-mosman",
+      "name": "Club Mosman",
+      "status": "sourced",
+      "official_site": "https://mosmanclub.com.au/",
+      "source_page": "https://mosmanclub.com.au/",
+      "source_asset_url": "https://mosmanclub.com.au/wp-content/themes/DailyPress/assets/images/MC_80yrs_Long_Coloured.svg",
+      "local_file": "/clients/club-mosman.svg",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://mosmanclub.com.au/wp-content/themes/DailyPress/assets/images/MC_80yrs_Long_Coloured.svg",
+          "score": 128,
+          "why": "img-header"
+        },
+        {
+          "url": "https://mosmanclub.com.au/wp-content/themes/DailyPress/assets/images/MC_80yrs_Long_Coloured-white.svg",
+          "score": 93,
+          "why": "img"
+        },
+        {
+          "url": "https://mosmanclub.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mosmanclub.com.au/wp-content/uploads/2022/12/Mosman-Logo-Colour-HD.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mosmanclub.com.au/wp-content/themes/DailyPress/assets/images/fb.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://mosmanclub.com.au/wp-content/themes/DailyPress/assets/images/ig.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://mosmanclub.com.au/wp-content/uploads/2023/02/fb.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://mosmanclub.com.au/wp-content/uploads/2023/02/ig.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mosmanclub.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://mosmanclub.com.au/wp-content/uploads/2026/07/cropped-MC_80yrs_Long_Coloured-favicon-32x32.jpg",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://mosmanclub.com.au/wp-content/uploads/2026/07/cropped-MC_80yrs_Long_Coloured-favicon-192x192.jpg",
+          "score": 12,
+          "why": "link:icon"
+        }
+      ]
+    },
+    {
+      "id": "pottsville-sports",
+      "name": "Pottsville Sports",
+      "status": "sourced",
+      "official_site": "https://pottsvillesports.com/",
+      "source_page": "https://pottsvillesports.com/",
+      "source_asset_url": "https://pottsvillesports.com/assets/img/PottsvilleSports_Logo.webp",
+      "local_file": "/clients/pottsville-sports.webp",
+      "notes": "Official site is pottsvillesports.com (pottsvillesports.com.au 404s).",
+      "candidates_considered": []
+    },
+    {
+      "id": "pittwater-rsl",
+      "name": "Pittwater RSL",
+      "status": "sourced",
+      "official_site": "https://www.pittwaterrsl.com.au/",
+      "source_page": "https://www.pittwaterrsl.com.au/",
+      "source_asset_url": "https://irp-cdn.multiscreensite.com/ed072947/dms3rep/multi/pittlogohoriz-rev.svg",
+      "local_file": "/clients/pittwater-rsl.svg",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://irp-cdn.multiscreensite.com/ed072947/dms3rep/multi/pittlogohoriz-rev.svg",
+          "score": 93,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.pittwaterrsl.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://irp-cdn.multiscreensite.com/ed072947/dms3rep/multi/pittwater-text.svg",
+          "score": 23,
+          "why": "img"
+        },
+        {
+          "url": "https://irp-cdn.multiscreensite.com/ed072947/dms3rep/multi/P+Device-01.png",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        },
+        {
+          "url": "https://irp-cdn.multiscreensite.com/ed072947/site_favicon_16_1590712925100.ico",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://irp.cdn-website.com/ed072947/dms3rep/multi/opt/Pickleball+images-12-2304w.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://irp.cdn-website.com/ed072947/dms3rep/multi/opt/JoshFotheringham+MonaVale_unsplash-2304w.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://irp.cdn-website.com/ed072947/dms3rep/multi/opt/Cocktails+3-2304w.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://irp.cdn-website.com/ed072947/dms3rep/multi/opt/BrightonLakesRecreationAndGolfClub_HighRes-37-2304w.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://irp.cdn-website.com//md/unsplash/dms3rep/multi/opt/photo-1527529482837-4698179dc6ce-2304w.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://irp.cdn-website.com//md/unsplash/dms3rep/multi/opt/photo-1470337458703-46ad1756a187-2304w.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "manly-leagues-club",
+      "name": "Manly Leagues Club",
+      "status": "sourced",
+      "official_site": "https://www.manlyleagues.com.au/",
+      "source_page": "https://www.manlyleagues.com.au/",
+      "source_asset_url": "https://www.manlyleagues.com.au/wp-content/uploads/2022/06/manly-leagues-logo.png",
+      "local_file": "/clients/manly-leagues-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://www.manlyleagues.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.manlyleagues.com.au/wp-content/uploads/2022/06/manly-leagues-logo.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.manlyleagues.com.au/wp-content/uploads/2023/03/white-dy-2.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://www.manlyleagues.com.au/wp-content/uploads/2025/09/The_Chatswood_Logo_Vertical_White.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.manlyleagues.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.manlyleagues.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.manlyleagues.com.au/wp-content/uploads/2022/07/cropped-favicon-125x125.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.manlyleagues.com.au/wp-content/uploads/2022/07/cropped-favicon-300x300.png",
+          "score": 12,
+          "why": "link:icon"
+        }
+      ]
+    },
+    {
+      "id": "greta-workers",
+      "name": "Greta Workers",
+      "status": "ambiguous",
+      "official_site": "https://gretaworkers.com/",
+      "source_page": "https://gretaworkers.com/",
+      "source_asset_url": "https://gretaworkers.com/favicon.ico?v=1766905137879",
+      "local_file": "/clients/greta-workers.webp",
+      "notes": "Official site gretaworkers.com only publishes low-resolution app icons (48\u2013192px GWC tile). No usable header/wordmark found. Omitted from the ticker.",
+      "candidates_considered": [
+        {
+          "url": "https://gretaworkers.com/favicon.ico?v=1766905137879",
+          "score": 12,
+          "why": "link:shortcut icon"
+        },
+        {
+          "url": "https://gretaworkers.com/misc/icon180.png?v=1766905137879",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        },
+        {
+          "url": "https://gretaworkers.com/misc/icon16.png?v=1766905137879",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://gretaworkers.com/misc/icon32.png?v=1766905137879",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://gretaworkers.com/misc/icon192.png?v=1766905137879",
+          "score": 12,
+          "why": "link:icon"
+        }
+      ]
+    },
+    {
+      "id": "west-wyalong-ex-services",
+      "name": "West Wyalong Ex-Services",
+      "status": "missing",
+      "official_site": "https://www.clubwestwyalong.com/",
+      "source_page": "https://www.clubwestwyalong.com/",
+      "source_asset_url": null,
+      "local_file": null,
+      "notes": "Official site is clubwestwyalong.com (West Wyalong Services & Citizens Club). Site is not a public WordPress REST host; no first-party logo file was captured. Not substituted.",
+      "candidates_considered": []
+    },
+    {
+      "id": "easts-leagues",
+      "name": "Easts Leagues",
+      "status": "sourced",
+      "official_site": "https://eastsbondijunction.com.au/",
+      "source_page": "https://eastsbondijunction.com.au/",
+      "source_asset_url": "https://eastsbondijunction.com.au/wp-content/uploads/2025/07/eg-new-logo-white.png",
+      "local_file": "/clients/easts-leagues.webp",
+      "notes": "NSW Eastern Suburbs Leagues Club / Easts Group (eastsbondijunction.com.au), not the Queensland Easts Leagues Club.",
+      "candidates_considered": [
+        {
+          "url": "https://eastsbondijunction.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2025/07/eg-new-logo-white.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2025/07/footer-logo3.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2025/07/Kingswood-Sports-Main_WHITE-e1739931461564.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2025/07/footer-logo1.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2025/07/WAVERLY_GREENS_White_1-removebg-preview-1.png",
+          "score": 53,
+          "why": "img"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2025/07/easts-navy.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2021/02/EASTS-NEW-BLUE.png",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2021/03/fav.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://eastsbondijunction.com.au/wp-content/uploads/2025/07/upcoming-events-internal.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "mollymook-golf-club",
+      "name": "Mollymook Golf Club",
+      "status": "sourced",
+      "official_site": "https://www.mollymookgolf.com.au/",
+      "source_page": "https://www.mollymookgolf.com.au/",
+      "source_asset_url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618386822275-FLDJLVRKNMRCDP14CM25/Asset+1.png?format=1500w",
+      "local_file": "/clients/mollymook-golf-club.webp",
+      "notes": "Official Mollymook Golf Club header logo from mollymookgolf.com.au.",
+      "candidates_considered": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618386822275-FLDJLVRKNMRCDP14CM25/Asset+1.png?format=1500w",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618386995305-62D9KQE1PZK62YIH5UX0/Asset+1.png?format=1500w",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.mollymookgolf.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "http://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1610941971855-J01CDTF0DQX3R8YCURWN/favicon.ico?format=100w",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618213920405-248W7TDZ8NTOKYFVY07I/Mollymook+Golf+Club+Preview+1+copy+no+text.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618213920405-248W7TDZ8NTOKYFVY07I/Mollymook+Golf+Club+Preview+1+copy+no+text.jpg?format=100w",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618213920405-248W7TDZ8NTOKYFVY07I/Mollymook+Golf+Club+Preview+1+copy+no+text.jpg?format=300w",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618213920405-248W7TDZ8NTOKYFVY07I/Mollymook+Golf+Club+Preview+1+copy+no+text.jpg?format=500w",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618213920405-248W7TDZ8NTOKYFVY07I/Mollymook+Golf+Club+Preview+1+copy+no+text.jpg?format=750w",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618213920405-248W7TDZ8NTOKYFVY07I/Mollymook+Golf+Club+Preview+1+copy+no+text.jpg?format=1000w",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6005047c47a6a51d6368fb4c/1618213920405-248W7TDZ8NTOKYFVY07I/Mollymook+Golf+Club+Preview+1+copy+no+text.jpg?format=1500w",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "briars-sports",
+      "name": "Briars Sports",
+      "status": "sourced",
+      "official_site": "https://briars.com.au/",
+      "source_page": "https://briars.com.au/",
+      "source_asset_url": "https://briars.com.au/wp-content/uploads/2024/11/Briars-Inn-Logo-CTA4.png",
+      "local_file": "/clients/briars-sports.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/Briars-Inn-Logo-CTA4.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/Briars-Inn-Logo-CTA4-300x222.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/Briars-Inn-Logo-CTA4-768x567.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/The-Conservatory-Logo-CTA2.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/The-Conservatory-Logo-CTA2-300x222.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/The-Conservatory-Logo-CTA2-768x567.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/The-Briars-Logo-CTA-Mobile.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/The-Briars-Logo-CTA-Mobile-300x222.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2024/11/The-Briars-Logo-CTA-Mobile-768x567.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://briars.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://briars.com.au/wp-content/uploads/2021/03/BRIARS-LOGO.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        }
+      ]
+    },
+    {
+      "id": "milton-ulladulla-ex-servos",
+      "name": "Milton Ulladulla Ex Servos",
+      "status": "sourced",
+      "official_site": "https://www.ulladullaexservos.com.au/",
+      "source_page": "https://www.ulladullaexservos.com.au/",
+      "source_asset_url": "https://www.ulladullaexservos.com.au/images/global/logo.png",
+      "local_file": "/clients/milton-ulladulla-ex-servos.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://www.ulladullaexservos.com.au/images/global/logo.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/images/global/fb.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/images/global/real-rewards.png",
+          "score": 43,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/favicon.ico",
+          "score": 12,
+          "why": "link:shortcut icon"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/\\images\\pages\\20k_Members_Badge_Draw_Web_main_page_N2.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/\\images\\pages\\Mag_launch_pic_final_web.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/\\images\\pages\\New_App_Web_home_page_2.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/images/events/Footy_Tipping_Comp_2026_Web_New.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/images/events/thumb-Friday_Meat_Raffles_Web_1.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/images/events/thumb-Sunday_Meat_Raffles_Web_2026_1.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/images/events/thumb-Trivia_WebNEW_1.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.ulladullaexservos.com.au/images/events/thumb-Morning_melodies_August_Web.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "lightning-ridge-bowling-club",
+      "name": "Lightning Ridge Bowling Club",
+      "status": "sourced",
+      "official_site": "https://lrbc.com.au/",
+      "source_page": "https://lrbc.com.au/",
+      "source_asset_url": "https://lrbc.com.au/wp-content/uploads/2021/12/logo.png",
+      "local_file": "/clients/lightning-ridge-bowling-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://lrbc.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2021/12/logo.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2021/12/logo-250x203.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2021/08/Lightning-Ridge-Bowling-Club-Logo.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2021/12/favicon.png",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://lrbc.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2021/12/cropped-favicon-32x32.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2021/12/cropped-favicon-192x192.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2021/12/cropped-favicon-180x180.png",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2022/01/Social-Bowls-768x768.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://lrbc.com.au/wp-content/uploads/2022/01/Social-Bowls-300x300.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "norths-leagues",
+      "name": "Norths Leagues",
+      "status": "sourced",
+      "official_site": "https://norths.com.au/",
+      "source_page": "https://norths.com.au/",
+      "source_asset_url": "https://norths.com.au/wp-content/uploads/2025/11/logo.svg",
+      "local_file": "/clients/norths-leagues.svg",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://norths.com.au/wp-content/uploads/2025/11/logo.svg",
+          "score": 128,
+          "why": "img-header"
+        },
+        {
+          "url": "https://norths.com.au/wp-content/uploads/2026/04/norths-logo.svg",
+          "score": 93,
+          "why": "img"
+        },
+        {
+          "url": "https://norths.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://norths.com.au/wp-content/uploads/2025/11/banner-logo-1.png",
+          "score": 88,
+          "why": "img-header"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://norths.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://norths.com.au/wp-content/uploads/2025/11/fav.png",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://norths.com.au/wp-content/themes/Dailypress/helpers/images//event-prev.svg",
+          "score": 23,
+          "why": "img"
+        },
+        {
+          "url": "https://norths.com.au/wp-content/themes/Dailypress/helpers/images//event-next.svg",
+          "score": 23,
+          "why": "img"
+        },
+        {
+          "url": "https://norths.com.au/wp-content/uploads/2026/01/Pantry_HomePage-1024x683.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://norths.com.au/wp-content/uploads/2026/01/AMD_0538-RA1-1024x681.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://norths.com.au/wp-content/uploads/2025/12/Kids-Monday-SQ-1.webp",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "bondi-icebergs-club",
+      "name": "Bondi Icebergs Club",
+      "status": "sourced",
+      "official_site": "https://icebergs.com.au/",
+      "source_page": "https://icebergs.com.au/",
+      "source_asset_url": "https://icebergs.com.au/wp-content/uploads/2021/02/icebergs-logoArtboard-2-copy-e1759753327763.png",
+      "local_file": "/clients/bondi-icebergs-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2021/02/icebergs-logoArtboard-2-copy-e1759753327763.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2022/11/logo_inv_light.png-copy.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2022/11/logo_inv_light.png-copy-120x120.png",
+          "score": 32,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2022/11/history.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2022/11/pool.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2022/11/view.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2025/05/bistro-3-edited.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2026/05/TheBergs_StevenWoodburn_229-copy.webp",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2026/05/TheBergs_StevenWoodburn_256-copy-1.webp",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2026/01/Chino-Cap-Washed-Navy-Womens.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2026/01/The-Bergs-Navy-W-Rib-Tank-Front-1.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://icebergs.com.au/wp-content/uploads/2026/05/Hoodie_black_-_side-2.webp",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "southern-cross-club-canberra",
+      "name": "Southern Cross Club Canberra",
+      "status": "sourced",
+      "official_site": "https://www.cscc.com.au/",
+      "source_page": "https://www.cscc.com.au/",
+      "source_asset_url": "https://www.cscc.com.au/wp-content/themes/cscc/assets/img/svg/logo-cscc.svg",
+      "local_file": "/clients/southern-cross-club-canberra.svg",
+      "notes": "CSS image-replaced header logo on cscc.com.au. An earlier homepage promotional graphic (meat raffles) was rejected.",
+      "candidates_considered": [
+        {
+          "url": "https://www.cscc.com.au/favicon-32x32.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.cscc.com.au/favicon-16x16.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2025/08/Now-Open.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2025/10/Meat-Raffles_Web-1-1200x800.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2024/06/IMG_9492-1200x800.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2026/02/Free-Pool-Mondays_Web.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2024/07/zyanya-citlalli-fmjR-Hztdps-unsplash-1200x800.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2026/03/Trivia-at-Woden_TV-Landscape-1200x800.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2026/02/Meat-Raffles-at-Tuggeranong_Web.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2023/03/2404_CSCC_067-1200x800.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2025/12/ClubsACT-2025-Awards-Digital-Landscape-2-1200x800.png",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cscc.com.au/wp-content/uploads/2025/08/Cans-for-Cancer-Relief-1-1200x800.png",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "fraternity-club",
+      "name": "Fraternity Club",
+      "status": "sourced",
+      "official_site": "https://www.fraternityclub.com.au/",
+      "source_page": "https://www.fraternityclub.com.au/",
+      "source_asset_url": "https://www.fraternityclub.com.au/wp-content/uploads/2024/08/logo.png",
+      "local_file": "/clients/fraternity-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://www.fraternityclub.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.fraternityclub.com.au/wp-content/uploads/2024/08/logo.png",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.fraternityclub.com.au/wp-content/uploads/2025/09/fraternity-logo-new.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.fraternityclub.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.fraternityclub.com.au/wp-content/uploads/2025/05/favicon.png",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        }
+      ]
+    },
+    {
+      "id": "vikings-group-canberra",
+      "name": "Vikings Group Canberra",
+      "status": "sourced",
+      "official_site": "https://www.vikings.com.au/",
+      "source_page": "https://www.vikings.com.au/",
+      "source_asset_url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png",
+      "local_file": "/clients/vikings-group-canberra.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png",
+          "score": 93,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png?format=100w",
+          "score": 93,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png?format=300w",
+          "score": 93,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png?format=500w",
+          "score": 93,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png?format=750w",
+          "score": 93,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png?format=1000w",
+          "score": 93,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png?format=1500w",
+          "score": 93,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/f6699970-391e-4c80-aa80-117a14f7191b/Group_Website-2024-Icons_Logo.png?format=2500w",
+          "score": 93,
+          "why": "img-header"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/1618791165539-V3Z8IBM096G7W0V5UI9I/logo.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/1618791165539-V3Z8IBM096G7W0V5UI9I/logo.png?format=100w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/1618791165539-V3Z8IBM096G7W0V5UI9I/logo.png?format=300w",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a15fc8518b27dba1cf16898/1618791165539-V3Z8IBM096G7W0V5UI9I/logo.png?format=500w",
+          "score": 78,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "moorebank-sports",
+      "name": "Moorebank Sports",
+      "status": "sourced",
+      "official_site": "https://moorebanksports.com.au/",
+      "source_page": "https://moorebanksports.com.au/",
+      "source_asset_url": "https://moorebanksports.com.au/wp-content/uploads/2020/01/logo1.png.webp",
+      "local_file": "/clients/moorebank-sports.webp",
+      "notes": "First-party mark from the Sporties Group site used by Moorebank Sports. Reverse (white) lockup; shown on a dark plate in the ticker.",
+      "candidates_considered": [
+        {
+          "url": "https://moorebanksports.com.au/wp-content/uploads/2020/01/logo1.png.webp",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://moorebanksports.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://moorebanksports.com.au/wp-content/uploads/2020/07/Sporties_frontshot-scaled.jpg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://moorebanksports.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        }
+      ]
+    },
+    {
+      "id": "belmont-16s",
+      "name": "Belmont 16s",
+      "status": "sourced",
+      "official_site": "https://16s.com.au/",
+      "source_page": "https://16s.com.au/",
+      "source_asset_url": "https://16s.com.au/wp/wp-content/uploads/2023/08/BELMONT-16S-MASTER-LOGO-White-RGB-ai.png",
+      "local_file": "/clients/belmont-16s.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/08/BELMONT-16S-MASTER-LOGO-White-RGB-ai.png",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/08/BELMONT-16S-MASTER-LOGO-White-RGB-ai-300x76.png",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/08/BELMONT-16S-MASTER-LOGO-Midnight-Blue-RGB-ai.png",
+          "score": 103,
+          "why": "img"
+        },
+        {
+          "url": "https://16s.com.au/",
+          "score": 90,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/10/BELMONT-16S-SUPPORT-LOGO-Midnight-Blue-RGB-ai_1200-300x162.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/10/BELMONT-16S-SUPPORT-LOGO-Midnight-Blue-RGB-ai_1200-1024x554.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/10/BELMONT-16S-SUPPORT-LOGO-Midnight-Blue-RGB-ai_1200-768x415.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/10/BELMONT-16S-SUPPORT-LOGO-Midnight-Blue-RGB-ai_1200-600x325.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/10/BELMONT-16S-SUPPORT-LOGO-Midnight-Blue-RGB-ai_1200.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2023/08/BELMONT-16S-MASTER-LOGO-Midnight-Blue-RGB-ai-300x76.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://16s.com.au/wp/wp-content/uploads/2026/06/SAILS_Free-Roasts-500_-12-WebBanner1.png",
+          "score": 40,
+          "why": "json-ld"
+        }
+      ]
+    },
+    {
+      "id": "parramatta-leagues-club",
+      "name": "Parramatta Leagues Club",
+      "status": "sourced",
+      "official_site": "https://www.parraleagues.com.au/",
+      "source_page": "https://www.parraleagues.com.au/",
+      "source_asset_url": "https://www.parraleagues.com.au/wp-content/uploads/2021/02/parra-desktop.png",
+      "local_file": "/clients/parramatta-leagues-club.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/2021/02/parra-desktop.png",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/PLC-Logo_reverse_2025-1.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/PLC-Logo_reverse_2025-1-300x282.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/?s={search_term_string}",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/2021/02/cropped-150627091_1052993565111944_903415644056433166_n-32x32.jpg",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/2021/02/cropped-150627091_1052993565111944_903415644056433166_n-192x192.jpg",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/2021/02/cropped-150627091_1052993565111944_903415644056433166_n-180x180.jpg",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/2022/09/Book-bowling-scaled.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/2022/09/Book-bowling-1280x854.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.parraleagues.com.au/wp-content/uploads/2022/09/Book-bowling-980x654.jpg",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "burwood-rsl",
+      "name": "Burwood RSL",
+      "status": "sourced",
+      "official_site": "https://clubburwoodgroup.com.au/",
+      "source_page": "https://clubburwoodgroup.com.au/",
+      "source_asset_url": "https://clubburwoodgroup.com.au/content/themes/DailyPress/assets/images/clubburwood-temp-logo.png",
+      "local_file": "/clients/burwood-rsl.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://clubburwoodgroup.com.au/content/themes/DailyPress/assets/images/clubburwood-temp-logo.png",
+          "score": 138,
+          "why": "img-header"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/themes/DailyPress/assets/images/facebook-logo.svg",
+          "score": 128,
+          "why": "img-header"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/themes/DailyPress/assets/images/instagram-logo.svg",
+          "score": 128,
+          "why": "img-header"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/themes/DailyPress/assets/images/clubburwood-temp-logo-black-white.png",
+          "score": 78,
+          "why": "img"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/uploads/2019/10/favicon-125x125.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/uploads/2019/10/favicon-300x300.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/uploads/2026/07/Celebration-Mix-22-Aug-WEB.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/uploads/2019/10/CB_FridayJumboRaffle_Web.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/uploads/2019/10/GettyImages-598298023.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/uploads/2026/08/Jellybean-Jam-18-SEP-WEB.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/uploads/2026/07/A-Night-to-Remember-19-SEP-WEB.jpg",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://clubburwoodgroup.com.au/content/themes/DailyPress/assets/images/mail.svg",
+          "score": 3,
+          "why": "img"
+        }
+      ]
+    },
+    {
+      "id": "club-mudgee",
+      "name": "Club Mudgee",
+      "status": "missing",
+      "official_site": "https://clubmudgee.com.au/",
+      "source_page": "https://clubmudgee.com.au/",
+      "source_asset_url": "https://clubmudgee.com.au/wp-content/uploads/2025/07/ClubMudgeeLogo-2025.webp",
+      "local_file": null,
+      "notes": "Official 2025 Club Mudgee logo identified on clubmudgee.com.au WordPress media. Local TCP to the host timed out and raster fetch could not be saved intact. Not substituted.",
+      "candidates_considered": [
+        {
+          "url": "https://clubmudgee.com.au/wp-content/uploads/2025/07/ClubMudgeeLogo-2025.webp",
+          "score": 100,
+          "why": "wp-media-title:ClubMudgeeLogo-2025"
+        },
+        {
+          "url": "https://clubmudgee.com.au/wp-content/uploads/2019/09/club-mudgee-logo.png",
+          "score": 70,
+          "why": "older official png"
+        }
+      ]
+    },
+    {
+      "id": "brothers-cairns",
+      "name": "Brothers Cairns",
+      "status": "sourced",
+      "official_site": "https://www.brothersleagues.com.au/",
+      "source_page": "https://www.brothersleagues.com.au/",
+      "source_asset_url": "https://www.brothersleagues.com.au/_next/image?url=%2Fimg%2Fbrand%2Fbrothers-reversed.png&w=3840&q=75",
+      "local_file": "/clients/brothers-cairns.webp",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://www.brothersleagues.com.au/_next/image?url=%2Fimg%2Fbrand%2Fbrothers-reversed.png&w=3840&q=75",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.brothersleagues.com.au/_next/image?url=%2Fimg%2Fbrand%2Fbrothers-reversed.png&w=1920&q=75",
+          "score": 113,
+          "why": "img-header"
+        },
+        {
+          "url": "https://schema.org",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.brothersleagues.com.au",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.brothersleagues.com.au/clubs/cairns",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.brotherscairns.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.brothersleagues.com.au/img/cairns/exterior.jpg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.brothersleagues.com.au/clubs/innisfail",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.brothersinnisfail.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.brothersleagues.com.au/img/innisfail/exterior.jpg",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://www.brothersleagues.com.au/clubs/townsville",
+          "score": 40,
+          "why": "json-ld"
+        },
+        {
+          "url": "https://brotherstsv.com.au/",
+          "score": 40,
+          "why": "json-ld"
+        }
+      ]
+    },
+    {
+      "id": "clubsnsw",
+      "name": "ClubsNSW",
+      "status": "sourced",
+      "official_site": "https://www.clubsnsw.com.au/",
+      "source_page": "https://www.clubsnsw.com.au/",
+      "source_asset_url": "https://www.clubsnsw.com.au/themes/custom/clubsnsw/images/clubsnsw-logo.png",
+      "local_file": "/clients/clubsnsw.webp",
+      "notes": "Header logo from the ClubsNSW Drupal theme. Unauthenticated urllib requests received 403; browser-equivalent request succeeded.",
+      "candidates_considered": []
+    },
+    {
+      "id": "cmaa",
+      "name": "CMAA",
+      "status": "sourced",
+      "official_site": "https://www.cmaa.asn.au/",
+      "source_page": "https://www.cmaa.asn.au/",
+      "source_asset_url": "https://www.cmaa.asn.au/images/HOSTPLUS-logo.svg",
+      "local_file": "/clients/cmaa.svg",
+      "notes": "",
+      "candidates_considered": [
+        {
+          "url": "https://www.cmaa.asn.au/images/HOSTPLUS-logo.svg",
+          "score": 93,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/images/CMAA.svg",
+          "score": 58,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/images/CMDAHorizontal.svg",
+          "score": 58,
+          "why": "img-header"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/favicon/cmaa/safari-pinned-tab.svg",
+          "score": 45,
+          "why": "link:mask-icon"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/images/location.svg",
+          "score": 23,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/images/calendar.svg",
+          "score": 23,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/favicon/cmaa/apple-touch-icon.png",
+          "score": 12,
+          "why": "link:apple-touch-icon"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/favicon/cmaa/favicon-32x32.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/favicon/cmaa/favicon-16x16.png",
+          "score": 12,
+          "why": "link:icon"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/favicon/cmaa/favicon.ico",
+          "score": 12,
+          "why": "link:shortcut icon"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/ViewDTEFile.png?Key=c16091d15ed94fa955dd79cfa663399aca447e4ea2ce5669c7118812b61372167c114bc23bfb6a4ee5539a64075f7755e8e537eab0604c1fcc83a7fdbb3ae0c6f40d7424505380bad06702524d476aac0945590cd98264e94a0e986ae372f46dc7d93ed8580a3c25de4f869efc0cc03c92c60a5e10f650f1c9e719b7a7b08d6974be4c7fb2cc3d9d5962492219",
+          "score": 8,
+          "why": "img"
+        },
+        {
+          "url": "https://www.cmaa.asn.au/ViewDTEFile.png?Key=c16091d15ed94fa95bff5cebe66f4fa9dd456448a39d5a76c5118812bf096b6c274f0f8e78a97b00c353826213413e48d6f520f2ab626b569587bdf4b23dbee3e4184c706f5f8da9fd7f1d10355e428e09434c0b92a178e4400cc517ca6df566e0c27fe244400a25996a8dcba1419b6fcce2025103a85af3c99f4fe0f3ed836979b84f7fb6c53b9e5f624c2a19804b558e1d5e2bf7",
+          "score": 8,
+          "why": "img"
+        }
+      ]
+    }
+  ],
+  "ticker_policy": "Ticker includes sourced first-party logos only. Missing and unresolved marks are documented here and omitted from the UI rather than replaced with third-party artwork."
+}

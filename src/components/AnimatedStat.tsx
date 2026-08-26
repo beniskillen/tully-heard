@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
 
-// Animates the numeric prefix of a stat value (e.g. "36,000+" -> counts 0 → 36000, keeps "+").
+/** Animates the numeric prefix of a stat value (e.g. "36,000+" -> counts 0 → 36000, keeps "+"). */
 export const AnimatedStat = ({ value }: { value: string }) => {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: '-40px' });

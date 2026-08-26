@@ -25,82 +25,85 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
-        {/* Hero */}
-        <section className="pt-40 pb-16 bg-background">
-          <div className="container-narrow max-w-3xl mx-auto text-center">
+        <section className="bg-background pb-16 pt-40">
+          <div className="container-narrow mx-auto max-w-3xl text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-              <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
+              <p className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.125em] text-primary">
                 Contact
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-foreground mb-6 italic">
-                Contact Tully Heard
+              <h1 className="mb-6 font-display text-4xl italic text-foreground sm:text-5xl lg:text-6xl">
+                Get in Touch
               </h1>
-              <p className="text-muted-foreground font-sans text-lg leading-relaxed">
+              <p className="font-sans text-lg leading-relaxed text-muted-foreground">
                 For strategic planning, redevelopment, feasibility, venue optimisation or advisory enquiries, contact the team directly.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Contact details */}
         <section className="pb-16">
           <div className="container-narrow max-w-3xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="mailto:info@tullyheard.com.au" className="flex items-center gap-4 p-6 rounded-2xl bg-card border border-border hover:border-primary transition-colors">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <a
+                href="mailto:info@tullyheard.com.au"
+                className="flex items-center gap-4 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
                   <Mail className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground font-sans">Email</div>
-                  <div className="text-foreground font-sans font-medium">info@tullyheard.com.au</div>
+                  <div className="font-sans text-sm text-muted-foreground">Email</div>
+                  <div className="font-sans font-medium text-foreground">info@tullyheard.com.au</div>
                 </div>
               </a>
-              <a href="tel:+61418267029" className="flex items-center gap-4 p-6 rounded-2xl bg-card border border-border hover:border-primary transition-colors">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+              <a
+                href="tel:+61418267029"
+                className="flex items-center gap-4 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
                   <Phone className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground font-sans">Phone — John Tully</div>
-                  <div className="text-foreground font-sans font-medium">0418 267 029</div>
+                  <div className="font-sans text-sm text-muted-foreground">Phone — John Tully</div>
+                  <div className="font-sans font-medium text-foreground">0418 267 029</div>
                 </div>
               </a>
             </div>
           </div>
         </section>
 
-        {/* Form */}
         <section className="section-padding bg-card">
           <div className="container-narrow max-w-2xl">
-            <p className="text-primary text-sm font-sans uppercase tracking-[0.125em] font-semibold mb-4">
+            <p className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.125em] text-primary">
               Send an enquiry
             </p>
-            <h2 className="text-3xl sm:text-4xl font-display text-foreground mb-8">
+            <h2 className="mb-8 font-display text-3xl text-foreground sm:text-4xl">
               Tell us about your venue
             </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="block text-sm font-sans font-medium text-foreground mb-2">First name</label>
-                  <Input name="firstName" required className="bg-background border-border" />
+                  <label className="mb-2 block font-sans text-sm font-medium text-foreground">First name</label>
+                  <Input name="firstName" required className="border-border bg-background" />
                 </div>
                 <div>
-                  <label className="block text-sm font-sans font-medium text-foreground mb-2">Last name</label>
-                  <Input name="lastName" required className="bg-background border-border" />
+                  <label className="mb-2 block font-sans text-sm font-medium text-foreground">Last name</label>
+                  <Input name="lastName" required className="border-border bg-background" />
                 </div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="block text-sm font-sans font-medium text-foreground mb-2">Email</label>
-                  <Input type="email" name="email" required className="bg-background border-border" />
+                  <label className="mb-2 block font-sans text-sm font-medium text-foreground">Email</label>
+                  <Input type="email" name="email" required className="border-border bg-background" />
                 </div>
                 <div>
-                  <label className="block text-sm font-sans font-medium text-foreground mb-2">Venue / organisation</label>
-                  <Input name="organisation" className="bg-background border-border" />
+                  <label className="mb-2 block font-sans text-sm font-medium text-foreground">Venue / organisation</label>
+                  <Input name="organisation" className="border-border bg-background" />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-sans font-medium text-foreground mb-2">Message</label>
-                <Textarea name="message" required rows={6} className="bg-background border-border resize-none" />
+                <label className="mb-2 block font-sans text-sm font-medium text-foreground">Message</label>
+                <Textarea name="message" required rows={6} className="resize-none border-border bg-background" />
               </div>
               <Button type="submit" variant="navy" size="lg" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending…' : 'Send enquiry'}
@@ -109,17 +112,18 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Final CTA */}
         <section className="section-padding bg-background">
           <div className="container-narrow max-w-3xl text-center">
-            <h2 className="text-3xl sm:text-4xl font-display text-foreground mb-6 uppercase tracking-[0.04em]">
+            <h2 className="mb-6 font-display text-3xl text-foreground sm:text-4xl">
               Have a strategic venue decision to work through?
             </h2>
-            <p className="text-muted-foreground font-sans text-lg leading-relaxed mb-8">
+            <p className="mb-8 font-sans text-lg leading-relaxed text-muted-foreground">
               If you are considering a redevelopment, repositioning, feasibility review or strategic planning process, Tully Heard can help define the opportunity and the practical next step.
             </p>
             <a href="mailto:info@tullyheard.com.au">
-              <Button variant="navy" size="xl" className="px-10">Contact us</Button>
+              <Button variant="navy" size="xl" className="px-10">
+                Get in Touch
+              </Button>
             </a>
           </div>
         </section>

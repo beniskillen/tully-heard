@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
+invest-clarity-refine-main 2/
 
 # Editor directories and files
 .vscode/*

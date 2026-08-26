@@ -19,6 +19,7 @@ export const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -32,44 +33,52 @@ export const Navigation = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="fixed top-6 inset-x-0 z-50 px-4 pointer-events-none"
+        className="fixed top-4 left-1/2 z-50 w-full max-w-5xl -translate-x-1/2 px-4"
       >
         <nav
-          className={`pointer-events-auto mx-auto flex items-center justify-between w-full max-w-5xl px-8 py-4 rounded-full transition-all duration-300 ${
+          className={`flex w-full items-center justify-between rounded-full px-5 py-3 transition-all duration-300 sm:px-7 sm:py-3.5 ${
             isScrolled
-              ? 'bg-background/60 backdrop-blur-xl border border-border shadow-md'
-              : 'bg-background/30 backdrop-blur-md border border-border/50'
+              ? 'border border-border bg-background/60 shadow-md backdrop-blur-xl'
+              : 'border border-border/50 bg-background/30 backdrop-blur-md'
           }`}
         >
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Tully Heard" className="h-12 w-auto object-contain rounded-md" />
+            <img
+              src={logo}
+              alt="Tully Heard"
+              className="h-12 w-auto rounded-md object-contain sm:h-14 md:h-16"
+            />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-1 whitespace-nowrap">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`px-4 py-2 text-xs font-sans font-semibold uppercase tracking-[0.125em] rounded-full transition-all duration-300 ${
-                  location.pathname === link.href
-                    ? 'text-primary bg-primary/10'
-                    : 'text-foreground hover:text-primary hover:bg-primary/5'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="hidden items-center gap-1 whitespace-nowrap lg:flex">
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`rounded-full px-3 py-2 font-sans text-[11px] font-semibold uppercase tracking-[0.125em] transition-all duration-300 xl:px-4 xl:text-xs ${
+                    isActive
+                      ? 'bg-primary/10 text-primary'
+                      : 'text-foreground hover:bg-primary/5 hover:text-primary'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
 
           <div className="flex items-center gap-3">
             <Link to="/contact" className="hidden sm:block">
               <Button variant="navy" size="sm">
-                Contact us
+                Get in Touch
               </Button>
             </Link>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-foreground"
+              className="p-2 text-foreground lg:hidden"
+              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -84,7 +93,7 @@ export const Navigation = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 pt-24 px-4 bg-background/98 backdrop-blur-xl lg:hidden"
+            className="fixed inset-0 z-40 bg-background/98 px-4 pt-32 backdrop-blur-xl lg:hidden"
           >
             <div className="flex flex-col gap-2 p-6">
               {navLinks.map((link, index) => (
@@ -96,9 +105,9 @@ export const Navigation = () => {
                 >
                   <Link
                     to={link.href}
-                    className={`block px-4 py-3 text-sm font-sans font-semibold uppercase tracking-[0.125em] rounded-xl transition-all duration-300 ${
+                    className={`block rounded-xl px-4 py-3 font-sans text-sm font-semibold uppercase tracking-[0.125em] transition-all duration-300 ${
                       location.pathname === link.href
-                        ? 'text-primary bg-primary/10'
+                        ? 'bg-primary/10 text-primary'
                         : 'text-foreground hover:bg-secondary'
                     }`}
                   >
@@ -106,13 +115,18 @@ export const Navigation = () => {
                   </Link>
                 </motion.div>
               ))}
-              <div className="mt-4">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: navLinks.length * 0.05 }}
+                className="mt-4"
+              >
                 <Link to="/contact">
                   <Button variant="navy" size="lg" className="w-full">
-                    Contact us
+                    Get in Touch
                   </Button>
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         )}
