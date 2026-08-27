@@ -251,4 +251,9 @@ export const moreWork: MoreWorkItem[] = [
     body: 'Integrated resort feasibility and assessment.',
     logo: centralRealLogo,
   },
+  {
+    title: 'Club Mosman / The Fernery',
+    body: 'Premises optimisation, concept development and execution, including The Fernery rooftop venue.',
+    logo: assetUrl('/clients/club-mosman.svg'),
+  },
 ];

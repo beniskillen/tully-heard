@@ -1,5 +1,41 @@
 import { motion } from 'framer-motion';
-import { proofs } from '@/data/proof';
+import { Linkedin } from 'lucide-react';
+import { proofs, type Proof } from '@/data/proof';
+
+const PersonCard = ({ item }: { item: Proof }) => {
+  const identity = (
+    <>
+      <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-border bg-secondary shadow-sm">
+        <img src={item.image} alt={item.person} className="h-full w-full object-cover object-top" />
+      </span>
+      <span>
+        <span className="inline-flex items-center gap-1.5 font-sans text-sm font-semibold text-foreground transition-colors group-hover:text-primary">
+          {item.person}
+          {item.linkedin ? <Linkedin size={14} strokeWidth={2} className="text-primary" aria-hidden /> : null}
+        </span>
+        <span className="mt-1 block font-sans text-xs uppercase tracking-[0.12em] text-muted-foreground">
+          {item.role}, {item.organisation}
+        </span>
+      </span>
+    </>
+  );
+
+  if (item.linkedin) {
+    return (
+      <a
+        href={item.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${item.person} on LinkedIn`}
+        className="group flex items-center gap-3.5 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      >
+        {identity}
+      </a>
+    );
+  }
+
+  return <div className="flex items-center gap-3.5">{identity}</div>;
+};
 
 export const ProofSection = ({ compact = false }: { compact?: boolean }) => {
   return (
@@ -46,12 +82,7 @@ export const ProofSection = ({ compact = false }: { compact?: boolean }) => {
                 </div>
                 <footer className="mt-8 border-t border-border pt-5">
                   <cite className="not-italic">
-                    <span className="block font-sans text-sm font-semibold text-foreground">
-                      {item.person}
-                    </span>
-                    <span className="mt-1 block font-sans text-xs uppercase tracking-[0.12em] text-muted-foreground">
-                      {item.role}, {item.organisation}
-                    </span>
+                    <PersonCard item={item} />
                   </cite>
                 </footer>
               </motion.blockquote>

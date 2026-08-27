@@ -2,7 +2,7 @@ import { render, screen, waitFor } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { describe, expect, it } from "vitest";
 import CaseStudies from "@/pages/CaseStudies";
-import { featuredCases } from "@/data/cases";
+import { featuredCases, moreWork } from "@/data/cases";
 
 describe("case studies page", () => {
   it("retains featured-case stats for client approval", async () => {
@@ -22,7 +22,9 @@ describe("case studies page", () => {
     await waitFor(() => {
       expect(screen.getByText("Increase in visitation")).toBeInTheDocument();
     });
+    expect(moreWork).toHaveLength(9);
     expect(screen.getByText("Oak Point Golf Club")).toBeInTheDocument();
     expect(screen.getByText("Cabra Vale Diggers Club Novotel")).toBeInTheDocument();
+    expect(screen.getByText("Club Mosman / The Fernery")).toBeInTheDocument();
   });
 });

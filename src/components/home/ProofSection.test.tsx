@@ -16,6 +16,20 @@ describe("ProofSection", () => {
     expect(screen.getByText(/Former Chief Executive Officer, Bankstown Sports/)).toBeInTheDocument();
     expect(screen.getByText(/clarity around our strategy before committing significant capital/)).toBeInTheDocument();
 
+    expect(screen.getByAltText("Andrew Hoschke")).toHaveAttribute(
+      "src",
+      expect.stringContaining("ah-headshot.png"),
+    );
+    expect(screen.getByAltText("Mark Condi")).toHaveAttribute(
+      "src",
+      expect.stringContaining("mc-headshot.jpg"),
+    );
+    expect(screen.getByRole("link", { name: "Mark Condi on LinkedIn" })).toHaveAttribute(
+      "href",
+      "https://au.linkedin.com/in/mark-condi-bba75430",
+    );
+    expect(screen.queryByRole("link", { name: /Andrew Hoschke/ })).not.toBeInTheDocument();
+
     expect(screen.queryByText(/profitability/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/200%/)).not.toBeInTheDocument();
   });
