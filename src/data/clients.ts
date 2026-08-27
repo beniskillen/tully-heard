@@ -1,3 +1,5 @@
+import { assetUrl } from '@/lib/assets';
+
 export type ClientLogo = {
   id: string;
   name: string;
@@ -72,7 +74,7 @@ export const approvedClientNames = [
  * missing official marks, ambiguous sourcing, unusable files, and the Cabra
  * file which resolved to a Novotel wordmark rather than the club mark.
  */
-export const tickerClients: ClientLogo[] = [
+const tickerClientEntries: ClientLogo[] = [
   { id: 'lions-afl', name: 'The Lions (AFL)', src: '/clients/lions-afl.svg' },
   { id: 'bankstown-sports', name: 'Bankstown Sports', src: '/clients/bankstown-sports.webp' },
   { id: 'gosford-rsl', name: 'Gosford RSL', src: '/clients/gosford-rsl.svg' },
@@ -112,3 +114,8 @@ export const tickerClients: ClientLogo[] = [
   { id: 'clubsnsw', name: 'ClubsNSW, Corporate Partner', src: '/clients/clubsnsw.webp' },
   { id: 'cmaa', name: 'CMAA, Sponsorship', src: '/clients/cmaa.svg' },
 ];
+
+export const tickerClients: ClientLogo[] = tickerClientEntries.map((client) => ({
+  ...client,
+  src: assetUrl(client.src),
+}));

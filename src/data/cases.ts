@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/assets';
 import gosfordImg from '@/assets/cases/gosford-rsl.jpeg';
 import yogisImg from '@/assets/cases/yogis-chatswood.webp';
 import shoalhavenImg from '@/assets/cases/shoalhaven.png';
@@ -44,7 +45,7 @@ export const featuredCases: FeaturedCase[] = [
     intro:
       'A major redevelopment that repositioned the club as a leading dining, entertainment and community destination on the Central Coast.',
     image: gosfordImg,
-    logo: '/clients/gosford-rsl.svg',
+    logo: assetUrl('/clients/gosford-rsl.svg'),
     result: 'Major venue transformation',
     stats: [
       { value: '4', label: 'Destination drivers: dining, events, sport and brewery' },
@@ -156,7 +157,7 @@ export const featuredCases: FeaturedCase[] = [
     intro:
       'A craft beer and casual dining concept that helped shift the role of an existing sports bar and broaden the venue’s appeal.',
     image: bankstownImg,
-    logo: '/clients/bankstown-sports.webp',
+    logo: assetUrl('/clients/bankstown-sports.webp'),
     result: 'Underused space repositioned',
     stats: [
       { value: '18–45', label: 'Younger demographic targeted through the new concept' },
@@ -219,12 +220,12 @@ export const moreWork: MoreWorkItem[] = [
   {
     title: 'Karuah RSL Club',
     body: 'Premises optimisation plan and execution to transform the Club and maximise growth opportunity from surrounding catchment (Ongoing).',
-    logo: '/clients/karuah-ex-services.webp',
+    logo: assetUrl('/clients/karuah-ex-services.webp'),
   },
   {
     title: 'Oaks Hotel Neutral Bay',
     body: "Site premises plan, concept development and execution, including Taffy's sports bar.",
-    logo: '/clients/oaks-taffeys.webp',
+    logo: assetUrl('/clients/oaks-taffeys.webp'),
   },
   {
     title: 'Oak Point Golf Club',

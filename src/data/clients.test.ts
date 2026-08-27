@@ -14,6 +14,7 @@ describe("client lists", () => {
     expect(new Set(ids).size).toBe(ids.length);
     for (const client of tickerClients) {
       expect(approved.has(client.name)).toBe(true);
+      expect(client.src.startsWith(import.meta.env.BASE_URL)).toBe(true);
     }
   });
 });
