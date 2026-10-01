@@ -38,15 +38,15 @@ export const ClientLogoTicker = () => {
   return (
     <section
       aria-label="Trusted by leading clubs and hospitality venues"
-      className="overflow-hidden border-y border-border bg-[#EEF0F2] py-12"
+      className="logo-ticker relative overflow-hidden border-y border-white/70 py-12"
     >
-      <div className="container-narrow">
+      <div className="container-narrow relative z-10">
         <p className="mb-8 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
           Trusted by leading clubs and hospitality venues
         </p>
       </div>
 
-      <div className="group relative">
+      <div className="group relative z-10">
         <div
           className="client-marquee flex w-max items-center"
           style={{ animationDuration: duration }}

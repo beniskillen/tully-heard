@@ -182,6 +182,32 @@
     animation: marquee 30s linear infinite;
   }
 
+  .logo-ticker {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.08) 38%, rgba(120, 132, 146, 0.22) 100%),
+      linear-gradient(155deg, #e4e8ed 0%, #c5ced6 46%, #e7ebef 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.9),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.35),
+      0 10px 28px -18px rgba(28, 40, 54, 0.35);
+    backdrop-filter: blur(18px) saturate(1.25);
+    -webkit-backdrop-filter: blur(18px) saturate(1.25);
+  }
+
+  .logo-ticker::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.08) 28%,
+      transparent 46%,
+      rgba(255, 255, 255, 0.16) 100%
+    );
+  }
+
   .client-marquee {
     animation: marquee 160s linear infinite;
   }

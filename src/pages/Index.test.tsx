@@ -13,10 +13,12 @@ describe("homepage", () => {
 
     expect(screen.getByText("Our Approach")).toBeInTheDocument();
     expect(screen.getByText("Understand the opportunity")).toBeInTheDocument();
-    expect(screen.getByText("Andrew Hoschke")).toBeInTheDocument();
+    expect(screen.getByText("Chatswood RSL / Yogi’s Sports Bar")).toBeInTheDocument();
     expect(screen.getByText("View full team")).toBeInTheDocument();
     expect(screen.getAllByText(/Get in Touch/i).length).toBeGreaterThan(0);
 
+    expect(screen.queryByText("Andrew Hoschke")).not.toBeInTheDocument();
+    expect(screen.queryByText("Mark Condi")).not.toBeInTheDocument();
     expect(screen.queryByText(/profitability/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/200%/)).not.toBeInTheDocument();
     expect(screen.queryByText(/Million in capital advised/i)).not.toBeInTheDocument();

@@ -87,7 +87,7 @@ const tickerClientEntries: ClientLogo[] = [
   { id: 'toukley-rsl', name: 'Toukley RSL', src: '/clients/toukley-rsl.webp' },
   { id: 'club-sapphire', name: 'Club Sapphire', src: '/clients/club-sapphire.webp' },
   { id: 'corowa-rsl', name: 'Corowa RSL', src: '/clients/corowa-rsl.webp' },
-  { id: 'kiama-golf-club', name: 'Kiama Golf Club', src: '/clients/kiama-golf-club.webp', onDark: true },
+  { id: 'kiama-golf-club', name: 'Kiama Golf Club', src: '/clients/kiama-golf-club.webp' },
   { id: 'long-reef-golf-club', name: 'Long Reef Golf Club', src: '/clients/long-reef-golf-club.webp' },
   { id: 'narromine-usmc', name: 'Narromine USMC', src: '/clients/narromine-usmc.webp' },
   { id: 'souths-juniors', name: 'Souths Juniors', src: '/clients/souths-juniors.webp' },

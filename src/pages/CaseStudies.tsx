@@ -7,7 +7,6 @@ import {
   TrendingUp,
   Users,
   Award,
-  CheckCircle2,
   Sparkles,
   Building2,
   MapPin,
@@ -15,13 +14,12 @@ import {
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { AnimatedStat } from '@/components/AnimatedStat';
+import { ProofSection } from '@/components/home/ProofSection';
 import { featuredCases, moreWork } from '@/data/cases';
 
 const SHOWREEL =
   'https://yuthbrxadentorgrsyar.supabase.co/storage/v1/object/sign/Tully%20Heard%20Consulting/Tully%20Heard%20Showreel%201.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wNGE4MjlmYy0xNTZiLTQ1NzgtYWViNS01NDUxMmE0MjJiNDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJUdWxseSBIZWFyZCBDb25zdWx0aW5nL1R1bGx5IEhlYXJkIFNob3dyZWVsIDEubXA0Iiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjU0MTMwNywiZXhwIjo0OTA0NjA1MzA3fQ.nl_wBWjvZOC-zarLVgp6KwlHm36D9IDAoEd0lhpNGTU';
 
-const statIcons = [TrendingUp, Users, Award];
 const moreWorkIcons = [Building2, MapPin, Sparkles, Award, TrendingUp, Users];
 
 const CaseStudies = () => {
@@ -121,29 +119,6 @@ const CaseStudies = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div className="mt-6 grid grid-cols-3 gap-3">
-                    {current.stats.map((s, i) => {
-                      const Icon = statIcons[i % statIcons.length];
-                      return (
-                        <motion.div
-                          key={s.label}
-                          initial={{ opacity: 0, y: 12 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.1 + i * 0.08, duration: 0.4 }}
-                          className="group relative overflow-hidden rounded-2xl border border-border bg-background p-5 transition-all hover:border-primary/40 hover:shadow-sm"
-                        >
-                          <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary/15">
-                            <Icon className="text-primary" size={16} />
-                          </div>
-                          <div className="mb-1 font-display text-2xl tabular-nums text-foreground">
-                            <AnimatedStat value={s.value} />
-                          </div>
-                          <div className="font-sans text-xs leading-snug text-muted-foreground">{s.label}</div>
-                        </motion.div>
-                      );
-                    })}
-                  </div>
                 </div>
 
                 <div>
@@ -175,45 +150,7 @@ const CaseStudies = () => {
                     </div>
                   </div>
 
-                  <p className="mb-8 font-sans leading-relaxed text-muted-foreground">{current.intro}</p>
-
-                  <div className="mb-8 space-y-6">
-                    <div>
-                      <h4 className="mb-2 font-sans text-sm font-semibold uppercase tracking-[0.125em] text-primary">
-                        Challenge
-                      </h4>
-                      <p className="font-sans leading-relaxed text-muted-foreground">{current.challenge}</p>
-                    </div>
-                    <div>
-                      <h4 className="mb-2 font-sans text-sm font-semibold uppercase tracking-[0.125em] text-primary">
-                        Tully Heard’s role
-                      </h4>
-                      <p className="font-sans leading-relaxed text-muted-foreground">{current.role}</p>
-                    </div>
-                    <div>
-                      <h4 className="mb-2 font-sans text-sm font-semibold uppercase tracking-[0.125em] text-primary">
-                        Outcome
-                      </h4>
-                      <p className="font-sans leading-relaxed text-muted-foreground">{current.outcome}</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="mb-3 font-sans text-sm font-semibold uppercase tracking-[0.125em] text-primary">
-                      Proof points
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {current.proof.map((p) => (
-                        <span
-                          key={p}
-                          className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 font-sans text-sm text-foreground transition-colors hover:border-primary/50 hover:text-primary"
-                        >
-                          <CheckCircle2 size={14} className="text-primary" />
-                          {p}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                  <p className="font-sans leading-relaxed text-muted-foreground">{current.intro}</p>
                 </div>
               </motion.div>
 
@@ -230,7 +167,7 @@ const CaseStudies = () => {
               ))}
             </div>
 
-            <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
+            <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
               {featuredCases.map((c, i) => (
                 <button
                   key={c.id}
@@ -312,7 +249,9 @@ const CaseStudies = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-card">
+        <ProofSection />
+
+        <section className="section-padding border-t border-border bg-card">
           <div className="container-narrow max-w-3xl text-center">
             <h2 className="mb-4 font-display text-3xl italic text-foreground sm:text-4xl">
               Have a venue challenge to work through?
