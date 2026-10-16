@@ -32,5 +32,7 @@ describe("people page", () => {
     expect(
       screen.getByText("Principal Consultant - Gaming Advisory & Customer Experience"),
     ).toBeInTheDocument();
+    expect(screen.getAllByRole("link", { name: "Team" }).length).toBeGreaterThan(0);
+    expect(screen.getAllByRole("link", { name: /get in touch/i }).length).toBeGreaterThan(1);
   });
 });

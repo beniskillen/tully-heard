@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
+import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { team } from '@/data/people';
 
@@ -61,6 +63,16 @@ const People = () => {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section-padding bg-background">
+          <div className="container-narrow text-center">
+            <Link to="/contact">
+              <Button variant="navy" size="xl" className="px-10">
+                Get in Touch
+              </Button>
+            </Link>
           </div>
         </section>
       </main>
