@@ -22,7 +22,7 @@ export const DirectorsSection = () => {
             <span className="italic text-primary">club and hospitality sector</span>
           </h2>
           <p className="font-sans text-lg leading-relaxed text-muted-foreground">
-            John and Luke combine practical venue ownership experience with strategic advisory capability to guide complex decisions from start to finish.
+            John and Luke combine venue ownership with strategic and financial advisory. Luke leads investment feasibility and long-term planning, and the wider team covers gaming, governance, research and culture.
           </p>
         </motion.div>
 
@@ -34,13 +34,13 @@ export const DirectorsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ delay: i * 0.12, duration: 0.6, ease: 'easeOut' }}
-              className="feature-card group text-center"
+              className="feature-card text-center"
             >
-              <div className="mb-5 aspect-[4/3] overflow-hidden rounded-2xl">
+              <div className="mb-5 aspect-[935/1024] overflow-hidden rounded-2xl">
                 <img
                   src={d.image}
                   alt={d.name}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover object-center"
                 />
               </div>
               <h3 className="mb-1 font-display text-2xl text-foreground">{d.name}</h3>

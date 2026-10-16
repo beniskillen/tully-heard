@@ -18,7 +18,7 @@ export const ServicesSection = () => {
             Practical strategy for complex decisions.
           </h2>
           <p className="font-sans text-base leading-relaxed text-muted-foreground sm:text-lg">
-            We help Clubs and hospitality businesses make better strategic, investment and
+            We help Clubs and hospitality businesses make better strategic, investment, gaming and
             development decisions, and turn those decisions into commercial outcomes.
           </p>
         </motion.div>
@@ -54,7 +54,7 @@ export const ServicesSection = () => {
           <p className="mb-8 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
             Specialist Advisory Services
           </p>
-          <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {specialists.map((item) => {
               const Icon = item.icon;
               return (

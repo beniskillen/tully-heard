@@ -9,10 +9,10 @@ describe("people page", () => {
     expect(team.map((person) => person.name)).toEqual([
       "John Tully",
       "Luke Heard",
-      "Peter McLean",
       "Craig Butler",
-      "Norrelle Goldring",
+      "Peter McLean",
       "Margaret Carew",
+      "Norrelle Goldring",
       "Brian Dickinson",
     ]);
 
@@ -28,6 +28,9 @@ describe("people page", () => {
 
     expect(screen.queryByText("Vaughan Campbell")).not.toBeInTheDocument();
     expect(screen.queryByText("Vaughn Campbell")).not.toBeInTheDocument();
-    expect(screen.getAllByText(/to be supplied/i).length).toBeGreaterThan(0);
+    expect(screen.queryByText(/to be supplied/i)).not.toBeInTheDocument();
+    expect(
+      screen.getByText("Principal Consultant - Gaming Advisory & Customer Experience"),
+    ).toBeInTheDocument();
   });
 });

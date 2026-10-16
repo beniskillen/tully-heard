@@ -4,6 +4,7 @@ import {
   Gauge,
   Hammer,
   Spade,
+  Scale,
   Users,
   HeartHandshake,
   Coins,
@@ -52,18 +53,23 @@ export const services: Service[] = [
 
 export const specialists: Specialist[] = [
   {
-    title: 'Member and consumer research and focus groups',
+    title: 'Governance and amalgamations',
+    lead: 'Peter McLean',
+    icon: Scale,
+  },
+  {
+    title: 'Market research and customer insights',
     lead: 'Norrelle Goldring',
     icon: Users,
   },
   {
-    title: 'Leadership and culture',
-    lead: 'Brian Dickinson',
-    icon: HeartHandshake,
-  },
-  {
-    title: 'EGM brokerage',
+    title: 'EGM brokerage and gaming advisory',
     lead: 'Margaret Carew',
     icon: Coins,
+  },
+  {
+    title: 'Leadership and organisational culture',
+    lead: 'Brian Dickinson',
+    icon: HeartHandshake,
   },
 ];

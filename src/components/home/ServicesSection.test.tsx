@@ -16,9 +16,14 @@ describe("ServicesSection", () => {
     expect(screen.getByText("Gaming Strategy & Optimisation")).toBeInTheDocument();
 
     expect(screen.getByText("Specialist Advisory Services")).toBeInTheDocument();
+    expect(screen.getByText("Governance and amalgamations")).toBeInTheDocument();
+    expect(screen.getByText("Led by Peter McLean")).toBeInTheDocument();
+    expect(screen.getByText("Market research and customer insights")).toBeInTheDocument();
     expect(screen.getByText("Led by Norrelle Goldring")).toBeInTheDocument();
-    expect(screen.getByText("Led by Brian Dickinson")).toBeInTheDocument();
+    expect(screen.getByText("EGM brokerage and gaming advisory")).toBeInTheDocument();
     expect(screen.getByText("Led by Margaret Carew")).toBeInTheDocument();
+    expect(screen.getByText("Leadership and organisational culture")).toBeInTheDocument();
+    expect(screen.getByText("Led by Brian Dickinson")).toBeInTheDocument();
     expect(screen.queryByText("Board Advisory and Decision Support")).not.toBeInTheDocument();
   });
 });

@@ -21,6 +21,6 @@ describe("AboutSection", () => {
 
     expect(screen.queryByText("Vaughan Campbell")).not.toBeInTheDocument();
     expect(screen.queryByText("Vaughn Campbell")).not.toBeInTheDocument();
-    expect(screen.getAllByText(/to be supplied/i).length).toBeGreaterThan(0);
+    expect(screen.queryByText(/to be supplied/i)).not.toBeInTheDocument();
   });
 });

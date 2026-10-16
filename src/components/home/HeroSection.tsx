@@ -50,7 +50,7 @@ export const HeroSection = () => {
             The Strategic Partner of Choice for Australia's Club and Hospitality Leaders
           </h1>
           <p className="mx-auto mb-10 max-w-2xl font-sans text-lg leading-relaxed text-white/80 sm:text-xl">
-            With over 25 years of experience as venue owners and strategic consultants, Tully Heard partners with hospitality venues to thrive.
+            With more than 25 years' experience, Tully Heard advises clubs on strategy, investment, gaming performance and the specialist work that sits around them.
           </p>
 
           <motion.div

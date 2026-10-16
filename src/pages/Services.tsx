@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { ServicesSection } from '@/components/home/ServicesSection';
+import { DirectorsSection } from '@/components/home/DirectorsSection';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -35,7 +36,7 @@ const Services = () => {
                 Practical strategy for complex decisions
               </h1>
               <p className="font-sans text-lg leading-relaxed text-white/80">
-                We help Clubs and hospitality businesses make better strategic, investment and development decisions, and turn those decisions into commercial outcomes.
+                We help Clubs and hospitality businesses make better strategic, investment, gaming and development decisions, and turn those decisions into commercial outcomes.
               </p>
             </motion.div>
           </div>
@@ -58,6 +59,8 @@ const Services = () => {
             </Link>
           </div>
         </section>
+
+        <DirectorsSection />
       </main>
       <Footer />
     </div>

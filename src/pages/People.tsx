@@ -17,9 +17,14 @@ const People = () => {
               <h1 className="mb-6 font-display text-4xl italic text-foreground sm:text-5xl lg:text-6xl">
                 Experienced operators and advisers for the club and hospitality sector
               </h1>
-              <p className="font-sans text-lg leading-relaxed text-muted-foreground">
-                Tully Heard brings together practical operating experience, strategic advisory capability and deep sector knowledge across clubs, hospitality, leisure and related property-backed businesses.
-              </p>
+              <div className="space-y-4 font-sans text-lg leading-relaxed text-muted-foreground">
+                <p>
+                  Our team combines extensive hospitality leadership and operational experience with specialist expertise in strategy, finance, gaming, governance, market research, and organisational development.
+                </p>
+                <p>
+                  Together, we provide the commercial insights, independent advice and practical support to help clubs strengthen their existing businesses, plan for future growth, and make informed investment decisions.
+                </p>
+              </div>
             </motion.div>
           </div>
         </section>
@@ -39,20 +44,19 @@ const People = () => {
                     <div className="aspect-square overflow-hidden rounded-2xl border border-border bg-background">
                       <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
                     </div>
-                    {(m.needsPhoto || m.needsBio) && (
-                      <p className="mt-3 font-sans text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
-                        {[m.needsPhoto && 'Photo to be supplied', m.needsBio && 'Bio to be supplied']
-                          .filter(Boolean)
-                          .join(' · ')}
-                      </p>
-                    )}
                   </div>
                   <div className="md:col-span-3 [direction:ltr]">
                     <h2 className="mb-2 font-display text-3xl text-foreground">{m.name}</h2>
                     <p className="mb-6 font-sans text-sm font-semibold uppercase tracking-[0.125em] text-primary">
                       {m.role}
                     </p>
-                    <p className="font-sans leading-relaxed text-muted-foreground">{m.bio}</p>
+                    <div className="space-y-4">
+                      {m.bio.map((paragraph) => (
+                        <p key={paragraph} className="font-sans leading-relaxed text-muted-foreground">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
                   </div>
                 </motion.div>
               ))}

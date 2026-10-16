@@ -49,20 +49,19 @@ export const AboutSection = () => {
                 <div className="relative h-32 w-32 overflow-hidden rounded-full bg-secondary">
                   <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
                 </div>
-                {(m.needsPhoto || m.needsBio) && (
-                  <p className="mt-2 max-w-[8rem] font-sans text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
-                    {[m.needsPhoto && 'Photo to be supplied', m.needsBio && 'Bio to be supplied']
-                      .filter(Boolean)
-                      .join(' · ')}
-                  </p>
-                )}
               </div>
               <div className="flex-1">
                 <h3 className="mb-1 font-display text-xl text-foreground">{m.name}</h3>
                 <p className="mb-3 font-sans text-xs font-semibold uppercase tracking-[0.15em] text-primary">
                   {m.role}
                 </p>
-                <p className="font-sans text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
+                <div className="space-y-3">
+                  {m.bio.map((paragraph) => (
+                    <p key={paragraph} className="font-sans text-sm leading-relaxed text-muted-foreground">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}
