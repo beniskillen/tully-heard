@@ -4,7 +4,7 @@ export type ClientLogo = {
   id: string;
   name: string;
   src: string;
-  /** Reverse / light marks that need a dark plate on the light ticker. */
+  /** Light or white artwork that disappears on the pale ticker. */
   onDark?: boolean;
 };
 
@@ -76,12 +76,12 @@ export const approvedClientNames = [
  */
 const tickerClientEntries: ClientLogo[] = [
   { id: 'lions-afl', name: 'The Lions (AFL)', src: '/clients/lions-afl.svg' },
-  { id: 'bankstown-sports', name: 'Bankstown Sports', src: '/clients/bankstown-sports.webp' },
+  { id: 'bankstown-sports', name: 'Bankstown Sports', src: '/clients/bankstown-sports.webp', onDark: true },
   { id: 'gosford-rsl', name: 'Gosford RSL', src: '/clients/gosford-rsl.svg' },
-  { id: 'chatswood-rsl', name: "Chatswood RSL, including Yogi's", src: '/clients/chatswood-rsl.webp' },
+  { id: 'chatswood-rsl', name: "Chatswood RSL, including Yogi's", src: '/clients/chatswood-rsl.webp', onDark: true },
   { id: 'oaks-taffeys', name: "Taffey's / The Oaks Hotel Neutral Bay", src: '/clients/oaks-taffeys.webp' },
   { id: 'mulwala-water-ski-club', name: 'Mulwala Water Ski Club', src: '/clients/mulwala-water-ski-club.webp' },
-  { id: 'corrimal-rsl', name: 'Corrimal RSL', src: '/clients/corrimal-rsl.webp' },
+  { id: 'corrimal-rsl', name: 'Corrimal RSL', src: '/clients/corrimal-rsl.webp', onDark: true },
   { id: 'ettalong-diggers', name: 'Ettalong Diggers', src: '/clients/ettalong-diggers.webp' },
   { id: 'broken-hill-musicians-club', name: 'Broken Hill Musicians Club', src: '/clients/broken-hill-musicians-club.webp' },
   { id: 'toukley-rsl', name: 'Toukley RSL', src: '/clients/toukley-rsl.webp' },
@@ -91,26 +91,26 @@ const tickerClientEntries: ClientLogo[] = [
   { id: 'long-reef-golf-club', name: 'Long Reef Golf Club', src: '/clients/long-reef-golf-club.webp' },
   { id: 'narromine-usmc', name: 'Narromine USMC', src: '/clients/narromine-usmc.webp' },
   { id: 'souths-juniors', name: 'Souths Juniors', src: '/clients/souths-juniors.webp' },
-  { id: 'strathfield-sports', name: 'Strathfield Sports', src: '/clients/strathfield-sports.webp' },
+  { id: 'strathfield-sports', name: 'Strathfield Sports', src: '/clients/strathfield-sports.webp', onDark: true },
   { id: 'karuah-ex-services', name: 'Karuah Ex-Services', src: '/clients/karuah-ex-services.webp' },
   { id: 'club-mosman', name: 'Club Mosman', src: '/clients/club-mosman.svg' },
   { id: 'pottsville-sports', name: 'Pottsville Sports', src: '/clients/pottsville-sports.webp' },
-  { id: 'pittwater-rsl', name: 'Pittwater RSL', src: '/clients/pittwater-rsl.svg' },
+  { id: 'pittwater-rsl', name: 'Pittwater RSL', src: '/clients/pittwater-rsl.svg', onDark: true },
   { id: 'manly-leagues-club', name: 'Manly Leagues Club', src: '/clients/manly-leagues-club.webp' },
   { id: 'mollymook-golf-club', name: 'Mollymook Golf Club', src: '/clients/mollymook-golf-club.webp' },
-  { id: 'briars-sports', name: 'Briars Sports', src: '/clients/briars-sports.webp' },
-  { id: 'milton-ulladulla-ex-servos', name: 'Milton Ulladulla Ex Servos', src: '/clients/milton-ulladulla-ex-servos.webp' },
+  { id: 'briars-sports', name: 'Briars Sports', src: '/clients/briars-sports.webp', onDark: true },
+  { id: 'milton-ulladulla-ex-servos', name: 'Milton Ulladulla Ex Servos', src: '/clients/milton-ulladulla-ex-servos.webp', onDark: true },
   { id: 'lightning-ridge-bowling-club', name: 'Lightning Ridge Bowling Club', src: '/clients/lightning-ridge-bowling-club.webp' },
   { id: 'norths-leagues', name: 'Norths Leagues', src: '/clients/norths-leagues.svg' },
-  { id: 'bondi-icebergs-club', name: 'Bondi Icebergs Club', src: '/clients/bondi-icebergs-club.webp' },
+  { id: 'bondi-icebergs-club', name: 'Bondi Icebergs Club', src: '/clients/bondi-icebergs-club.webp', onDark: true },
   { id: 'southern-cross-club-canberra', name: 'Southern Cross Club Canberra', src: '/clients/southern-cross-club-canberra.svg', onDark: true },
   { id: 'fraternity-club', name: 'Fraternity Club', src: '/clients/fraternity-club.webp' },
   { id: 'vikings-group-canberra', name: 'Vikings Group Canberra', src: '/clients/vikings-group-canberra.webp' },
-  { id: 'moorebank-sports', name: 'Moorebank Sports', src: '/clients/moorebank-sports.webp' },
+  { id: 'moorebank-sports', name: 'Moorebank Sports', src: '/clients/moorebank-sports.webp', onDark: true },
   { id: 'belmont-16s', name: 'Belmont 16s', src: '/clients/belmont-16s.webp' },
   { id: 'parramatta-leagues-club', name: 'Parramatta Leagues Club', src: '/clients/parramatta-leagues-club.webp' },
   { id: 'burwood-rsl', name: 'Burwood RSL', src: '/clients/burwood-rsl.webp' },
-  { id: 'brothers-cairns', name: 'Brothers Cairns', src: '/clients/brothers-cairns.webp' },
+  { id: 'brothers-cairns', name: 'Brothers Cairns', src: '/clients/brothers-cairns.webp', onDark: true },
   { id: 'clubsnsw', name: 'ClubsNSW, Corporate Partner', src: '/clients/clubsnsw.webp' },
   { id: 'cmaa', name: 'CMAA, Sponsorship', src: '/clients/cmaa.svg' },
 ];

@@ -49,8 +49,8 @@ export const HeroSection = () => {
           <h1 className="mb-6 font-display text-3xl italic leading-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl">
             The Strategic Partner of Choice for Australia's Club and Hospitality Leaders
           </h1>
-          <p className="mx-auto mb-10 max-w-2xl font-sans text-lg leading-relaxed text-white/80 sm:text-xl">
-            With more than 25 years' experience, Tully Heard advises clubs on strategy, investment, gaming performance and the specialist work that sits around them.
+          <p className="mx-auto mb-10 max-w-3xl font-sans text-lg leading-relaxed text-white/80 sm:text-xl">
+            With more than 25 years' industry experience, Tully Heard provides independent strategic and commercial advice to Australia's club and hospitality sectors.
           </p>
 
           <motion.div

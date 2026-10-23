@@ -3,7 +3,6 @@ import {
   Search,
   Compass,
   Scale,
-  LineChart,
   FileCheck,
   Handshake,
   type LucideIcon,
@@ -11,33 +10,28 @@ import {
 
 const steps: { title: string; body: string; icon: LucideIcon }[] = [
   {
-    title: 'Understand the opportunity',
-    body: 'Understand the business, market, performance and where the greatest potential lies.',
+    title: 'Understand the Business',
+    body: 'Review business performance, market positioning, competition, and the key drivers of profitability.',
     icon: Search,
   },
   {
-    title: 'Define the direction',
-    body: 'Establish the preferred positioning, priorities and opportunities for growth.',
+    title: 'Identify the Opportunities',
+    body: 'Explore what the business could become, opportunities for growth and where future investment should be directed.',
     icon: Compass,
   },
   {
-    title: 'Test the options',
-    body: 'Assess the commercial, operational and capital implications.',
+    title: 'Test the Options',
+    body: 'Assess commercial viability, financial projections, cash flow, capital requirements, and expected returns.',
     icon: Scale,
   },
   {
-    title: 'Model the outcomes',
-    body: 'Test feasibility, investment requirements, cash flow and expected returns.',
-    icon: LineChart,
-  },
-  {
-    title: 'Recommend the strategy',
-    body: 'Bring this together into a clear, commercially grounded strategy.',
+    title: 'Define the Strategy',
+    body: 'Establish the preferred direction, longer-term priorities, and recommended investments.',
     icon: FileCheck,
   },
   {
-    title: 'Support implementation',
-    body: 'Work alongside the client and specialist partners to turn the strategy into reality.',
+    title: 'Support Implementation',
+    body: 'Work alongside management and specialist partners to help deliver the agreed strategy.',
     icon: Handshake,
   },
 ];
@@ -56,11 +50,14 @@ export const ApproachSection = () => {
             Our Approach
           </p>
           <h2 className="mb-6 font-display text-3xl leading-tight text-foreground sm:text-4xl">
-            We help venues move from uncertainty to a clear way forward.
+            Helping clubs plan for the future and make better investment decisions.
           </h2>
           <p className="font-sans text-base leading-relaxed text-muted-foreground sm:text-lg">
-            TH combines deep industry experience, commercial analysis and strategic insight to help
-            venues make better decisions, invest with confidence and achieve sustainable growth.
+            We combine industry experience, market insight and financial analysis to help clubs
+            understand their opportunities, determine their future direction, and make informed
+            decisions about where to invest. We specialise in strategic planning, gaming performance,
+            financial modelling, capital investment, and customer experience – helping Boards and
+            management make informed decisions about the future of their businesses.
           </p>
         </motion.div>
 
@@ -78,7 +75,7 @@ export const ApproachSection = () => {
           ))}
         </ol>
 
-        <ol className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-10 lg:grid-cols-3">
+        <ol className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-10 lg:grid-cols-6">
           {steps.map((step, i) => {
             const Icon = step.icon;
             const n = String(i + 1).padStart(2, '0');
@@ -89,7 +86,9 @@ export const ApproachSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06 }}
-                className="relative flex gap-4 rounded-2xl border border-border bg-card p-6"
+                className={`relative flex gap-4 rounded-2xl border border-border bg-card p-6 ${
+                  i < 3 ? 'lg:col-span-2' : 'lg:col-span-3'
+                }`}
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Icon size={22} strokeWidth={1.75} aria-hidden />

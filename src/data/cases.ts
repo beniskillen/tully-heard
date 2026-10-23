@@ -16,6 +16,7 @@ export type FeaturedCase = {
   title: string;
   headline: string;
   intro: string;
+  outcome: string;
   image: string;
   logo?: string;
   result: string;
@@ -31,52 +32,62 @@ export const featuredCases: FeaturedCase[] = [
   {
     id: 'chatswood-rsl',
     title: 'Chatswood RSL / Yogi’s Sports Bar',
-    headline: 'A more dynamic, multi-generational venue experience',
+    headline: 'Repositioning the venue to attract new markets and drive business growth.',
     intro:
-      'A sports and entertainment concept at Chatswood RSL, bringing together viewing, casual dining and social occasions.',
+      "Part of a broader TH-led strategy to strengthen Chatswood RSL's existing business while attracting a younger audience through a contemporary sports bar and hospitality experience.",
+    outcome:
+      'The work strengthened the existing club business and delivered strong commercial results, while opening a contemporary hospitality offer for a younger audience.',
     image: yogisImg,
     logo: assetUrl('/clients/chatswood-rsl.webp'),
-    result: 'Sports and social venue',
+    result: 'New-market growth',
   },
   {
     id: 'gosford-rsl',
     title: 'Gosford RSL',
-    headline: 'Strategic direction for a major venue transformation',
+    headline: 'Setting the commercial direction for a major venue investment.',
     intro:
-      'A major redevelopment on the Central Coast, bringing dining, events, sport and community spaces into one venue.',
+      "A TH-led strategy for Gosford RSL's redevelopment, testing how dining, events, sport and community spaces could strengthen the club's long-term business.",
+    outcome:
+      'The strategy gave the Board a clear commercial direction before committing to a major investment in the venue.',
     image: gosfordImg,
     logo: assetUrl('/clients/gosford-rsl.svg'),
-    result: 'Venue transformation',
+    result: 'Major investment strategy',
   },
   {
     id: 'shoalhaven',
     title: 'Shoalhaven Ex-Servos / The Growers',
-    headline: 'A regional food and beverage destination',
+    headline: "Building a hospitality offer that broadens the club's trade.",
     intro:
-      'A locally led dining concept for Shoalhaven Ex-Servos, shaped around regional produce and a broader social offer.',
+      'The Growers was developed as a commercial food and beverage strategy for Shoalhaven Ex-Servos, using regional produce to attract a wider social audience.',
+    outcome:
+      'The concept gave the club a distinct hospitality business and a practical way to grow food and beverage trade beyond its existing members.',
     image: shoalhavenImg,
     logo: growersLogo,
-    result: 'Regional dining concept',
+    result: 'Hospitality growth',
   },
   {
     id: 'club-mudgee',
     title: 'Club Mudgee / The Hub Sports Bar',
-    headline: 'Revitalising a historic club space for modern community use',
+    headline: 'Putting an existing space to work for the business.',
     intro:
-      'A sports bar and community hub that gave an existing area of Club Mudgee a clearer role in the venue.',
+      'The Hub Sports Bar gave an underused area of Club Mudgee a clearer commercial role, connecting sport and community use with day-to-day trade.',
+    outcome:
+      'An existing part of the club now contributes more directly to trade, rather than sitting underused.',
     image: mudgeeImg,
     logo: mudgeeLogo,
-    result: 'Sports and community hub',
+    result: 'Stronger use of the venue',
   },
   {
     id: 'bankstown',
     title: 'Bankstown Sports / Basement Brewhouse',
-    headline: 'Repositioning an underused space for a new audience',
+    headline: 'Diversifying the offer to reach a new audience.',
     intro:
-      'A craft beer and casual dining concept that gave an existing sports bar at Bankstown Sports a more contemporary role.',
+      'The Basement Brewhouse repositioned an existing sports bar at Bankstown Sports, creating a craft beer and casual dining business for a broader market.',
+    outcome:
+      'The new offer gave an existing space a contemporary role and supported a more diversified club business.',
     image: bankstownImg,
     logo: assetUrl('/clients/bankstown-sports.webp'),
-    result: 'Craft beer and dining',
+    result: 'A wider commercial offer',
   },
 ];
 

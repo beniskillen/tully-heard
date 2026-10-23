@@ -33,10 +33,10 @@ const Services = () => {
                 Services
               </p>
               <h1 className="mb-6 font-display text-4xl italic text-white sm:text-5xl lg:text-6xl">
-                Practical strategy for complex decisions
+                Commercial advice for clubs and hospitality
               </h1>
               <p className="font-sans text-lg leading-relaxed text-white/80">
-                We help Clubs and hospitality businesses make better strategic, investment, gaming and development decisions, and turn those decisions into commercial outcomes.
+                Strategic planning, financial modelling, master planning, gaming strategy and implementation, with specialist consulting where the decision needs it.
               </p>
             </motion.div>
           </div>

@@ -151,6 +151,7 @@ const CaseStudies = () => {
                   </div>
 
                   <p className="font-sans leading-relaxed text-muted-foreground">{current.intro}</p>
+                  <p className="mt-4 font-sans leading-relaxed text-muted-foreground">{current.outcome}</p>
                 </div>
               </motion.div>
 

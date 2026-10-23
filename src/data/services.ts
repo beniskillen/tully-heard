@@ -1,18 +1,21 @@
 import {
   Map,
   Landmark,
-  Gauge,
-  Hammer,
+  Building2,
   Spade,
+  Handshake,
   Scale,
   Users,
+  Heart,
   HeartHandshake,
   Coins,
   type LucideIcon,
 } from 'lucide-react';
 
 export type Service = {
+  id: string;
   title: string;
+  summary: string;
   desc: string;
   icon: LucideIcon;
 };
@@ -25,51 +28,66 @@ export type Specialist = {
 
 export const services: Service[] = [
   {
-    title: 'Strategy & Commercial Planning',
-    desc: 'Clear, practical strategies that define where the business is going, where growth will come from and the priorities required to get there.',
+    id: 'strategic-planning',
+    title: 'Strategic Planning & Business Performance',
+    summary: 'Direction, performance and the priorities that strengthen the business.',
+    desc: 'Clear direction for the business: where it is performing, where it should go, and the priorities required to get there.',
     icon: Map,
   },
   {
-    title: 'Investment, Feasibility & Financial Modelling',
-    desc: 'Independent assessment of major investment decisions, testing commercial viability, capital requirements, staging, funding and projected financial outcomes.',
+    id: 'financial-modelling',
+    title: 'Financial Modelling & Commercial Feasibility',
+    summary: 'Viability, projections, capital requirements and expected returns.',
+    desc: 'Independent testing of commercial viability, financial projections, cash flow, capital requirements and expected returns.',
     icon: Landmark,
   },
   {
-    title: 'Venue Performance & Optimisation',
-    desc: 'Identifying what is driving performance, where opportunities exist and how venues, assets and operations can deliver stronger commercial outcomes.',
-    icon: Gauge,
+    id: 'master-planning',
+    title: 'Master Planning & Development Strategy',
+    summary: 'How a venue should develop, and where investment should go.',
+    desc: 'A practical development direction for the venue or precinct, including priorities, staging and how investment should be sequenced.',
+    icon: Building2,
   },
   {
-    title: 'Development & Implementation',
-    desc: 'Turning strategy into delivered outcomes, from establishing the commercial brief and development priorities through to implementation and project advisory.',
-    icon: Hammer,
-  },
-  {
+    id: 'gaming-strategy',
     title: 'Gaming Strategy & Optimisation',
-    desc: 'Specialist advice on gaming performance, layout, product mix, operational settings and investment priorities to improve commercial performance.',
+    summary: 'Gaming performance and the returns from gaming investment.',
+    desc: 'Specialist advice on gaming performance, layout, product mix, operational settings and investment priorities.',
     icon: Spade,
+  },
+  {
+    id: 'strategy-implementation',
+    title: 'Strategy Implementation & Advisory',
+    summary: 'Support to deliver the agreed strategy with management.',
+    desc: 'Work alongside management and specialist partners to help deliver the agreed strategy.',
+    icon: Handshake,
   },
 ];
 
 export const specialists: Specialist[] = [
   {
-    title: 'Governance and amalgamations',
-    lead: 'Peter McLean',
-    icon: Scale,
+    title: 'Customer Experience & Hospitality Advisory',
+    lead: 'Craig Butler',
+    icon: Heart,
   },
   {
-    title: 'Market research and customer insights',
+    title: 'Leadership & Culture',
+    lead: 'Brian Dickinson',
+    icon: HeartHandshake,
+  },
+  {
+    title: 'Market Research & Consumer Insights',
     lead: 'Norrelle Goldring',
     icon: Users,
   },
   {
-    title: 'EGM brokerage and gaming advisory',
+    title: 'EGM Brokerage',
     lead: 'Margaret Carew',
     icon: Coins,
   },
   {
-    title: 'Leadership and organisational culture',
-    lead: 'Brian Dickinson',
-    icon: HeartHandshake,
+    title: 'Governance & Amalgamations',
+    lead: 'Peter McLean',
+    icon: Scale,
   },
 ];

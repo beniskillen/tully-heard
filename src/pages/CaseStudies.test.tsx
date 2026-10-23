@@ -23,6 +23,9 @@ describe("case studies page", () => {
 
     await waitFor(() => {
       expect(screen.getByRole("heading", { name: "Chatswood RSL / Yogi’s Sports Bar" })).toBeInTheDocument();
+    expect(
+      screen.getByText(/delivered strong commercial results/i),
+    ).toBeInTheDocument();
     });
     expect(screen.getByText("Gosford RSL")).toBeInTheDocument();
     expect(screen.queryByText(/The Doylo/)).not.toBeInTheDocument();

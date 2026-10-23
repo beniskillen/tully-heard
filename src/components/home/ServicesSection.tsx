@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { services, specialists } from '@/data/services';
 
 export const ServicesSection = () => {
@@ -12,14 +13,14 @@ export const ServicesSection = () => {
           className="mx-auto mb-14 max-w-3xl text-center"
         >
           <p className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-            Our Services
+            Our Expertise
           </p>
           <h2 className="mb-5 font-display text-3xl leading-tight text-foreground sm:text-4xl">
-            Practical strategy for complex decisions.
+            Principal services and specialist consulting.
           </h2>
           <p className="font-sans text-base leading-relaxed text-muted-foreground sm:text-lg">
-            We help Clubs and hospitality businesses make better strategic, investment, gaming and
-            development decisions, and turn those decisions into commercial outcomes.
+            Five areas of commercial advice, with specialist capability for the decisions that need
+            a narrower expert.
           </p>
         </motion.div>
 
@@ -28,12 +29,13 @@ export const ServicesSection = () => {
             const Icon = s.icon;
             return (
               <motion.article
+                id={s.id}
                 key={s.title}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className={`feature-card ${i < 3 ? 'xl:col-span-2' : 'xl:col-span-3'}`}
+                className={`feature-card scroll-mt-28 ${i < 3 ? 'xl:col-span-2' : 'xl:col-span-3'}`}
               >
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Icon size={22} strokeWidth={1.75} aria-hidden />
@@ -51,8 +53,14 @@ export const ServicesSection = () => {
           viewport={{ once: true }}
           className="mt-16 border-t border-border pt-12"
         >
-          <p className="mb-8 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-            Specialist Advisory Services
+          <p className="mb-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+            Specialist consulting
+          </p>
+          <p className="mx-auto mb-8 max-w-2xl text-center font-sans text-sm leading-relaxed text-muted-foreground">
+            These capabilities sit with the consultants who lead them. Their profiles are on the{' '}
+            <Link to="/people" className="font-semibold text-primary underline-offset-4 hover:underline">
+              team page
+            </Link>.
           </p>
           <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {specialists.map((item) => {

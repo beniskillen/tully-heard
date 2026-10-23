@@ -22,7 +22,7 @@ export const DirectorsSection = () => {
             <span className="italic text-primary">club and hospitality sector</span>
           </h2>
           <p className="font-sans text-lg leading-relaxed text-muted-foreground">
-            John and Luke combine venue ownership with strategic and financial advisory. Luke leads investment feasibility and long-term planning, and the wider team covers gaming, governance, research and culture.
+            Directors John Tully and Luke Heard bring together extensive experience in hospitality operations, business leadership, strategy, and finance. Supported by a team of specialist consultants, TH combines practical industry knowledge with commercial analysis to help clubs make informed decisions about their future.
           </p>
         </motion.div>
 

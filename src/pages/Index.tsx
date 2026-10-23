@@ -3,6 +3,7 @@ import { Footer } from '@/components/layout/Footer';
 import { HeroSection } from '@/components/home/HeroSection';
 import { ClientLogoTicker } from '@/components/home/ClientLogoTicker';
 import { ApproachSection } from '@/components/home/ApproachSection';
+import { ExpertiseSection } from '@/components/home/ExpertiseSection';
 import { CaseStudiesSection } from '@/components/home/CaseStudiesSection';
 import { DirectorsSection } from '@/components/home/DirectorsSection';
 import { CtaSection } from '@/components/home/CtaSection';
@@ -15,6 +16,7 @@ const Index = () => {
         <HeroSection />
         <ClientLogoTicker />
         <ApproachSection />
+        <ExpertiseSection />
         <CaseStudiesSection />
         <DirectorsSection />
         <CtaSection />
